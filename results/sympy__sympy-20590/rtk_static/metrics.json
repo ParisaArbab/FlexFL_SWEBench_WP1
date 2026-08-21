@@ -1,0 +1,14 @@
+{
+  "instance_id": "sympy__sympy-20590",
+  "condition": "rtk_static",
+  "command": [
+    "/home/parbab/.local/bin/rtk",
+    "pytest",
+    "sympy/core/tests/test_basic.py::test_immutable",
+    "-v"
+  ],
+  "returncode": 1,
+  "characters": 262,
+  "lines": 8,
+  "output_file": "results/sympy__sympy-20590/rtk_static/pytest_output.txt"
+}

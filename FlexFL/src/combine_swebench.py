@@ -48,6 +48,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--bug", default="sympy__sympy-20590")
     ap.add_argument("--root", default=None)
+    ap.add_argument(
+        "--condition",
+        default="raw",
+        choices=["raw", "rtk_static"],
+    )
     args = ap.parse_args()
 
     src = Path(__file__).resolve().parent
@@ -60,12 +65,22 @@ def main():
     for fl in ("SBIR", "Ochiai", "BoostN"):
         combined.extend(read_ranked_methods(data / "FL_results" / fl / DATASET / f"{bug}_method-susps.csv", 5))
 
-    sr_file = res / f"{MODEL}_{DATASET}_SR" / f"{bug}.json"
+    sr_file = (
+        res
+        / f"{MODEL}_{DATASET}_SR_{args.condition}"
+        / f"{bug}.json"
+    )
     if not sr_file.exists():
         raise FileNotFoundError(f"Required Agent4SR result missing: {sr_file}")
     combined.extend(agent4sr_top5(sr_file))
 
-    out_dir = data / "input" / "suspicious_methods" / DATASET / f"{MODEL}_All"
+    out_dir = (
+        data
+        / "input"
+        / "suspicious_methods"
+        / DATASET
+        / f"{MODEL}_All_{args.condition}"
+    )
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / f"{bug}.txt"
     out_path.write_text("\n".join(combined) + "\n", encoding="utf-8")

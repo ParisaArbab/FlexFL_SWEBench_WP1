@@ -1,0 +1,9 @@
+{
+  "instance_id": "sympy__sympy-20590",
+  "raw_characters": 1724,
+  "rtk_characters": 262,
+  "character_reduction_percent": 84.8,
+  "raw_lines": 34,
+  "rtk_lines": 8,
+  "note": "This compares terminal/test output only. FlexFL RAW-vs-RTK agent ranking integration is the next step."
+}
