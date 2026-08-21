@@ -1,0 +1,16 @@
+
+# Local SWE-bench repository checkouts
+FlexFL/data/repos/
+
+# Llama model weights
+FlexFL/src/Meta-Llama-3-8B-Instruct/
+
+# External SBIR replication package
+SBIR-ReplicationPackage/
+
+# Runtime logs
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
