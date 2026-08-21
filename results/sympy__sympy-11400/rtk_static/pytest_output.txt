@@ -1,0 +1,8 @@
+OUTPUT (last 5 lines):
+  DO *NOT* COMMIT!
+  /home/parbab/FlexFL_SWEBench_WP1/FlexFL/data/repos/sympy__sympy-11400/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+    from collections import Mapping
+  /home/parbab/FlexFL_SWEBench_WP1/FlexFL/data/repos/sympy__sympy-11400/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+    from collections import Callable
+
+[full output: ~/.local/share/rtk/tee/1787331096_test.log]
