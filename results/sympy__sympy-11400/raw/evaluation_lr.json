@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-11400",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/printing/ccode.py"
+  ],
+  "top5": [
+    "sympy.printing.ccode.CCodePrinter._print_Piecewise()",
+    "sympy.printing.ccode.CCodePrinter._print_Pow()",
+    "sympy.printing.ccode.CCodePrinter._print_Symbol()",
+    "sympy.printing.ccode.CCodePrinter._print_Pi()",
+    "sympy.printing.ccode.CCodePrinter._print_Rational()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.printing.ccode.CCodePrinter._print_Piecewise()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/ccode.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.printing.ccode.CCodePrinter._print_Pow()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/ccode.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.printing.ccode.CCodePrinter._print_Symbol()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/ccode.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.printing.ccode.CCodePrinter._print_Pi()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/ccode.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.printing.ccode.CCodePrinter._print_Rational()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/ccode.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/printing/ccode.py"
+}
