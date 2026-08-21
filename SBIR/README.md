@@ -1,0 +1,2 @@
+- sbir_results_seed1 : Results of SBIR (https://github.com/LASER-UMASS/SBIR-ReplicationPackage) in `SBIR-ReplicationPackage/FaultLocalization/data/SBIR_results/sbir_seed1`
+- filter_SBIR.py : transfer statement-level results of SBIR to method-level, results found in `SBIR_results`. (Before you run this script, ensure that you have obtained methods via steps in `buggy_program`)

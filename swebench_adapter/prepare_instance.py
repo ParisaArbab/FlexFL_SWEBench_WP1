@@ -41,11 +41,16 @@ def changed_python_files(patch: str) -> list[str]:
 
 
 def method_name(path: Path, root: Path, node: ast.AST, parents: list[str]) -> str:
-    rel = path.relative_to(root).as_posix()
-    module = rel[:-3].replace("/", ".")
+    rel = path.relative_to(root).with_suffix("")
+    parts = rel.parts
+
+    module_name = parts[-1]
+    package = ".".join(parts[:-1])
+
     name = getattr(node, "name", "<unknown>")
-    scope = ".".join(parents + [name])
-    return f"{module}${scope}()"
+    scope = ".".join([module_name] + parents + [name])
+
+    return f"{package}${scope}()"
 
 
 def collect_python_methods(repo: Path) -> tuple[list[str], list[str]]:
@@ -56,6 +61,17 @@ def collect_python_methods(repo: Path) -> tuple[list[str], list[str]]:
     for path in sorted(repo.rglob("*.py")):
         if any(part in ignored for part in path.parts):
             continue
+
+        rel_parts = path.relative_to(repo).parts
+
+        # For the SymPy SWE-bench instance, FlexFL searches the actual
+        # implementation package, not repository tooling/docs/examples.
+        if not rel_parts or rel_parts[0] != "sympy":
+            continue
+
+        if "tests" in rel_parts or path.name.startswith("test_"):
+            continue
+
         try:
             text = path.read_text(encoding="utf-8")
             tree = ast.parse(text)
