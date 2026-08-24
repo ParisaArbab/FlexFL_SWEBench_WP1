@@ -1,0 +1,29 @@
+{
+  "instance_id": "sympy__sympy-24102",
+  "trigger_tests": [
+    "test_mathematica",
+    "test_parser_mathematica_tokenizer"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_mathematica",
+      "name": "test_mathematica",
+      "path": "sympy/parsing/tests/test_mathematica.py"
+    },
+    {
+      "trigger": "test_parser_mathematica_tokenizer",
+      "name": "test_parser_mathematica_tokenizer",
+      "path": "sympy/parsing/tests/test_mathematica.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-24102.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-24102.sh"
+  ]
+}

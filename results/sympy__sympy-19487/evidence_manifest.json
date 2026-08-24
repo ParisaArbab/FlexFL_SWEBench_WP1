@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-19487",
+  "trigger_tests": [
+    "test_sign"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_sign",
+      "name": "test_sign",
+      "path": "sympy/functions/elementary/tests/test_complexes.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-19487.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-19487.sh"
+  ]
+}

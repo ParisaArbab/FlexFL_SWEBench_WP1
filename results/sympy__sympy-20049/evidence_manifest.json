@@ -1,0 +1,41 @@
+{
+  "instance_id": "sympy__sympy-20049",
+  "trigger_tests": [
+    "test_auto_point_vel",
+    "test_auto_point_vel_multiple_point_path",
+    "test_auto_vel_dont_overwrite",
+    "test_auto_point_vel_shortest_path"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_auto_point_vel",
+      "name": "test_auto_point_vel",
+      "path": "sympy/physics/vector/tests/test_point.py"
+    },
+    {
+      "trigger": "test_auto_point_vel_multiple_point_path",
+      "name": "test_auto_point_vel_multiple_point_path",
+      "path": "sympy/physics/vector/tests/test_point.py"
+    },
+    {
+      "trigger": "test_auto_vel_dont_overwrite",
+      "name": "test_auto_vel_dont_overwrite",
+      "path": "sympy/physics/vector/tests/test_point.py"
+    },
+    {
+      "trigger": "test_auto_point_vel_shortest_path",
+      "name": "test_auto_point_vel_shortest_path",
+      "path": "sympy/physics/vector/tests/test_point.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-20049.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-20049.sh"
+  ]
+}

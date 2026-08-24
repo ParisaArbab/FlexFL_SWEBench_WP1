@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-24066",
+  "trigger_tests": [
+    "test_issue_24062"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_issue_24062",
+      "name": "test_issue_24062",
+      "path": "sympy/physics/units/tests/test_quantities.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-24066.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-24066.sh"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "instance_id": "sympy__sympy-19007",
+  "trigger_tests": [
+    "test_block_index_symbolic",
+    "test_block_index_symbolic_nonzero",
+    "test_block_index_large"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_block_index_symbolic",
+      "name": "test_block_index_symbolic",
+      "path": "sympy/matrices/expressions/tests/test_indexing.py"
+    },
+    {
+      "trigger": "test_block_index_symbolic_nonzero",
+      "name": "test_block_index_symbolic_nonzero",
+      "path": "sympy/matrices/expressions/tests/test_indexing.py"
+    },
+    {
+      "trigger": "test_block_index_large",
+      "name": "test_block_index_large",
+      "path": "sympy/matrices/expressions/tests/test_indexing.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-19007.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-19007.sh"
+  ]
+}

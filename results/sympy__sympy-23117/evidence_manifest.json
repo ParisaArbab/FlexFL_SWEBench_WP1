@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-23117",
+  "trigger_tests": [
+    "test_issue_17851"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_issue_17851",
+      "name": "test_issue_17851",
+      "path": "sympy/tensor/array/tests/test_ndim_array.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-23117.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-23117.sh"
+  ]
+}

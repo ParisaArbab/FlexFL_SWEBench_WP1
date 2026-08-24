@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-21614",
+  "trigger_tests": [
+    "test_Derivative_kind"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_Derivative_kind",
+      "name": "test_Derivative_kind",
+      "path": "sympy/core/tests/test_kind.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-21614.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-21614.sh"
+  ]
+}

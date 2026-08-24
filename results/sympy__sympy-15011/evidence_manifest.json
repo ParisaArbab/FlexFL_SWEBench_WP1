@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-15011",
+  "trigger_tests": [
+    "test_curly_matrix_symbol"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_curly_matrix_symbol",
+      "name": "test_curly_matrix_symbol",
+      "path": "sympy/utilities/tests/test_lambdify.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-15011.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-15011.sh"
+  ]
+}

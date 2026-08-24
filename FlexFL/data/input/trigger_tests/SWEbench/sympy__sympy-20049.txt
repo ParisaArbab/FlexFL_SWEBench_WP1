@@ -1,0 +1,1 @@
+["test_auto_point_vel", "test_auto_point_vel_multiple_point_path", "test_auto_vel_dont_overwrite", "test_auto_point_vel_shortest_path"]

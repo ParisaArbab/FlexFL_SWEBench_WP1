@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-13471",
+  "trigger_tests": [
+    "test_Float_from_tuple"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_Float_from_tuple",
+      "name": "test_Float_from_tuple",
+      "path": "sympy/core/tests/test_numbers.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-13471.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-13471.sh"
+  ]
+}

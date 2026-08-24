@@ -1,0 +1,29 @@
+{
+  "instance_id": "sympy__sympy-13177",
+  "trigger_tests": [
+    "test_mod",
+    "test_mod_inverse"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_mod",
+      "name": "test_mod",
+      "path": "sympy/core/tests/test_numbers.py"
+    },
+    {
+      "trigger": "test_mod_inverse",
+      "name": "test_mod_inverse",
+      "path": "sympy/core/tests/test_numbers.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-13177.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-13177.sh"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "instance_id": "sympy__sympy-14308",
+  "trigger_tests": [
+    "test_issue_12675",
+    "test_pretty_print_unicode"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_issue_12675",
+      "name": "test_issue_12675",
+      "path": "sympy/printing/pretty/tests/test_pretty.py"
+    },
+    {
+      "trigger": "test_pretty_print_unicode",
+      "name": "test_pretty_print_unicode",
+      "path": "sympy/vector/tests/test_printing.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-14308.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-14308.sh"
+  ]
+}

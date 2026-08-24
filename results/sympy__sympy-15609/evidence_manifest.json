@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-15609",
+  "trigger_tests": [
+    "test_MatrixElement_printing"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_MatrixElement_printing",
+      "name": "test_MatrixElement_printing",
+      "path": "sympy/printing/tests/test_latex.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-15609.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-15609.sh"
+  ]
+}

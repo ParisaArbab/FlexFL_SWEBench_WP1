@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-13437",
+  "trigger_tests": [
+    "test_bell"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_bell",
+      "name": "test_bell",
+      "path": "sympy/functions/combinatorial/tests/test_comb_numbers.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-13437.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-13437.sh"
+  ]
+}

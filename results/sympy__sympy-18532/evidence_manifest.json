@@ -1,0 +1,29 @@
+{
+  "instance_id": "sympy__sympy-18532",
+  "trigger_tests": [
+    "test_sizeof",
+    "test_atoms"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_sizeof",
+      "name": "test_sizeof",
+      "path": "sympy/codegen/tests/test_cnodes.py"
+    },
+    {
+      "trigger": "test_atoms",
+      "name": "test_atoms",
+      "path": "sympy/core/tests/test_basic.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-18532.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-18532.sh"
+  ]
+}

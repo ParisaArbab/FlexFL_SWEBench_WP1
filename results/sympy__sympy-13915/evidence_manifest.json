@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-13915",
+  "trigger_tests": [
+    "test_Mul_does_not_cancel_infinities"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_Mul_does_not_cancel_infinities",
+      "name": "test_Mul_does_not_cancel_infinities",
+      "path": "sympy/core/tests/test_arit.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-13915.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-13915.sh"
+  ]
+}

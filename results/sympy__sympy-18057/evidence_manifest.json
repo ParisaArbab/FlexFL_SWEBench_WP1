@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-18057",
+  "trigger_tests": [
+    "test_var"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_var",
+      "name": "test_var",
+      "path": "sympy/core/tests/test_var.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-18057.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-18057.sh"
+  ]
+}
