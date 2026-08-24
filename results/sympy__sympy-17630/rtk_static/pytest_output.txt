@@ -1,0 +1,6 @@
+OUTPUT (last 5 lines):
+  AssertionError
+  ============= tests finished: 0 passed, 1 failed, in 0.05 seconds ==============
+  DO *NOT* COMMIT!
+  ===== TEST EXIT CODE: 1 =====
+

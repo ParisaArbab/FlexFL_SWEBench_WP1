@@ -1,0 +1,21 @@
+
+===== FAIL_TO_PASS: test_sparse_matrix =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+random seed:        82644933
+hash randomization: off
+
+sympy/matrices/tests/test_sparse.py[1] F                                  [FAIL]
+
+________________________________________________________________________________
+____________ sympy/matrices/tests/test_sparse.py:test_sparse_matrix ____________
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13031/sympy/matrices/tests/test_sparse.py", line 31, in test_sparse_matrix
+    assert SparseMatrix.hstack(*sparse_matrices) == Matrix(0, 6, [])
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.09 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

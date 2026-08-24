@@ -1,0 +1,25 @@
+
+===== FAIL_TO_PASS: test_issue_22684 =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        36819642
+hash randomization: off
+
+sympy/geometry/tests/test_point.py[1] E                                   [FAIL]
+
+________________________________________________________________________________
+_____________ sympy/geometry/tests/test_point.py:test_issue_22684 ______________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-22714/sympy/geometry/tests/test_point.py", line 459, in test_issue_22684
+    Point(1, 2)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-22714/sympy/geometry/point.py", line 156, in __new__
+    raise ValueError('Imaginary coordinates are not permitted.')
+ValueError: Imaginary coordinates are not permitted.
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.11 seconds ============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

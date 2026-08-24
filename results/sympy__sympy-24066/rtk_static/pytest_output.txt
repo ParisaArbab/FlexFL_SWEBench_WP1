@@ -1,0 +1,6 @@
+OUTPUT (last 5 lines):
+  ValueError: Dimension of "exp(T/(C*R))" is Dimension(time/(capacitance*impedance)), but it should be Dimension(1)
+  =========== tests finished: 0 passed, 1 exceptions, in 0.25 seconds ============
+  DO *NOT* COMMIT!
+  ===== TEST EXIT CODE: 1 =====
+

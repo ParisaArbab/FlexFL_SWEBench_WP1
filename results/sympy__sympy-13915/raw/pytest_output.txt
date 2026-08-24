@@ -1,0 +1,28 @@
+
+===== FAIL_TO_PASS: test_Mul_does_not_cancel_infinities =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        11254856
+hash randomization: off
+
+sympy/core/tests/test_arit.py[1] F                                        [FAIL]
+
+________________________________________________________________________________
+______ sympy/core/tests/test_arit.py:test_Mul_does_not_cancel_infinities _______
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13915/sympy/core/tests/test_arit.py", line 1942, in test_Mul_does_not_cancel_infinities
+    assert ((zoo + 3*a)/(3*a + zoo)) is nan
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.15 seconds ==============
+DO *NOT* COMMIT!
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13915/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping, defaultdict
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13915/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  class OrderedSet(collections.MutableSet):
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13915/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Callable
+===== TEST EXIT CODE: 1 =====

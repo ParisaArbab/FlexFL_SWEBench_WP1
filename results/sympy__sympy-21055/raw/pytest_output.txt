@@ -1,0 +1,23 @@
+
+===== FAIL_TO_PASS: test_arg =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        56735458
+hash randomization: off
+
+sympy/assumptions/tests/test_refine.py[1] F                               [FAIL]
+
+________________________________________________________________________________
+_______________ sympy/assumptions/tests/test_refine.py:test_arg ________________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21055/sympy/assumptions/tests/test_refine.py", line 165, in test_arg
+    assert refine(arg(x), Q.positive(x)) == 0
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.03 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

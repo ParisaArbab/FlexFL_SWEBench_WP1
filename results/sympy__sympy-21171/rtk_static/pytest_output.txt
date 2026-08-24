@@ -1,0 +1,7 @@
+OUTPUT (last 5 lines):
+  =========== tests finished: 0 passed, 1 exceptions, in 0.41 seconds ============
+  DO *NOT* COMMIT!
+  ===== TEST EXIT CODE: 1 =====
+  /scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21171/sympy/physics/quantum/matrixutils.py:43: DeprecationWarning: Please use `spmatrix` from the `scipy.sparse` namespace, the `scipy.sparse.base` namespace is deprecated.
+    scipy_sparse_matrix = sparse.base.spmatrix  # type: ignore
+

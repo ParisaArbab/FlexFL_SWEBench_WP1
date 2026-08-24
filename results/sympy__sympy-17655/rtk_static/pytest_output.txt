@@ -1,0 +1,6 @@
+OUTPUT (last 5 lines):
+  TypeError: unsupported operand type(s) for *: 'int' and 'Point3D'
+  =========== tests finished: 0 passed, 1 exceptions, in 0.23 seconds ============
+  DO *NOT* COMMIT!
+  ===== TEST EXIT CODE: 1 =====
+

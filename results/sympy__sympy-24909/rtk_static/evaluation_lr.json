@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-24909",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/physics/units/prefixes.py"
+  ],
+  "top5": [
+    "sympy.physics.units.prefixes.Prefix.__mul__(self, other)",
+    "sympy.physics.units.prefixes.Prefix.__mul__(self, other)",
+    "sympy.physics.units.prefixes.prefix_unit(unit, prefixes)",
+    "sympy.physics.units.prefixes.Prefix.__new__(...)",
+    "sympy.physics.units.prefixes.Prefix.__repr__(...)"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.physics.units.prefixes.Prefix.__mul__(self, other)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/units/prefixes.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.physics.units.prefixes.Prefix.__mul__(self, other)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/units/prefixes.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.physics.units.prefixes.prefix_unit(unit, prefixes)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/units/prefixes.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.physics.units.prefixes.Prefix.__new__(...)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/units/prefixes.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.physics.units.prefixes.Prefix.__repr__(...)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/units/prefixes.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/physics/units/prefixes.py"
+}

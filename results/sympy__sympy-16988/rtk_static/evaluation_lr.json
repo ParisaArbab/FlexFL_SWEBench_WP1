@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-16988",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/sets/sets.py"
+  ],
+  "top5": [
+    "sympy.sets.sets.Intersection._handle_finite_sets()",
+    "sympy.sets.sets.simplify_intersection()",
+    "sympy.sets.sets.Intersection._contains()",
+    "sympy.sets.sets.Set.intersection()",
+    "sympy.sets.sets.Intersection.__init__()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.sets.sets.Intersection._handle_finite_sets()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/sets/sets.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.sets.sets.simplify_intersection()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/sets/sets.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.sets.sets.Intersection._contains()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/sets/sets.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.sets.sets.Set.intersection()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/sets/sets.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.sets.sets.Intersection.__init__()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/sets/sets.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/sets/sets.py"
+}

@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-18199",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/ntheory/residue_ntheory.py"
+  ],
+  "top5": [
+    "sympy.ntheory.residue_ntheory.nthroot_mod(a, n, p, all_roots=False)",
+    "sympy.ntheory.residue_ntheory._nthroot_mod1(s, q, p, all_roots)",
+    "sympy.ntheory.residue_ntheory._nthroot_mod2(s, q, p)",
+    "sympy.ntheory.residue_ntheory.sqrt_mod(a, p, all_roots)",
+    "sympy.ntheory.residue_ntheory.discrete_log(p, s1, h)"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.ntheory.residue_ntheory.nthroot_mod(a, n, p, all_roots=False)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/ntheory/residue_ntheory.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.ntheory.residue_ntheory._nthroot_mod1(s, q, p, all_roots)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/ntheory/residue_ntheory.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.ntheory.residue_ntheory._nthroot_mod2(s, q, p)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/ntheory/residue_ntheory.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.ntheory.residue_ntheory.sqrt_mod(a, p, all_roots)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/ntheory/residue_ntheory.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.ntheory.residue_ntheory.discrete_log(p, s1, h)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/ntheory/residue_ntheory.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/ntheory/residue_ntheory.py"
+}

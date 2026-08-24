@@ -1,0 +1,30 @@
+
+===== FAIL_TO_PASS: test_Float_from_tuple =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        3656929
+hash randomization: off
+
+sympy/core/tests/test_numbers.py[1] E                                     [FAIL]
+
+________________________________________________________________________________
+____________ sympy/core/tests/test_numbers.py:test_Float_from_tuple ____________
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13471/sympy/core/tests/test_numbers.py", line 586, in test_Float_from_tuple
+    a = Float((0, '1L', 0, 1))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13471/sympy/core/numbers.py", line 1045, in __new__
+    num[1] = long(num[1], 16)
+ValueError: invalid literal for int() with base 16: '1L'
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.15 seconds ============
+DO *NOT* COMMIT!
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13471/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping, defaultdict
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13471/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  class OrderedSet(collections.MutableSet):
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13471/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Callable
+===== TEST EXIT CODE: 1 =====

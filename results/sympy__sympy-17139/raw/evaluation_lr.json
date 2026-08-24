@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-17139",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/simplify/fu.py"
+  ],
+  "top5": [
+    "sympy.simplify.fu._TR56(rv, f, g, h, max, pow)",
+    "sympy.simplify.fu.TR6(rv, max=4, pow=False)",
+    "sympy.simplify.trigsimp.futrig(e)",
+    "sympy.simplify.trigsimp.trigsimp_old()",
+    "sympy.simplify.fu._f(rv)"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.simplify.fu._TR56(rv, f, g, h, max, pow)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/simplify/fu.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.simplify.fu.TR6(rv, max=4, pow=False)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/simplify/fu.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.simplify.trigsimp.futrig(e)",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.simplify.trigsimp.trigsimp_old()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.simplify.fu._f(rv)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/simplify/fu.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/simplify/fu.py"
+}

@@ -1,0 +1,34 @@
+
+===== FAIL_TO_PASS: test_MatrixElement_printing =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        56368864
+hash randomization: off
+
+E
+________________________________________________________________________________
+________________________________________________________________________________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15609/sympy/printing/tests/test_latex.py", line 34, in <module>
+    from sympy.physics.quantum import Commutator, Operator
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15609/sympy/physics/quantum/__init__.py", line 14, in <module>
+    from . import anticommutator
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15609/sympy/physics/quantum/anticommutator.py", line 8, in <module>
+    from sympy.physics.quantum.operator import Operator
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15609/sympy/physics/quantum/operator.py", line 17, in <module>
+    from sympy.physics.quantum.qexpr import QExpr, dispatch_method
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15609/sympy/physics/quantum/qexpr.py", line 9, in <module>
+    from sympy.physics.quantum.matrixutils import (
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15609/sympy/physics/quantum/matrixutils.py", line 46, in <module>
+    scipy_sparse_matrix = sparse.base.spmatrix
+  File "/home/parbab/.local/lib/python3.8/site-packages/scipy/sparse/base.py", line 38, in __getattr__
+    warnings.warn(f"Please use `{name}` from the `scipy.sparse` namespace, "
+DeprecationWarning: Please use `spmatrix` from the `scipy.sparse` namespace, the `scipy.sparse.base` namespace is deprecated.
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.35 seconds ============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

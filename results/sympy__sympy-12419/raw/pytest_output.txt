@@ -1,0 +1,25 @@
+
+===== FAIL_TO_PASS: test_Identity =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+random seed:        38708759
+hash randomization: off
+
+sympy/matrices/expressions/tests/test_matexpr.py[2] F.                    [FAIL]
+
+________________________________________________________________________________
+________ sympy/matrices/expressions/tests/test_matexpr.py:test_Identity ________
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12419/sympy/matrices/expressions/tests/test_matexpr.py", line 90, in test_Identity
+    assert In[i, j] != 0
+AssertionError
+
+============= tests finished: 1 passed, 1 failed, in 0.15 seconds ==============
+DO *NOT* COMMIT!
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12419/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12419/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Callable
+===== TEST EXIT CODE: 1 =====

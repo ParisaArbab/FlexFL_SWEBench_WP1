@@ -1,0 +1,6 @@
+OUTPUT (last 5 lines):
+  ValueError: Velocity of point P4 has not been defined in ReferenceFrame B
+  =========== tests finished: 0 passed, 1 exceptions, in 0.23 seconds ============
+  DO *NOT* COMMIT!
+  ===== TEST EXIT CODE: 1 =====
+

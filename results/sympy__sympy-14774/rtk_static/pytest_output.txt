@@ -1,0 +1,7 @@
+OUTPUT (last 5 lines):
+    File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14774/sympy/utilities/runtests.py", line 1165, in test_file
+      reporter.test_exception(sys.exc_info())
+    File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14774/sympy/utilities/runtests.py", line 2300, in test_exception
+      self._exceptions.append((self._active_file, self._active_f, exc_info))
+  AttributeError: 'PyTestReporter' object has no attribute '_active_file'
+

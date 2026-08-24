@@ -1,0 +1,23 @@
+
+===== FAIL_TO_PASS: test_prefix_operations =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        70585996
+hash randomization: off
+
+sympy/physics/units/tests/test_prefixes.py[1] F                           [FAIL]
+
+________________________________________________________________________________
+______ sympy/physics/units/tests/test_prefixes.py::test_prefix_operations ______
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24909/sympy/physics/units/tests/test_prefixes.py", line 20, in test_prefix_operations
+    assert m * k is S.One
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.13 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

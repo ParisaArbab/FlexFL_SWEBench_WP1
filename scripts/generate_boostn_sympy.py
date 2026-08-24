@@ -12,7 +12,7 @@ from pathlib import Path
 PROJECT = Path.home() / "FlexFL_SWEBench_WP1"
 DATA = PROJECT / "FlexFL" / "data"
 BOOSTN = PROJECT / "BoostN"
-BUG_LIST = PROJECT / "configs" / "chunks" / "test_5_sympy.txt"
+BUG_LIST = Path(os.environ.get("FLEXFL_BUG_LIST", PROJECT / "configs/chunks/test_5_sympy.txt"))
 OUT_DIR = DATA / "FL_results" / "BoostN" / "SWEbench"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 

@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-21612",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/printing/str.py"
+  ],
+  "top5": [
+    "sympy.parsing.latex._antlr.latexparser.LaTeXParser.frac()",
+    "sympy.parsing.latex.__init__.parse_latex()",
+    "sympy.printing.latex.latex()",
+    "sympy.functions.elementary.integers.frac._eval_rewrite_as_floor()",
+    "sympy.functions.elementary.integers.frac._eval_rewrite_as_ceiling()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.parsing.latex._antlr.latexparser.LaTeXParser.frac()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.parsing.latex.__init__.parse_latex()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.printing.latex.latex()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.functions.elementary.integers.frac._eval_rewrite_as_floor()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.functions.elementary.integers.frac._eval_rewrite_as_ceiling()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": false,
+  "file_rank": null,
+  "matched_gold_file": null
+}

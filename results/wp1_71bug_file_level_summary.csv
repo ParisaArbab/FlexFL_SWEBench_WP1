@@ -1,0 +1,72 @@
+bug,raw_hit,raw_rank,rtk_hit,rtk_rank,classification
+sympy__sympy-12419,True,4,True,4,NO TAX - BOTH HIT
+sympy__sympy-12454,True,2,True,2,NO TAX - BOTH HIT
+sympy__sympy-12481,,,,,INCOMPLETE
+sympy__sympy-13031,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-13043,,,,,INCOMPLETE
+sympy__sympy-13146,,,,,INCOMPLETE
+sympy__sympy-13177,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-13437,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-13471,,,,,INCOMPLETE
+sympy__sympy-13480,True,4,True,4,NO TAX - BOTH HIT
+sympy__sympy-13647,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-13773,,,,,INCOMPLETE
+sympy__sympy-13895,,,,,INCOMPLETE
+sympy__sympy-13915,,,,,INCOMPLETE
+sympy__sympy-13971,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-14024,,,,,INCOMPLETE
+sympy__sympy-14308,False,,False,,NO TAX - BOTH MISS
+sympy__sympy-14317,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-14396,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-14774,,,,,INCOMPLETE
+sympy__sympy-14817,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-15011,True,4,True,4,NO TAX - BOTH HIT
+sympy__sympy-15308,,,,,INCOMPLETE
+sympy__sympy-15345,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-15346,False,,False,,NO TAX - BOTH MISS
+sympy__sympy-15609,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-15678,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-16106,,,,,INCOMPLETE
+sympy__sympy-16281,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-16503,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-16792,False,,False,,NO TAX - BOTH MISS
+sympy__sympy-16988,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-17022,,,,,INCOMPLETE
+sympy__sympy-17139,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-17630,False,,False,,NO TAX - BOTH MISS
+sympy__sympy-17655,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-18057,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-18087,False,,False,,NO TAX - BOTH MISS
+sympy__sympy-18189,,,,,INCOMPLETE
+sympy__sympy-18199,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-18532,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-18621,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-18698,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-18835,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-19007,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-19254,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-19487,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-20049,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-20154,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-20212,True,2,True,2,NO TAX - BOTH HIT
+sympy__sympy-20322,True,3,True,3,NO TAX - BOTH HIT
+sympy__sympy-20442,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-20639,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-21055,,,,,INCOMPLETE
+sympy__sympy-21171,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-21379,False,,False,,NO TAX - BOTH MISS
+sympy__sympy-21612,False,,False,,NO TAX - BOTH MISS
+sympy__sympy-21614,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-21627,False,,False,,NO TAX - BOTH MISS
+sympy__sympy-21847,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-22005,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-22714,,,,,INCOMPLETE
+sympy__sympy-22840,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-23117,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-23191,True,2,True,2,NO TAX - BOTH HIT
+sympy__sympy-23262,,,,,INCOMPLETE
+sympy__sympy-24066,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-24102,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-24152,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-24213,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-24909,True,1,True,1,NO TAX - BOTH HIT

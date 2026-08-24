@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-12454",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/matrices/matrices.py"
+  ],
+  "top5": [
+    "sympy.matrices.matrices.Matrix.is_upper()",
+    "sympy.matrices.matrices.Matrix._eval_is_upper_hessenberg()",
+    "sympy.matrices.matrices.Matrix.extract()",
+    "sympy.matrices.matrices.Matrix.a2idx()",
+    "sympy.matrices.matrices.Matrix.__getitem__()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.matrices.matrices.Matrix.is_upper()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/matrices.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.matrices.matrices.Matrix._eval_is_upper_hessenberg()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/matrices.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.matrices.matrices.Matrix.extract()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/matrices.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.matrices.matrices.Matrix.a2idx()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/matrices.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.matrices.matrices.Matrix.__getitem__()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/matrices.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/matrices/matrices.py"
+}

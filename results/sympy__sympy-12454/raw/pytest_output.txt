@@ -1,0 +1,76 @@
+
+===== FAIL_TO_PASS: test_is_upper =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+random seed:        97960172
+hash randomization: off
+
+sympy/matrices/tests/test_matrices.py[1] E                                [FAIL]
+
+________________________________________________________________________________
+_____________ sympy/matrices/tests/test_matrices.py:test_is_upper ______________
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/matrices/tests/test_matrices.py", line 1229, in test_is_upper
+    assert a.is_upper is True
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/matrices/matrices.py", line 1113, in is_upper
+    return all(self[i, j].is_zero
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/matrices/matrices.py", line 1113, in <genexpr>
+    return all(self[i, j].is_zero
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/matrices/dense.py", line 111, in __getitem__
+    return self.extract(i, j)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/matrices/matrices.py", line 354, in extract
+    colsList = [a2idx(k, self.cols) for k in colsList]
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/matrices/matrices.py", line 354, in <listcomp>
+    colsList = [a2idx(k, self.cols) for k in colsList]
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/matrices/matrices.py", line 5348, in a2idx
+    raise IndexError("Index out of range: a[%s]" % (j,))
+IndexError: Index out of range: a[2]
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.21 seconds ============
+DO *NOT* COMMIT!
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Callable
+===== TEST EXIT CODE: 1 =====
+
+===== FAIL_TO_PASS: test_hessenberg =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+random seed:        72180928
+hash randomization: off
+
+sympy/matrices/tests/test_matrices.py[1] E                                [FAIL]
+
+________________________________________________________________________________
+____________ sympy/matrices/tests/test_matrices.py:test_hessenberg _____________
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/matrices/tests/test_matrices.py", line 1886, in test_hessenberg
+    assert A.is_upper_hessenberg
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/matrices/matrices.py", line 1069, in is_upper_hessenberg
+    return self._eval_is_upper_hessenberg()
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/matrices/matrices.py", line 642, in _eval_is_upper_hessenberg
+    return all(self[i, j].is_zero
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/matrices/matrices.py", line 642, in <genexpr>
+    return all(self[i, j].is_zero
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/matrices/dense.py", line 111, in __getitem__
+    return self.extract(i, j)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/matrices/matrices.py", line 354, in extract
+    colsList = [a2idx(k, self.cols) for k in colsList]
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/matrices/matrices.py", line 354, in <listcomp>
+    colsList = [a2idx(k, self.cols) for k in colsList]
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/matrices/matrices.py", line 5348, in a2idx
+    raise IndexError("Index out of range: a[%s]" % (j,))
+IndexError: Index out of range: a[2]
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.21 seconds ============
+DO *NOT* COMMIT!
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12454/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Callable
+===== TEST EXIT CODE: 1 =====

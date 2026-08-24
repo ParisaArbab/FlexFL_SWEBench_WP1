@@ -1,0 +1,38 @@
+
+===== FAIL_TO_PASS: test_coth =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        2402448
+hash randomization: off
+
+sympy/functions/elementary/tests/test_hyperbolic.py[3] E..                [FAIL]
+
+________________________________________________________________________________
+________ sympy/functions/elementary/tests/test_hyperbolic.py:test_coth _________
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13480/sympy/functions/elementary/tests/test_hyperbolic.py", line 275, in test_coth
+    assert coth(log(tan(2))) == coth(log(-tan(2)))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13480/sympy/core/cache.py", line 93, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13480/sympy/core/function.py", line 439, in __new__
+    result = super(Function, cls).__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13480/sympy/core/cache.py", line 93, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13480/sympy/core/function.py", line 250, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13480/sympy/functions/elementary/hyperbolic.py", line 590, in eval
+    if cotm is S.ComplexInfinity:
+NameError: name 'cotm' is not defined
+
+=========== tests finished: 2 passed, 1 exceptions, in 0.19 seconds ============
+DO *NOT* COMMIT!
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13480/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping, defaultdict
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13480/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  class OrderedSet(collections.MutableSet):
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13480/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Callable
+===== TEST EXIT CODE: 1 =====

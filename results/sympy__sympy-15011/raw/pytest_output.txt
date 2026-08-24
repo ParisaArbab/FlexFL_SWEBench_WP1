@@ -1,0 +1,28 @@
+
+===== FAIL_TO_PASS: test_curly_matrix_symbol =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        63037977
+hash randomization: off
+
+sympy/utilities/tests/test_lambdify.py[1] E                               [FAIL]
+
+________________________________________________________________________________
+_______ sympy/utilities/tests/test_lambdify.py:test_curly_matrix_symbol ________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15011/sympy/utilities/tests/test_lambdify.py", line 734, in test_curly_matrix_symbol
+    lam = lambdify(curlyv, curlyv)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15011/sympy/utilities/lambdify.py", line 464, in lambdify
+    c = compile(funcstr, filename, 'exec')
+  File "<lambdifygenerated-1>", line 1
+    def _lambdifygenerated({v}):
+                           ^
+SyntaxError: invalid syntax
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.10 seconds ============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

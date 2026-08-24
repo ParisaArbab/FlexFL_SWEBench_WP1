@@ -1,0 +1,52 @@
+
+===== FAIL_TO_PASS: test_point =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        61796611
+hash randomization: off
+
+sympy/geometry/tests/test_point.py[2] EE                                  [FAIL]
+
+________________________________________________________________________________
+________________ sympy/geometry/tests/test_point.py:test_point _________________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-17655/sympy/geometry/tests/test_point.py", line 94, in test_point
+    assert 5 * p4 == Point(5, 5)
+TypeError: unsupported operand type(s) for *: 'int' and 'Point2D'
+________________________________________________________________________________
+_______________ sympy/geometry/tests/test_point.py:test_point3D ________________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-17655/sympy/geometry/tests/test_point.py", line 171, in test_point3D
+    assert 5 * p4 == Point3D(5, 5, 5)
+TypeError: unsupported operand type(s) for *: 'int' and 'Point3D'
+
+=========== tests finished: 0 passed, 2 exceptions, in 1.22 seconds ============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====
+
+===== FAIL_TO_PASS: test_point3D =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        8581954
+hash randomization: off
+
+sympy/geometry/tests/test_point.py[1] E                                   [FAIL]
+
+________________________________________________________________________________
+_______________ sympy/geometry/tests/test_point.py:test_point3D ________________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-17655/sympy/geometry/tests/test_point.py", line 171, in test_point3D
+    assert 5 * p4 == Point3D(5, 5, 5)
+TypeError: unsupported operand type(s) for *: 'int' and 'Point3D'
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.24 seconds ============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

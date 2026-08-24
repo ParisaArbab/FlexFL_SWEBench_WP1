@@ -1,0 +1,23 @@
+
+===== FAIL_TO_PASS: test_dup_zz_mignotte_bound =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        87980906
+hash randomization: off
+
+sympy/polys/tests/test_factortools.py[1] F                                [FAIL]
+
+________________________________________________________________________________
+_______ sympy/polys/tests/test_factortools.py:test_dup_zz_mignotte_bound _______
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-19254/sympy/polys/tests/test_factortools.py", line 30, in test_dup_zz_mignotte_bound
+    assert R.dup_zz_mignotte_bound(2*x**2 + 3*x + 4) == 6
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.10 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

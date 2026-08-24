@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-15609",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/printing/latex.py"
+  ],
+  "top5": [
+    "sympy.printing.latex.LatexPrinter._print_Function()",
+    "sympy.matrices.expressions.matexpr.MatrixElement._eval_derivative()",
+    "sympy.printing.latex.LatexPrinter.latex()",
+    "sympy.matrices.expressions.matexpr.MatrixElement.__new__()",
+    "sympy.parsing.latex._antlr.latexparser.LaTeXParser.func()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.printing.latex.LatexPrinter._print_Function()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/latex.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.matrices.expressions.matexpr.MatrixElement._eval_derivative()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.printing.latex.LatexPrinter.latex()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/latex.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.matrices.expressions.matexpr.MatrixElement.__new__()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.parsing.latex._antlr.latexparser.LaTeXParser.func()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/printing/latex.py"
+}

@@ -1,0 +1,1267 @@
+
+===== FAIL_TO_PASS: test_Abs =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        96012575
+hash randomization: off
+
+sympy/functions/elementary/tests/test_complexes.py[4] E...                [FAIL]
+
+________________________________________________________________________________
+_________ sympy/functions/elementary/tests/test_complexes.py:test_Abs __________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/tests/test_complexes.py", line 468, in test_Abs
+    assert unchanged(Abs, S("im(acos(-i + acosh(-g + i)))"))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 4024, in unchanged
+    f = func(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 621, in eval
+    return sqrt(expand_mul(arg*conj))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/miscellaneous.py", line 152, in sqrt
+    return Pow(arg, S.Half, evaluate=evaluate)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 336, in __new__
+    obj = b._eval_power(e)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/power.py", line 418, in _eval_power
+    b = abs(b)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/expr.py", line 200, in __abs__
+    return Abs(self)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/functions/elementary/complexes.py", line 542, in eval
+    arg = signsimp(arg, evaluate=False)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/simplify/simplify.py", line 401, in signsimp
+    e = sub_post(sub_pre(expr))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/simplify/cse_opts.py", line 14, in sub_pre
+    adds = [a for a in e.atoms(Add) if a.could_extract_minus_sign()]
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/basic.py", line 490, in atoms
+    result = {node for node in nodes if isinstance(node, types)}
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/basic.py", line 490, in <setcomp>
+    result = {node for node in nodes if isinstance(node, types)}
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/basic.py", line 2058, in __next__
+    return next(self._pt)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21627/sympy/core/basic.py", line 2018, in _preorder_traversal
+    if isinstance(node, Basic):
+RecursionError: maximum recursion depth exceeded while calling a Python object
+
+=========== tests finished: 3 passed, 1 exceptions, in 0.59 seconds ============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

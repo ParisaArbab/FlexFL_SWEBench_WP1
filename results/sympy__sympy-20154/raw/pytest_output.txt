@@ -1,0 +1,46 @@
+
+===== FAIL_TO_PASS: test_partitions =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        31301942
+hash randomization: off
+
+sympy/utilities/tests/test_iterables.py[1] F                              [FAIL]
+
+________________________________________________________________________________
+___________ sympy/utilities/tests/test_iterables.py:test_partitions ____________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20154/sympy/utilities/tests/test_iterables.py", line 484, in test_partitions
+    assert [p for p in partitions(6, k=2)] == [
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.14 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====
+
+===== FAIL_TO_PASS: test_uniq =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        92755875
+hash randomization: off
+
+sympy/utilities/tests/test_iterables.py[1] F                              [FAIL]
+
+________________________________________________________________________________
+______________ sympy/utilities/tests/test_iterables.py:test_uniq _______________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20154/sympy/utilities/tests/test_iterables.py", line 700, in test_uniq
+    assert list(uniq(p for p in partitions(4))) == \
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.13 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

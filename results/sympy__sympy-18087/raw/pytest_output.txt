@@ -1,0 +1,46 @@
+
+===== FAIL_TO_PASS: test_Factors =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        42868951
+hash randomization: off
+
+sympy/core/tests/test_exprtools.py[1] F                                   [FAIL]
+
+________________________________________________________________________________
+_______________ sympy/core/tests/test_exprtools.py:test_Factors ________________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-18087/sympy/core/tests/test_exprtools.py", line 31, in test_Factors
+    assert Factors((x**2)**S.Half).as_expr() == (x**2)**S.Half
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.11 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====
+
+===== FAIL_TO_PASS: test_fu =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        4929895
+hash randomization: off
+
+sympy/simplify/tests/test_fu.py[1] F                                      [FAIL]
+
+________________________________________________________________________________
+___________________ sympy/simplify/tests/test_fu.py:test_fu ____________________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-18087/sympy/simplify/tests/test_fu.py", line 280, in test_fu
+    assert fu(cos(x) + sqrt(sin(x)**2)) == cos(x) + sqrt(sin(x)**2)
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.35 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

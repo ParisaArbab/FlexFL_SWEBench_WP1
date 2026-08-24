@@ -1,0 +1,6 @@
+OUTPUT (last 5 lines):
+  TypeError: Invalid comparison of complex I
+  =========== tests finished: 0 passed, 1 exceptions, in 0.12 seconds ============
+  DO *NOT* COMMIT!
+  ===== TEST EXIT CODE: 1 =====
+

@@ -1,0 +1,23 @@
+
+===== FAIL_TO_PASS: test_convert_to =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        46240687
+hash randomization: off
+
+sympy/physics/units/tests/test_quantities.py[1] F                         [FAIL]
+
+________________________________________________________________________________
+_________ sympy/physics/units/tests/test_quantities.py:test_convert_to _________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20442/sympy/physics/units/tests/test_quantities.py", line 50, in test_convert_to
+    assert conv == joule*second
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.23 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

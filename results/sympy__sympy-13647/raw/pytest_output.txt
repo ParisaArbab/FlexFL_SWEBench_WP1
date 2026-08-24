@@ -1,0 +1,28 @@
+
+===== FAIL_TO_PASS: test_col_insert =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        76050148
+hash randomization: off
+
+sympy/matrices/tests/test_commonmatrix.py[1] F                            [FAIL]
+
+________________________________________________________________________________
+__________ sympy/matrices/tests/test_commonmatrix.py:test_col_insert ___________
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13647/sympy/matrices/tests/test_commonmatrix.py", line 204, in test_col_insert
+    assert eye_Shaping(6).col_insert(3, Matrix([[2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]])) == \
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.14 seconds ==============
+DO *NOT* COMMIT!
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13647/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping, defaultdict
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13647/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  class OrderedSet(collections.MutableSet):
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13647/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Callable
+===== TEST EXIT CODE: 1 =====

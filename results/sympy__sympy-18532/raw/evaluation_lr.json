@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-18532",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/core/basic.py"
+  ],
+  "top5": [
+    "sympy.core.basic.Basic.atoms()",
+    "sympy.matrices.common.MatrixProperties.atoms()",
+    "sympy.printing.latex.LatexPrinter._print_KroneckerDelta()",
+    "sympy.printing.ccode.C89CodePrinter._print_sinc()",
+    "sympy.printing.rcode.RCodePrinter._print_ITE()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.core.basic.Basic.atoms()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/core/basic.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.matrices.common.MatrixProperties.atoms()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.printing.latex.LatexPrinter._print_KroneckerDelta()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.printing.ccode.C89CodePrinter._print_sinc()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.printing.rcode.RCodePrinter._print_ITE()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/core/basic.py"
+}

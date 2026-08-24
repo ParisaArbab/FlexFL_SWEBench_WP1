@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-19254",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/polys/factortools.py"
+  ],
+  "top5": [
+    "sympy.polys.factortools.dup_zz_mignotte_bound()",
+    "sympy.polys.factortools.dmp_zz_mignotte_bound()",
+    "sympy.polys.compatibility.IPolys.dup_zz_mignotte_bound()",
+    "sympy.polys.compatibility.IPolys.dup_zz_mignotte_bound()",
+    "sympy.polys.factortools.dup_zz_mignotte_bound()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.polys.factortools.dup_zz_mignotte_bound()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/factortools.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.polys.factortools.dmp_zz_mignotte_bound()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/factortools.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.polys.compatibility.IPolys.dup_zz_mignotte_bound()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.polys.compatibility.IPolys.dup_zz_mignotte_bound()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.polys.factortools.dup_zz_mignotte_bound()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/factortools.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/polys/factortools.py"
+}

@@ -1,0 +1,6 @@
+OUTPUT (last 5 lines):
+  DeprecationWarning: Please use `spmatrix` from the `scipy.sparse` namespace, the `scipy.sparse.base` namespace is deprecated.
+  =========== tests finished: 0 passed, 1 exceptions, in 0.35 seconds ============
+  DO *NOT* COMMIT!
+  ===== TEST EXIT CODE: 1 =====
+

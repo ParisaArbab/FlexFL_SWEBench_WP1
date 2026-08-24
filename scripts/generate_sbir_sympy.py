@@ -12,7 +12,7 @@ from pathlib import Path
 
 PROJECT = Path.home() / "FlexFL_SWEBench_WP1"
 DATA = PROJECT / "FlexFL" / "data"
-BUG_LIST = PROJECT / "configs" / "chunks" / "test_5_sympy.txt"
+BUG_LIST = Path(os.environ.get("FLEXFL_BUG_LIST", PROJECT / "configs/chunks/test_5_sympy.txt"))
 
 SBIR_ROOT = DATA / "FL_results" / "SBIR"
 SBIR_INPUT = SBIR_ROOT / "input"
