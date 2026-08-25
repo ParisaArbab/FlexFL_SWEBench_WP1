@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-15609",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/printing/latex.py"
+  ],
+  "top5": [
+    "sympy.parsing.latex._antlr.latexparser.LaTeXParser.func()",
+    "sympy.printing.latex.latex()",
+    "sympy.physics.quantum.matrixutils.matrix_tensor_product()",
+    "sympy.physics.quantum.matrixutils.scipy_sparse_to_sympy()",
+    "sympy.physics.units.quantities.Quantity.__new__()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.parsing.latex._antlr.latexparser.LaTeXParser.func()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.printing.latex.latex()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/latex.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.physics.quantum.matrixutils.matrix_tensor_product()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.physics.quantum.matrixutils.scipy_sparse_to_sympy()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.physics.units.quantities.Quantity.__new__()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 2,
+  "matched_gold_file": "sympy/printing/latex.py"
+}

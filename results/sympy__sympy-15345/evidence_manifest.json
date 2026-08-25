@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-15345",
+  "trigger_tests": [
+    "test_Function"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_Function",
+      "name": "test_Function",
+      "path": "sympy/printing/tests/test_mathematica.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-15345.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-15345.sh"
+  ]
+}

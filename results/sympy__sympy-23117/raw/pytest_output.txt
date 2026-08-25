@@ -1,0 +1,33 @@
+
+===== FAIL_TO_PASS: test_issue_17851 =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        92425906
+hash randomization: off
+
+sympy/tensor/array/tests/test_ndim_array.py[1] E                          [FAIL]
+
+________________________________________________________________________________
+_________ sympy/tensor/array/tests/test_ndim_array.py:test_issue_17851 _________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-23117/sympy/tensor/array/tests/test_ndim_array.py", line 63, in test_issue_17851
+    A = array_type([])
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-23117/sympy/tensor/array/dense_ndim_array.py", line 137, in __new__
+    return cls._new(iterable, shape, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-23117/sympy/tensor/array/dense_ndim_array.py", line 141, in _new
+    shape, flat_list = cls._handle_ndarray_creation_inputs(iterable, shape, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-23117/sympy/tensor/array/ndim_array.py", line 226, in _handle_ndarray_creation_inputs
+    iterable, shape = cls._scan_iterable_shape(iterable)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-23117/sympy/tensor/array/ndim_array.py", line 205, in _scan_iterable_shape
+    return f(iterable)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-23117/sympy/tensor/array/ndim_array.py", line 198, in f
+    elems, shapes = zip(*[f(i) for i in pointer])
+ValueError: not enough values to unpack (expected 2, got 0)
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.09 seconds ============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

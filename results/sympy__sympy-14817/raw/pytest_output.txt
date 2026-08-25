@@ -1,0 +1,43 @@
+
+===== FAIL_TO_PASS: test_MatrixSymbol_printing =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        87911302
+hash randomization: off
+
+sympy/printing/pretty/tests/test_pretty.py[1] E                           [FAIL]
+
+________________________________________________________________________________
+____ sympy/printing/pretty/tests/test_pretty.py:test_MatrixSymbol_printing _____
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14817/sympy/printing/pretty/tests/test_pretty.py", line 6126, in test_MatrixSymbol_printing
+    assert pretty(x + y) == "x + y*"
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14817/sympy/printing/pretty/tests/test_pretty.py", line 226, in pretty
+    return xpretty(expr, order=order, use_unicode=False, wrap_line=False)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14817/sympy/printing/pretty/pretty.py", line 2331, in pretty
+    return pp.doprint(expr)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14817/sympy/printing/pretty/pretty.py", line 62, in doprint
+    return self._print(expr).render(**self._settings)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14817/sympy/printing/printer.py", line 274, in _print
+    return getattr(self, printmethod)(expr, *args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14817/sympy/printing/pretty/pretty.py", line 828, in _print_MatAdd
+    if S(item.args[0]).is_negative:
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14817/sympy/core/sympify.py", line 370, in sympify
+    raise SympifyError('could not parse %r' % a, exc)
+sympy.core.sympify.SympifyError: Sympify of expression 'could not parse 'y*'' failed, because of exception being raised:
+SyntaxError: unexpected EOF while parsing (<string>, line 1)
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.39 seconds ============
+DO *NOT* COMMIT!
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14817/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping, defaultdict
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14817/sympy/core/expr.py:12: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import defaultdict, Iterable
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14817/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  class OrderedSet(collections.MutableSet):
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14817/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Callable
+===== TEST EXIT CODE: 1 =====

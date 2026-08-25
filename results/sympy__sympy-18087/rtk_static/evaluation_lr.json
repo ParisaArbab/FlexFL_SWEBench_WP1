@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-18087",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/core/exprtools.py"
+  ],
+  "top5": [
+    "sympy.integrals.rubi.rules.sine.replacement2277()",
+    "sympy.integrals.rubi.rules.sine.replacement2376()",
+    "sympy.simplify.trigsimp.trigsimp_groebner()",
+    "sympy.simplify.trigsimp.trigsimp_old()",
+    "sympy.simplify.trigsimp._trigsimp()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.integrals.rubi.rules.sine.replacement2277()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.integrals.rubi.rules.sine.replacement2376()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.simplify.trigsimp.trigsimp_groebner()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.simplify.trigsimp.trigsimp_old()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.simplify.trigsimp._trigsimp()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": false,
+  "file_rank": null,
+  "matched_gold_file": null
+}

@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-15346",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/simplify/trigsimp.py"
+  ],
+  "top5": [
+    "sympy.integrals.rubi.parsetools.parse.replaceWith()",
+    "sympy.integrals.rubi.rules.sine.sine()",
+    "sympy.integrals.rubi.rules.secant.secant()",
+    "sympy.integrals.rubi.rules.tangent.tangent()",
+    "sympy.integrals.rubi.parsetools.parse.extract_set()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.integrals.rubi.parsetools.parse.replaceWith()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.integrals.rubi.rules.sine.sine()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.integrals.rubi.rules.secant.secant()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.integrals.rubi.rules.tangent.tangent()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.integrals.rubi.parsetools.parse.extract_set()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": false,
+  "file_rank": null,
+  "matched_gold_file": null
+}

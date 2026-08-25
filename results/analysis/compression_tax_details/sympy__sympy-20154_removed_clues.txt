@@ -1,0 +1,44 @@
+BUG: sympy__sympy-20154
+CATEGORY: MULTIPLE_DEBUGGING_CLUES_REMOVED
+RAW bytes: 1989
+RTK bytes: 175
+Reduction: 91.20%
+RAW rank: 1
+RTK rank: None
+Top5 overlap: 0/5
+
+REMOVED EXCEPTION TYPES
+
+REMOVED TEST NAMES
+test_iterables
+test_partitions
+test_uniq
+
+REMOVED SOURCE REFERENCES
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20154/sympy/utilities/tests/test_iterables.py
+sympy/utilities/tests/test_iterables.py
+
+REMOVED ASSERTION INFORMATION
+assert [p for p in partitions(6, k=2)] == [
+assert list(uniq(p for p in partitions(4))) == \
+
+IMPORTANT REMOVED RAW LINES
+===== FAIL_TO_PASS: test_partitions =====
+sympy/utilities/tests/test_iterables.py[1] F                              [FAIL]
+___________ sympy/utilities/tests/test_iterables.py:test_partitions ____________
+Traceback (most recent call last):
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20154/sympy/utilities/tests/test_iterables.py", line 484, in test_partitions
+assert [p for p in partitions(6, k=2)] == [
+===== FAIL_TO_PASS: test_uniq =====
+______________ sympy/utilities/tests/test_iterables.py:test_uniq _______________
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20154/sympy/utilities/tests/test_iterables.py", line 700, in test_uniq
+assert list(uniq(p for p in partitions(4))) == \
+
+RAW TOP 5
+sympy.utilities.iterables.partitions()
+sympy.utilities.iterables.multiset_partitions_taocp()
+sympy.combinatorics.partitions.Partitions.partitions()
+sympy.combinatorics.partitions.Partition.partition()
+sympy.combinatorics.partitions.Partition.from_rgs()
+
+RTK TOP 5

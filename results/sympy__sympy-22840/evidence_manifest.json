@@ -1,0 +1,29 @@
+{
+  "instance_id": "sympy__sympy-22840",
+  "trigger_tests": [
+    "test_cse_MatrixSymbol",
+    "test_multidim_c_argument_cse"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_cse_MatrixSymbol",
+      "name": "test_cse_MatrixSymbol",
+      "path": "sympy/simplify/tests/test_cse.py"
+    },
+    {
+      "trigger": "test_multidim_c_argument_cse",
+      "name": "test_multidim_c_argument_cse",
+      "path": "sympy/utilities/tests/test_codegen.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-22840.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-22840.sh"
+  ]
+}

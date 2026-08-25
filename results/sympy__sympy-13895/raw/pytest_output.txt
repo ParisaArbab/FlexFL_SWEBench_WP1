@@ -1,0 +1,56 @@
+
+===== FAIL_TO_PASS: test_powers_Integer =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        642051
+hash randomization: off
+
+sympy/core/tests/test_numbers.py[1] F                                     [FAIL]
+
+________________________________________________________________________________
+_____________ sympy/core/tests/test_numbers.py:test_powers_Integer _____________
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13895/sympy/core/tests/test_numbers.py", line 1025, in test_powers_Integer
+    assert (-8) ** Rational(2, 5) == \
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.18 seconds ==============
+DO *NOT* COMMIT!
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13895/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping, defaultdict
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13895/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  class OrderedSet(collections.MutableSet):
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13895/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Callable
+===== TEST EXIT CODE: 1 =====
+
+===== FAIL_TO_PASS: test_issue_13890 =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        70734004
+hash randomization: off
+
+sympy/core/tests/test_numbers.py[1] F                                     [FAIL]
+
+________________________________________________________________________________
+______________ sympy/core/tests/test_numbers.py:test_issue_13890 _______________
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13895/sympy/core/tests/test_numbers.py", line 1208, in test_issue_13890
+    assert abs(e.subs(x,a).evalf() - f.subs(x,a).evalf()) < 1e-15
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.19 seconds ==============
+DO *NOT* COMMIT!
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13895/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping, defaultdict
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13895/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  class OrderedSet(collections.MutableSet):
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13895/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Callable
+===== TEST EXIT CODE: 1 =====

@@ -1,0 +1,29 @@
+{
+  "instance_id": "sympy__sympy-17139",
+  "trigger_tests": [
+    "test__TR56",
+    "test_issue_17137"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test__TR56",
+      "name": "test__TR56",
+      "path": "sympy/simplify/tests/test_fu.py"
+    },
+    {
+      "trigger": "test_issue_17137",
+      "name": "test_issue_17137",
+      "path": "sympy/simplify/tests/test_simplify.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-17139.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-17139.sh"
+  ]
+}

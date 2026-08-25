@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-20322",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/core/mul.py"
+  ],
+  "top5": [
+    "sympy.core.sympify.sympify()",
+    "sympy.parsing.latex._parse_latex_antlr.convert_ceil()",
+    "sympy.core.mul.Mul._eval_pos_neg()",
+    "sympy.core.mul.Mul._eval_is_integer()",
+    "sympy.core.sympify._sympify()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.core.sympify.sympify()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.parsing.latex._parse_latex_antlr.convert_ceil()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.core.mul.Mul._eval_pos_neg()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/core/mul.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.core.mul.Mul._eval_is_integer()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/core/mul.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.core.sympify._sympify()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 3,
+  "matched_gold_file": "sympy/core/mul.py"
+}

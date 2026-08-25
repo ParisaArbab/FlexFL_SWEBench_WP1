@@ -81,7 +81,7 @@ def load_bug_list(data_root: Path) -> list[str]:
         return [e.strip() for e in f if e.strip()]
 
 
-def run_bug(generator, bug: str, stage: str, rank: str, data_root: Path, res_root: Path):
+def run_bug(generator, bug: str, stage: str, rank: str, condition: str, data_root: Path, res_root: Path):
     dataset = "SWEbench"
     max_try = 10
     input_type = "All"
@@ -104,9 +104,37 @@ def run_bug(generator, bug: str, stage: str, rank: str, data_root: Path, res_roo
     if input_type_a is None:
         raise RuntimeError(f"No bug report or trigger test found for {bug}")
 
+    # WP1: provide the same test execution evidence under two conditions.
+    # RAW receives normal pytest output.
+    # RTK_STATIC receives output compressed by the real RTK binary.
+    project_root = data_root.parent.parent
+    evidence_path = (
+        project_root
+        / "results"
+        / bug
+        / condition
+        / "pytest_output.txt"
+    )
+
+    if evidence_path.exists():
+        evidence = evidence_path.read_text(
+            encoding="utf-8",
+            errors="replace"
+        )
+
+        input_description += (
+            f"The test execution output under the {condition} condition "
+            "is as follows:\n```\n"
+            f"{evidence}\n```\n"
+        )
+    else:
+        print(
+            f"WARNING: no terminal evidence found at {evidence_path}"
+        )
+
     suspicious_methods = None
     if stage == "LR":
-        suspicious_path = data_root / "input" / "suspicious_methods" / dataset / f"{model_name}_{rank}" / f"{bug}.txt"
+        suspicious_path = data_root / "input" / "suspicious_methods" / dataset / f"{model_name}_{rank}_{condition}" / f"{bug}.txt"
         suspicious_methods = [e for e in suspicious_path.read_text(encoding="utf-8").splitlines() if e.strip()]
         content = "\n".join(f"{i}.{m}" for i, m in enumerate(suspicious_methods, 1))
         input_description += f"The suggested methods are as follows:\n```\n{content}\n```\n"
@@ -189,7 +217,11 @@ def run_bug(generator, bug: str, stage: str, rank: str, data_root: Path, res_roo
     content = query(generator, instruction)
     instruction.append({"role": "Assistant", "content": content})
 
-    output_dir = res_root / (f"{model_name}_{dataset}_SR" if stage == "SR" else f"{model_name}_{dataset}_{rank}")
+    output_dir = res_root / (
+        f"{model_name}_{dataset}_SR_{condition}"
+        if stage == "SR"
+        else f"{model_name}_{dataset}_{rank}_{condition}"
+    )
     output_dir.mkdir(parents=True, exist_ok=True)
     (output_dir / f"{bug}.json").write_text(json.dumps(instruction, indent=4), encoding="utf-8")
 
@@ -201,6 +233,11 @@ def main():
     parser.add_argument("--stage", default="SR", choices=["SR", "LR"])
     parser.add_argument("--rank", default="All")
     parser.add_argument("--bug", default=None)
+    parser.add_argument(
+        "--condition",
+        default="raw",
+        choices=["raw", "rtk_static"],
+    )
     args = parser.parse_args()
 
     here = Path(__file__).resolve().parent
@@ -210,7 +247,15 @@ def main():
     generator = build_llama()
     for bug in bugs:
         print(bug)
-        run_bug(generator, bug, args.stage, args.rank, data_root, res_root)
+        run_bug(
+            generator,
+            bug,
+            args.stage,
+            args.rank,
+            args.condition,
+            data_root,
+            res_root,
+        )
 
 
 if __name__ == "__main__":

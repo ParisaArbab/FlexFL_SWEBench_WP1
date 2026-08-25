@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-18057",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/core/expr.py"
+  ],
+  "top5": [
+    "sympy.core.expr.Expr.__eq__()",
+    "sympy.parsing.sympy_parser.eval_expr()",
+    "sympy.parsing.sympy_parser.parse_expr()",
+    "sympy.core.sympify.sympify()",
+    "sympy.parsing.autolev._antlr.autolevparser.AutolevParser.prog()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.core.expr.Expr.__eq__()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/core/expr.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.parsing.sympy_parser.eval_expr()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.parsing.sympy_parser.parse_expr()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.core.sympify.sympify()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.parsing.autolev._antlr.autolevparser.AutolevParser.prog()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/core/expr.py"
+}

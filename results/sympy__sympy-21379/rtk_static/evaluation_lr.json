@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-21379",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/core/mod.py"
+  ],
+  "top5": [
+    "sympy.physics.quantum.cg._check_cg_simp()",
+    "sympy.testing.runtests.PyTestReporter.finish()",
+    "sympy.solvers.ode.ode._nonlinear_2eq_order1_type4()",
+    "sympy.core.expr.Expr.aseries()",
+    "sympy.vector.functions.scalar_potential_difference()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.physics.quantum.cg._check_cg_simp()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.testing.runtests.PyTestReporter.finish()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.solvers.ode.ode._nonlinear_2eq_order1_type4()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.core.expr.Expr.aseries()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.vector.functions.scalar_potential_difference()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": false,
+  "file_rank": null,
+  "matched_gold_file": null
+}

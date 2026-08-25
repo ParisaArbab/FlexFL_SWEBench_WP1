@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-18698",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/polys/polytools.py"
+  ],
+  "top5": [
+    "sympy.polys.polytools.Poly.sqf_list()",
+    "sympy.solvers.diophantine.diophantine._diop_ternary_quadratic_normal()",
+    "sympy.polys.galoistools.gf_sqf_list()",
+    "sympy.polys.polytools.sqf_list()",
+    "sympy.polys.polyclasses.DMP.sqf_list()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.polys.polytools.Poly.sqf_list()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/polytools.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.solvers.diophantine.diophantine._diop_ternary_quadratic_normal()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.polys.galoistools.gf_sqf_list()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.polys.polytools.sqf_list()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/polytools.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.polys.polyclasses.DMP.sqf_list()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/polys/polytools.py"
+}

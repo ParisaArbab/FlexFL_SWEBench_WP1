@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-18532",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/core/basic.py"
+  ],
+  "top5": [
+    "sympy.core.expr.Expr.atoms()",
+    "sympy.core.expr.Expr._random()",
+    "sympy.core.expr.Expr.as_terms()",
+    "sympy.core.expr.Expr.fps()",
+    "sympy.core.expr.Expr.apart()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.core.expr.Expr.atoms()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.core.expr.Expr._random()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.core.expr.Expr.as_terms()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.core.expr.Expr.fps()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.core.expr.Expr.apart()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": false,
+  "file_rank": null,
+  "matched_gold_file": null
+}

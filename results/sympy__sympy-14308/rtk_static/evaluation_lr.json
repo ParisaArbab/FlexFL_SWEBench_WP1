@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-14308",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/printing/pretty/pretty.py"
+  ],
+  "top5": [
+    "sympy.physics.vector.printing.vpprint()",
+    "sympy.physics.vector.printing.VectorPrettyPrinter._print_Derivative()",
+    "sympy.physics.vector.printing.VectorPrettyPrinter._print_Function()",
+    "sympy.physics.vector.printing.VectorPrettyPrinter._print_Vector()",
+    "sympy.physics.vector.printing.VectorPrettyPrinter._print_VectorLatex()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.physics.vector.printing.vpprint()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.physics.vector.printing.VectorPrettyPrinter._print_Derivative()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.physics.vector.printing.VectorPrettyPrinter._print_Function()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.physics.vector.printing.VectorPrettyPrinter._print_Vector()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.physics.vector.printing.VectorPrettyPrinter._print_VectorLatex()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": false,
+  "file_rank": null,
+  "matched_gold_file": null
+}

@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-13480",
+  "trigger_tests": [
+    "test_coth"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_coth",
+      "name": "test_coth",
+      "path": "sympy/functions/elementary/tests/test_hyperbolic.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-13480.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-13480.sh"
+  ]
+}

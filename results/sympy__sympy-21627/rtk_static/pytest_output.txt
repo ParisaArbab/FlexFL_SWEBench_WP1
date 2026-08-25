@@ -1,0 +1,6 @@
+OUTPUT (last 5 lines):
+  RecursionError: maximum recursion depth exceeded while calling a Python object
+  =========== tests finished: 3 passed, 1 exceptions, in 0.59 seconds ============
+  DO *NOT* COMMIT!
+  ===== TEST EXIT CODE: 1 =====
+

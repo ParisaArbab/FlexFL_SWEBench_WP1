@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-24066",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/physics/units/unitsystem.py"
+  ],
+  "top5": [
+    "sympy.physics.units.unitsystem.UnitSystem._collect_factor_and_dimension()",
+    "sympy.physics.units.unitsystem.UnitSystem._collect_factor_and_dimension()",
+    "sympy.physics.units.quantities.Quantity._collect_factor_and_dimension()",
+    "sympy.physics.units.unitsystem.UnitSystem._collect_factor_and_dimension()",
+    "sympy.physics.units.dimensions.DimensionSystem.is_dimensionless()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.physics.units.unitsystem.UnitSystem._collect_factor_and_dimension()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/units/unitsystem.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.physics.units.unitsystem.UnitSystem._collect_factor_and_dimension()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/units/unitsystem.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.physics.units.quantities.Quantity._collect_factor_and_dimension()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.physics.units.unitsystem.UnitSystem._collect_factor_and_dimension()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/units/unitsystem.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.physics.units.dimensions.DimensionSystem.is_dimensionless()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/physics/units/unitsystem.py"
+}

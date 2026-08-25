@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-21847",
+  "trigger_tests": [
+    "test_monomials"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_monomials",
+      "name": "test_monomials",
+      "path": "sympy/polys/tests/test_monomials.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-21847.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-21847.sh"
+  ]
+}

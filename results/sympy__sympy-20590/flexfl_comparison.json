@@ -1,0 +1,28 @@
+{
+  "instance_id": "sympy__sympy-20590",
+  "gold_file": "sympy/core/_print_helpers.py",
+  "raw": {
+    "top5": [
+      "Top_1 : sympy.core.symbol.Symbol._eval_subs()",
+      "Top_2 : sympy.core.add.Add._eval_subs()",
+      "Top_3 : sympy.core.basic.Basic._eval_subs()",
+      "Top_4 : sympy.printing.str.StrPrinter._print_Basic()",
+      "Top_5 : sympy.printing.printer.Printer._print()"
+    ],
+    "hit": false,
+    "gold_rank": null
+  },
+  "rtk_static": {
+    "top5": [
+      "Top_1 : sympy.core.symbol.Symbol._eval_subs()",
+      "Top_2 : sympy.core.power.Pow._eval_subs()",
+      "Top_3 : sympy.core.function.Derivative._eval_subs()",
+      "Top_4 : sympy.printing.str.StrPrinter._print_Basic()",
+      "Top_5 : sympy.printing.printer.Printer._get_initial_settings()"
+    ],
+    "hit": false,
+    "gold_rank": null
+  },
+  "top5_exact_overlap_count": 2,
+  "classification": "NO COMPRESSION TAX OBSERVED - BOTH MISS"
+}

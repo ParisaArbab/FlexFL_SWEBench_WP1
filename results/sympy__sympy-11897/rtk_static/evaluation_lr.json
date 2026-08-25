@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-11897",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/printing/latex.py"
+  ],
+  "top5": [
+    "sympy.functions.elementary.piecewise.Piecewise.eval()",
+    "sympy.functions.elementary.piecewise.Piecewise.__eval_cond()",
+    "sympy.printing.latex.LatexPrinter._print_Function()",
+    "sympy.functions.elementary.piecewise.Piecewise.__new__()",
+    "sympy.functions.elementary.piecewise.Piecewise.doit()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.functions.elementary.piecewise.Piecewise.eval()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.functions.elementary.piecewise.Piecewise.__eval_cond()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.printing.latex.LatexPrinter._print_Function()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/latex.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.functions.elementary.piecewise.Piecewise.__new__()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.functions.elementary.piecewise.Piecewise.doit()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 3,
+  "matched_gold_file": "sympy/printing/latex.py"
+}

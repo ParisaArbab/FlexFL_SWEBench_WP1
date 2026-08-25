@@ -1,0 +1,31 @@
+--- RAW
++++ RTK
+@@ -1,23 +1,6 @@
++OUTPUT (last 5 lines):
++  AssertionError
++  ============= tests finished: 0 passed, 1 failed, in 0.20 seconds ==============
++  DO *NOT* COMMIT!
++  ===== TEST EXIT CODE: 1 =====
+ 
+-===== FAIL_TO_PASS: test_Mul_is_integer =====
+-============================= test process starts ==============================
+-executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+-architecture:       64-bit
+-cache:              yes
+-ground types:       python 
+-numpy:              1.24.4
+-random seed:        48233431
+-hash randomization: off
+-
+-sympy/core/tests/test_arit.py[1] F                                        [FAIL]
+-
+-________________________________________________________________________________
+-______________ sympy/core/tests/test_arit.py:test_Mul_is_integer _______________
+-Traceback (most recent call last):
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20322/sympy/core/tests/test_arit.py", line 400, in test_Mul_is_integer
+-    assert Mul(2., S.Half, evaluate=False).is_integer is None
+-AssertionError
+-
+-============= tests finished: 0 passed, 1 failed, in 0.21 seconds ==============
+-DO *NOT* COMMIT!
+-===== TEST EXIT CODE: 1 =====

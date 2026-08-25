@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-23117",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/tensor/array/ndim_array.py"
+  ],
+  "top5": [
+    "sympy.tensor.array.ndim_array.NDimArray._handle_ndarray_creation_inputs()",
+    "sympy.tensor.array.ndim_array.NDimArray._scan_iterable_shape()",
+    "sympy.tensor.array.ndim_array.NDimArray._parse_index()",
+    "sympy.tensor.array.ndim_array.NDimArray._get_tuple_index()",
+    "sympy.tensor.array.ndim_array.NDimArray._check_symbolic_index()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.tensor.array.ndim_array.NDimArray._handle_ndarray_creation_inputs()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/tensor/array/ndim_array.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.tensor.array.ndim_array.NDimArray._scan_iterable_shape()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/tensor/array/ndim_array.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.tensor.array.ndim_array.NDimArray._parse_index()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/tensor/array/ndim_array.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.tensor.array.ndim_array.NDimArray._get_tuple_index()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/tensor/array/ndim_array.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.tensor.array.ndim_array.NDimArray._check_symbolic_index()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/tensor/array/ndim_array.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/tensor/array/ndim_array.py"
+}

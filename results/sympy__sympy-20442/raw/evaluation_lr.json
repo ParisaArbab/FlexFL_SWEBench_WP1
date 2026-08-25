@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-20442",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/physics/units/util.py"
+  ],
+  "top5": [
+    "sympy.physics.units.util.convert_to()",
+    "sympy.physics.units.util._get_conversion_matrix_for_expr()",
+    "sympy.physics.units.quantities.Quantity.convert_to()",
+    "sympy.physics.units.util.convert_to()",
+    "sympy.physics.units.util._get_conversion_matrix_for_expr()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.physics.units.util.convert_to()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/units/util.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.physics.units.util._get_conversion_matrix_for_expr()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/units/util.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.physics.units.quantities.Quantity.convert_to()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.physics.units.util.convert_to()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/units/util.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.physics.units.util._get_conversion_matrix_for_expr()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/units/util.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/physics/units/util.py"
+}

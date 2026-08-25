@@ -1,0 +1,46 @@
+
+===== FAIL_TO_PASS: test_imageset =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        91053988
+hash randomization: off
+
+sympy/sets/tests/test_sets.py[1] F                                        [FAIL]
+
+________________________________________________________________________________
+_________________ sympy/sets/tests/test_sets.py:test_imageset __________________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-16988/sympy/sets/tests/test_sets.py", line 24, in test_imageset
+    assert (1, r) in imageset(x, (x, x), S.Reals) != False
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.12 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====
+
+===== FAIL_TO_PASS: test_intersection =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        21827083
+hash randomization: off
+
+sympy/sets/tests/test_sets.py[1] F                                        [FAIL]
+
+________________________________________________________________________________
+_______________ sympy/sets/tests/test_sets.py:test_intersection ________________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-16988/sympy/sets/tests/test_sets.py", line 346, in test_intersection
+    assert Intersection({1}, {1}, {x}) == Intersection({1}, {x})
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.15 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

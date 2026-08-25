@@ -1,0 +1,6 @@
+OUTPUT (last 5 lines):
+  SyntaxError: invalid syntax
+  =========== tests finished: 0 passed, 1 exceptions, in 0.10 seconds ============
+  DO *NOT* COMMIT!
+  ===== TEST EXIT CODE: 1 =====
+

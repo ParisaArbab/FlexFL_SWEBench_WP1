@@ -1,0 +1,45 @@
+
+===== FAIL_TO_PASS: test_Mod =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        40738750
+hash randomization: off
+
+sympy/core/tests/test_arit.py[4] E...                                     [FAIL]
+
+________________________________________________________________________________
+____________________ sympy/core/tests/test_arit.py:test_Mod ____________________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21379/sympy/core/tests/test_arit.py", line 1921, in test_Mod
+    (Piecewise((x_r, y_r > x_r), (y_r, True)) / z) % 1
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21379/sympy/core/decorators.py", line 266, in _func
+    return func(self, other)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21379/sympy/core/decorators.py", line 136, in binary_op_wrapper
+    return func(self, other)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21379/sympy/core/expr.py", line 280, in __mod__
+    return Mod(self, other)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21379/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21379/sympy/core/function.py", line 473, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21379/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21379/sympy/core/function.py", line 285, in __new__
+    evaluated = cls.eval(*args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21379/sympy/core/mod.py", line 169, in eval
+    G = gcd(p, q)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21379/sympy/polys/polytools.py", line 5306, in gcd
+    (F, G), opt = parallel_poly_from_expr((f, g), *gens, **args)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21379/sympy/polys/polytools.py", line 4340, in parallel_poly_from_expr
+    return _parallel_poly_from_expr(exprs, opt)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21379/sympy/polys/polytools.py", line 4399, in _parallel_poly_from_expr
+    raise PolynomialError("Piecewise generators do not make sense")
+sympy.polys.polyerrors.PolynomialError: Piecewise generators do not make sense
+
+=========== tests finished: 3 passed, 1 exceptions, in 1.31 seconds ============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

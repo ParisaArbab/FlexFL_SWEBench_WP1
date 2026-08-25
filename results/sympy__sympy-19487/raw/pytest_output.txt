@@ -1,0 +1,23 @@
+
+===== FAIL_TO_PASS: test_sign =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        19303998
+hash randomization: off
+
+sympy/functions/elementary/tests/test_complexes.py[2] Ff                  [FAIL]
+
+________________________________________________________________________________
+_________ sympy/functions/elementary/tests/test_complexes.py:test_sign _________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-19487/sympy/functions/elementary/tests/test_complexes.py", line 305, in test_sign
+    assert sign(y).rewrite(Abs) == Piecewise((0, Eq(y, 0)), (y/Abs(y), True))
+AssertionError
+
+=== tests finished: 0 passed, 1 failed, 1 expected to fail, in 0.15 seconds ====
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

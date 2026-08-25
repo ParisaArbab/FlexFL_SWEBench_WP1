@@ -1,0 +1,23 @@
+
+===== FAIL_TO_PASS: test_Function =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        15267955
+hash randomization: off
+
+sympy/printing/tests/test_mathematica.py[1] F                             [FAIL]
+
+________________________________________________________________________________
+____________ sympy/printing/tests/test_mathematica.py:test_Function ____________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15345/sympy/printing/tests/test_mathematica.py", line 31, in test_Function
+    assert mcode(Max(x,y,z)*Min(y,z)) == "Max[x, y, z]*Min[y, z]"
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.02 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

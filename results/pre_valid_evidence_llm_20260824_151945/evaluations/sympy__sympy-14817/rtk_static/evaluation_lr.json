@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-14817",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/printing/pretty/pretty.py"
+  ],
+  "top5": [
+    "sympy.printing.pretty.pretty.PrettyPrinter._print_MatAdd()",
+    "sympy.printing.pretty.pretty.PrettyPrinter._print_Product()",
+    "sympy.printing.pretty.pretty.PrettyPrinter._print_Sum()",
+    "sympy.core.compatibility.default_sort_key()",
+    "sympy.matrices.expressions.matexpr.MatrixSymbol.name()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter._print_MatAdd()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pretty/pretty.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter._print_Product()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pretty/pretty.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter._print_Sum()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pretty/pretty.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.core.compatibility.default_sort_key()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.matrices.expressions.matexpr.MatrixSymbol.name()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/printing/pretty/pretty.py"
+}

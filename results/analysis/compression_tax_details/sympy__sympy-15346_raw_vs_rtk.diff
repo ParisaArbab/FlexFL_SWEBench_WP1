@@ -1,0 +1,31 @@
+--- RAW
++++ RTK
+@@ -1,23 +1,6 @@
++OUTPUT (last 5 lines):
++  AssertionError
++  ============= tests finished: 0 passed, 1 failed, in 0.13 seconds ==============
++  DO *NOT* COMMIT!
++  ===== TEST EXIT CODE: 1 =====
+ 
+-===== FAIL_TO_PASS: test_issue_15129_trigsimp_methods =====
+-============================= test process starts ==============================
+-executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+-architecture:       64-bit
+-cache:              yes
+-ground types:       python 
+-numpy:              1.24.4
+-random seed:        2494672
+-hash randomization: off
+-
+-sympy/simplify/tests/test_trigsimp.py[1] F                                [FAIL]
+-
+-________________________________________________________________________________
+-___ sympy/simplify/tests/test_trigsimp.py:test_issue_15129_trigsimp_methods ____
+-Traceback (most recent call last):
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15346/sympy/simplify/tests/test_trigsimp.py", line 367, in test_issue_15129_trigsimp_methods
+-    assert trigsimp(r1) == cos(S(1)/50)
+-AssertionError
+-
+-============= tests finished: 0 passed, 1 failed, in 0.13 seconds ==============
+-DO *NOT* COMMIT!
+-===== TEST EXIT CODE: 1 =====

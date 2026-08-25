@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-22005",
+  "trigger_tests": [
+    "test_solve_poly_system"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_solve_poly_system",
+      "name": "test_solve_poly_system",
+      "path": "sympy/solvers/tests/test_polysys.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-22005.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-22005.sh"
+  ]
+}

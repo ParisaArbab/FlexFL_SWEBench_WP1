@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-13647",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/matrices/common.py"
+  ],
+  "top5": [
+    "sympy.matrices.common.MatrixShaping._eval_col_insert()",
+    "sympy.matrices.common.MatrixShaping.col_insert()",
+    "sympy.matrices.common.MatrixShaping._eval_col_insert()",
+    "sympy.matrices.common.MatrixShaping._eval_col_insert()",
+    "sympy.matrices.common.MatrixShaping._eval_col_insert()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.matrices.common.MatrixShaping._eval_col_insert()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/common.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.matrices.common.MatrixShaping.col_insert()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/common.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.matrices.common.MatrixShaping._eval_col_insert()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/common.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.matrices.common.MatrixShaping._eval_col_insert()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/common.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.matrices.common.MatrixShaping._eval_col_insert()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/common.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/matrices/common.py"
+}

@@ -1,0 +1,23 @@
+
+===== FAIL_TO_PASS: test_factor_terms =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        81105307
+hash randomization: off
+
+sympy/polys/tests/test_polytools.py[1] F                                  [FAIL]
+
+________________________________________________________________________________
+____________ sympy/polys/tests/test_polytools.py:test_factor_terms _____________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-18698/sympy/polys/tests/test_polytools.py", line 3276, in test_factor_terms
+    assert sqf_list(x*(x + y)) == (1, [(x**2 + x*y, 1)])
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.29 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

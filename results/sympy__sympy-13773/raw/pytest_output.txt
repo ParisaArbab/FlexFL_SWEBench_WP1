@@ -1,0 +1,38 @@
+
+===== FAIL_TO_PASS: test_matmul =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        54559799
+hash randomization: off
+
+sympy/matrices/tests/test_commonmatrix.py[1] E                            [FAIL]
+
+________________________________________________________________________________
+____________ sympy/matrices/tests/test_commonmatrix.py:test_matmul _____________
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13773/sympy/matrices/tests/test_commonmatrix.py", line 680, in test_matmul
+    assert a.__matmul__(2) == NotImplemented
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13773/sympy/core/decorators.py", line 132, in binary_op_wrapper
+    return func(self, other)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13773/sympy/matrices/common.py", line 1976, in __matmul__
+    return self.__mul__(other)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13773/sympy/core/decorators.py", line 132, in binary_op_wrapper
+    return func(self, other)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13773/sympy/matrices/common.py", line 2022, in __mul__
+    if not isinstance(other, collections.Iterable):
+  File "/home/parbab/miniconda3/envs/flexfl-sympy38/lib/python3.8/collections/__init__.py", line 49, in __getattr__
+    warnings.warn("Using or importing the ABCs from 'collections' instead "
+DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.14 seconds ============
+DO *NOT* COMMIT!
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13773/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping, defaultdict
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13773/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  class OrderedSet(collections.MutableSet):
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13773/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Callable
+===== TEST EXIT CODE: 1 =====

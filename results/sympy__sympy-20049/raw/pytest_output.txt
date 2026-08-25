@@ -1,0 +1,124 @@
+
+===== FAIL_TO_PASS: test_auto_point_vel =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        49429085
+hash randomization: off
+
+sympy/physics/vector/tests/test_point.py[5] EE.EE                         [FAIL]
+
+________________________________________________________________________________
+_________ sympy/physics/vector/tests/test_point.py:test_auto_point_vel _________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20049/sympy/physics/vector/tests/test_point.py", line 151, in test_auto_point_vel
+    assert Q.vel(N) == q1.diff(t) * N.x + q2 * N.y  # Velocity of Q using O
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20049/sympy/physics/vector/point.py", line 522, in vel
+    raise ValueError('Velocity of point ' + self.name + ' has not been'
+ValueError: Velocity of point Q has not been defined in ReferenceFrame N
+________________________________________________________________________________
+ sympy/physics/vector/tests/test_point.py:test_auto_point_vel_multiple_point_path 
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20049/sympy/physics/vector/tests/test_point.py", line 173, in test_auto_point_vel_multiple_point_path
+    assert P3.vel(B) == 10 * q1.diff(t) * B.y + (q1 + q1.diff(t)) * B.z
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20049/sympy/physics/vector/point.py", line 522, in vel
+    raise ValueError('Velocity of point ' + self.name + ' has not been'
+ValueError: Velocity of point P3 has not been defined in ReferenceFrame B
+________________________________________________________________________________
+__ sympy/physics/vector/tests/test_point.py:test_auto_point_vel_shortest_path __
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20049/sympy/physics/vector/tests/test_point.py", line 219, in test_auto_point_vel_shortest_path
+    assert P4.vel(B) == q1.diff(t) * B.x + u2 * B.y + 2 * q2.diff(t) * B.z
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20049/sympy/physics/vector/point.py", line 522, in vel
+    raise ValueError('Velocity of point ' + self.name + ' has not been'
+ValueError: Velocity of point P4 has not been defined in ReferenceFrame B
+________________________________________________________________________________
+ sympy/physics/vector/tests/test_point.py:test_auto_point_vel_connected_frames _
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20049/sympy/physics/vector/tests/test_point.py", line 232, in test_auto_point_vel_connected_frames
+    assert P.vel(N) == (u + q1.diff(t)) * N.x + q2.diff(t) * B.y - q2 * q.diff(t) * B.z
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20049/sympy/physics/vector/point.py", line 522, in vel
+    raise ValueError('Velocity of point ' + self.name + ' has not been'
+ValueError: Velocity of point P has not been defined in ReferenceFrame N
+
+=========== tests finished: 1 passed, 4 exceptions, in 0.25 seconds ============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====
+
+===== FAIL_TO_PASS: test_auto_point_vel_multiple_point_path =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        23993035
+hash randomization: off
+
+sympy/physics/vector/tests/test_point.py[1] E                             [FAIL]
+
+________________________________________________________________________________
+ sympy/physics/vector/tests/test_point.py:test_auto_point_vel_multiple_point_path 
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20049/sympy/physics/vector/tests/test_point.py", line 173, in test_auto_point_vel_multiple_point_path
+    assert P3.vel(B) == 10 * q1.diff(t) * B.y + (q1 + q1.diff(t)) * B.z
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20049/sympy/physics/vector/point.py", line 522, in vel
+    raise ValueError('Velocity of point ' + self.name + ' has not been'
+ValueError: Velocity of point P3 has not been defined in ReferenceFrame B
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.21 seconds ============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====
+
+===== FAIL_TO_PASS: test_auto_vel_dont_overwrite =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        85932211
+hash randomization: off
+
+sympy/physics/vector/tests/test_point.py[1] E                             [FAIL]
+
+________________________________________________________________________________
+____ sympy/physics/vector/tests/test_point.py:test_auto_vel_dont_overwrite _____
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20049/sympy/physics/vector/tests/test_point.py", line 183, in test_auto_vel_dont_overwrite
+    assert P1.vel(N) == q2.diff(t) * N.y + u1 * N.x
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20049/sympy/physics/vector/point.py", line 522, in vel
+    raise ValueError('Velocity of point ' + self.name + ' has not been'
+ValueError: Velocity of point P1 has not been defined in ReferenceFrame N
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.22 seconds ============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====
+
+===== FAIL_TO_PASS: test_auto_point_vel_shortest_path =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        11917648
+hash randomization: off
+
+sympy/physics/vector/tests/test_point.py[1] E                             [FAIL]
+
+________________________________________________________________________________
+__ sympy/physics/vector/tests/test_point.py:test_auto_point_vel_shortest_path __
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20049/sympy/physics/vector/tests/test_point.py", line 219, in test_auto_point_vel_shortest_path
+    assert P4.vel(B) == q1.diff(t) * B.x + u2 * B.y + 2 * q2.diff(t) * B.z
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20049/sympy/physics/vector/point.py", line 522, in vel
+    raise ValueError('Velocity of point ' + self.name + ' has not been'
+ValueError: Velocity of point P4 has not been defined in ReferenceFrame B
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.24 seconds ============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

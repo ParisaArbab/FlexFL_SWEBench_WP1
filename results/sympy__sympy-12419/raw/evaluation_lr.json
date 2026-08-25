@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-12419",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/matrices/expressions/matexpr.py"
+  ],
+  "top5": [
+    "sympy.matrices.expressions.matexpr.Identity._entry()",
+    "sympy.matrices.expressions.matexpr.MatrixExpr.inverse()",
+    "sympy.core.evalf.add_terms()",
+    "sympy.matrices.expressions.matexpr.Identity",
+    "sympy.concrete.summations.Sum.doit()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.matrices.expressions.matexpr.Identity._entry()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/expressions/matexpr.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.matrices.expressions.matexpr.MatrixExpr.inverse()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/expressions/matexpr.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.core.evalf.add_terms()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.matrices.expressions.matexpr.Identity",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/expressions/matexpr.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.concrete.summations.Sum.doit()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/matrices/expressions/matexpr.py"
+}

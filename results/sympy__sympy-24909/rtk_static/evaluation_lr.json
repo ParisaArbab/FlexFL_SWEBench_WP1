@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-24909",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/physics/units/prefixes.py"
+  ],
+  "top5": [
+    "sympy.physics.units.prefixes.Prefix.__mul__()",
+    "sympy.physics.units.prefixes.Prefix.__mul__()",
+    "sympy.physics.units.prefixes.Prefix.__mul__()",
+    "sympy.physics.units.quantities.Quantity.__new__()",
+    "sympy.core.numbers.NumberSymbol.__eq__()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.physics.units.prefixes.Prefix.__mul__()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/units/prefixes.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.physics.units.prefixes.Prefix.__mul__()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/units/prefixes.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.physics.units.prefixes.Prefix.__mul__()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/units/prefixes.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.physics.units.quantities.Quantity.__new__()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.core.numbers.NumberSymbol.__eq__()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/physics/units/prefixes.py"
+}

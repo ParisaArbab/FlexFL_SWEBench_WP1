@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-13437",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/functions/combinatorial/numbers.py"
+  ],
+  "top5": [
+    "sympy.functions.combinatorial.numbers.bell.eval()",
+    "sympy.functions.combinatorial.numbers.bell._bell_poly()",
+    "sympy.functions.combinatorial.numbers.bell._bell()",
+    "sympy.functions.combinatorial.numbers.bell._bell_incomplete_poly()",
+    "sympy.functions.combinatorial.numbers.bell._bell()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.functions.combinatorial.numbers.bell.eval()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/functions/combinatorial/numbers.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.functions.combinatorial.numbers.bell._bell_poly()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/functions/combinatorial/numbers.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.functions.combinatorial.numbers.bell._bell()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/functions/combinatorial/numbers.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.functions.combinatorial.numbers.bell._bell_incomplete_poly()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/functions/combinatorial/numbers.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.functions.combinatorial.numbers.bell._bell()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/functions/combinatorial/numbers.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/functions/combinatorial/numbers.py"
+}

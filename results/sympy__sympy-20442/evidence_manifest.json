@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-20442",
+  "trigger_tests": [
+    "test_convert_to"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_convert_to",
+      "name": "test_convert_to",
+      "path": "sympy/physics/units/tests/test_quantities.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-20442.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-20442.sh"
+  ]
+}

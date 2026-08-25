@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-11870",
+  "repo": "sympy/sympy",
+  "base_commit": "5c2e1f96a7ff562d4a778f4ca9ffc9c81557197e",
+  "method_count": 13571,
+  "gold_changed_python_files": [
+    "sympy/functions/elementary/trigonometric.py"
+  ],
+  "status": "prepared"
+}

@@ -1,0 +1,27 @@
+
+===== FAIL_TO_PASS: test_args =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+random seed:        40276231
+hash randomization: off
+
+sympy/combinatorics/tests/test_permutations.py[1] E                       [FAIL]
+
+________________________________________________________________________________
+___________ sympy/combinatorics/tests/test_permutations.py:test_args ___________
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12481/sympy/combinatorics/tests/test_permutations.py", line 342, in test_args
+    assert Permutation([[0, 1], [0, 2]]) == Permutation(0, 1, 2)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12481/sympy/combinatorics/permutations.py", line 900, in __new__
+    raise ValueError('there were repeated elements; to resolve '
+ValueError: there were repeated elements; to resolve cycles use Cycle(0, 1)(0, 2).
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.16 seconds ============
+DO *NOT* COMMIT!
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12481/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-12481/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Callable
+===== TEST EXIT CODE: 1 =====

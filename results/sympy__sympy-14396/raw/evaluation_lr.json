@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-14396",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/polys/polyoptions.py"
+  ],
+  "top5": [
+    "sympy.polys.polyoptions.polyoptions.Domain.preprocess(cls, domain)",
+    "sympy.polys.polyoptions.polyoptions.build_options(gens, args)",
+    "sympy.polys.polyoptions.polyoptions.preprocess_options(args)",
+    "sympy.polys.polyoptions.polyoptions.OptionError('expected a valid domain specification, got %s' % domain)",
+    "sympy.polys.polyoptions.polyoptions.Options.__init__(self, gens, args, flags=None, strict=False)"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.polys.polyoptions.polyoptions.Domain.preprocess(cls, domain)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/polyoptions.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.polys.polyoptions.polyoptions.build_options(gens, args)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/polyoptions.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.polys.polyoptions.polyoptions.preprocess_options(args)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/polyoptions.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.polys.polyoptions.polyoptions.OptionError('expected a valid domain specification, got %s' % domain)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/polyoptions.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.polys.polyoptions.polyoptions.Options.__init__(self, gens, args, flags=None, strict=False)",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/polyoptions.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/polys/polyoptions.py"
+}

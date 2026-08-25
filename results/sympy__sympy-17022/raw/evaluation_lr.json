@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-17022",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/printing/pycode.py"
+  ],
+  "top5": [
+    "sympy.matrices.expressions.matexpr.Identity.__new__()",
+    "sympy.printing.pycode.NumPyPrinter._print_MatMul()",
+    "sympy.matrices.expressions.matexpr.Identity.__new__()",
+    "sympy.printing.pycode.NumPyPrinter._print()",
+    "sympy.matrices.expressions.matexpr.MatrixExpr._eval_inverse()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.matrices.expressions.matexpr.Identity.__new__()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.printing.pycode.NumPyPrinter._print_MatMul()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pycode.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.matrices.expressions.matexpr.Identity.__new__()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.printing.pycode.NumPyPrinter._print()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pycode.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.matrices.expressions.matexpr.MatrixExpr._eval_inverse()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 2,
+  "matched_gold_file": "sympy/printing/pycode.py"
+}

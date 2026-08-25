@@ -1,0 +1,46 @@
+
+===== FAIL_TO_PASS: test_sizeof =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        54076789
+hash randomization: off
+
+sympy/codegen/tests/test_cnodes.py[1] F                                   [FAIL]
+
+________________________________________________________________________________
+________________ sympy/codegen/tests/test_cnodes.py:test_sizeof ________________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-18532/sympy/codegen/tests/test_cnodes.py", line 69, in test_sizeof
+    assert sz.atoms() == {String('unsigned int'), String('sizeof')}
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.01 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====
+
+===== FAIL_TO_PASS: test_atoms =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        40893191
+hash randomization: off
+
+sympy/core/tests/test_basic.py[1] F                                       [FAIL]
+
+________________________________________________________________________________
+__________________ sympy/core/tests/test_basic.py:test_atoms ___________________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-18532/sympy/core/tests/test_basic.py", line 140, in test_atoms
+    assert b21.atoms() == set([Basic()])
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.08 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

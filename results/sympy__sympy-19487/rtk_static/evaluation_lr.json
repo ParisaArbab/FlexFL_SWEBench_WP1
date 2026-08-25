@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-19487",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/functions/elementary/complexes.py"
+  ],
+  "top5": [
+    "sympy.functions.elementary.complexes.sign._eval_Abs()",
+    "sympy.functions.elementary.complexes.sign._eval_conjugate()",
+    "sympy.functions.elementary.complexes.sign._eval_derivative()",
+    "sympy.functions.elementary.complexes.sign._eval_is_imaginary()",
+    "sympy.functions.elementary.complexes.sign._eval_is_nonnegative()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.functions.elementary.complexes.sign._eval_Abs()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/functions/elementary/complexes.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.functions.elementary.complexes.sign._eval_conjugate()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/functions/elementary/complexes.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.functions.elementary.complexes.sign._eval_derivative()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/functions/elementary/complexes.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.functions.elementary.complexes.sign._eval_is_imaginary()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/functions/elementary/complexes.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.functions.elementary.complexes.sign._eval_is_nonnegative()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/functions/elementary/complexes.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/functions/elementary/complexes.py"
+}

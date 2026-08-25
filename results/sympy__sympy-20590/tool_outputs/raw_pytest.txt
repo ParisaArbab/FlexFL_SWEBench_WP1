@@ -1,0 +1,34 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.20, pytest-9.1.1, pluggy-1.6.0 -- /home/parbab/miniconda3/envs/flexfl-swebench/bin/python
+cachedir: .pytest_cache
+architecture: 64-bit
+cache:        yes
+ground types: python 
+
+rootdir: /home/parbab/FlexFL_SWEBench_WP1/FlexFL/data/repos/sympy__sympy-20590
+configfile: pytest.ini
+plugins: anyio-4.14.2
+collecting ... collected 1 item
+
+sympy/core/tests/test_basic.py::test_immutable FAILED                    [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_immutable ________________________________
+
+    def test_immutable():
+>       assert not hasattr(b1, '__dict__')
+E       AssertionError: assert not True
+E        +  where True = hasattr(Basic(), '__dict__')
+
+sympy/core/tests/test_basic.py:38: AssertionError
+=============================== warnings summary ===============================
+../../../../../miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/_pytest/config/__init__.py:1464
+  /home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: doctestplus
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+                                DO *NOT* COMMIT!                                
+=========================== short test summary info ============================
+FAILED sympy/core/tests/test_basic.py::test_immutable - AssertionError: asser...
+========================= 1 failed, 1 warning in 0.27s =========================

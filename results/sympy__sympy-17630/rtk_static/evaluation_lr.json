@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-17630",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/matrices/expressions/matexpr.py"
+  ],
+  "top5": [
+    "sympy.matrices.expressions.blockmatrix.BlockMatrix._blockmul()",
+    "sympy.matrices.expressions.blockmatrix.BlockMatrix.colblocksizes()",
+    "sympy.matrices.expressions.blockmatrix.BlockMatrix._blockmul()",
+    "sympy.matrices.expressions.blockmatrix.BlockMatrix.rowblocksizes()",
+    "sympy.matrices.expressions.blockmatrix.BlockMatrix.structurally_equal()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.matrices.expressions.blockmatrix.BlockMatrix._blockmul()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.matrices.expressions.blockmatrix.BlockMatrix.colblocksizes()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.matrices.expressions.blockmatrix.BlockMatrix._blockmul()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.matrices.expressions.blockmatrix.BlockMatrix.rowblocksizes()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.matrices.expressions.blockmatrix.BlockMatrix.structurally_equal()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": false,
+  "file_rank": null,
+  "matched_gold_file": null
+}

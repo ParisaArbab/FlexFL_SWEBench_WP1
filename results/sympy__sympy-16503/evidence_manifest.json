@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-16503",
+  "trigger_tests": [
+    "test_pretty_sum"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_pretty_sum",
+      "name": "test_pretty_sum",
+      "path": "sympy/printing/pretty/tests/test_pretty.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-16503.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-16503.sh"
+  ]
+}

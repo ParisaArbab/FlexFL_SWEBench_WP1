@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-18199",
+  "trigger_tests": [
+    "test_solve_modular"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_solve_modular",
+      "name": "test_solve_modular",
+      "path": "sympy/solvers/tests/test_solveset.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-18199.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-18199.sh"
+  ]
+}

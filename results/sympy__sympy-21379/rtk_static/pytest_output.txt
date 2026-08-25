@@ -1,0 +1,6 @@
+OUTPUT (last 5 lines):
+  sympy.polys.polyerrors.PolynomialError: Piecewise generators do not make sense
+  =========== tests finished: 3 passed, 1 exceptions, in 1.31 seconds ============
+  DO *NOT* COMMIT!
+  ===== TEST EXIT CODE: 1 =====
+

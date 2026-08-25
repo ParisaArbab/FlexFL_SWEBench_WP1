@@ -1,0 +1,6 @@
+OUTPUT (last 5 lines):
+  TypeError: 'One' object is not subscriptable
+  =========== tests finished: 0 passed, 1 exceptions, in 0.02 seconds ============
+  DO *NOT* COMMIT!
+  ===== TEST EXIT CODE: 1 =====
+

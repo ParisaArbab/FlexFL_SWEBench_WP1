@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-20154",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/utilities/iterables.py"
+  ],
+  "top5": [
+    "sympy.utilities.iterables.partitions()",
+    "sympy.utilities.iterables.multiset_partitions_taocp()",
+    "sympy.combinatorics.partitions.Partitions.partitions()",
+    "sympy.combinatorics.partitions.Partition.partition()",
+    "sympy.combinatorics.partitions.Partition.from_rgs()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.utilities.iterables.partitions()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/utilities/iterables.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.utilities.iterables.multiset_partitions_taocp()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/utilities/iterables.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.combinatorics.partitions.Partitions.partitions()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.combinatorics.partitions.Partition.partition()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.combinatorics.partitions.Partition.from_rgs()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/utilities/iterables.py"
+}

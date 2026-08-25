@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-12481",
+  "trigger_tests": [
+    "test_args"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_args",
+      "name": "test_args",
+      "path": "sympy/combinatorics/tests/test_permutations.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-12481.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-12481.sh"
+  ]
+}

@@ -1,0 +1,62 @@
+
+===== FAIL_TO_PASS: test_mathematica =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        46754040
+hash randomization: off
+
+sympy/parsing/tests/test_mathematica.py[1] E                              [FAIL]
+
+________________________________________________________________________________
+___________ sympy/parsing/tests/test_mathematica.py:test_mathematica ___________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24102/sympy/parsing/tests/test_mathematica.py", line 74, in test_mathematica
+    assert parse_mathematica(e) == sympify(d[e])
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24102/sympy/parsing/mathematica.py", line 82, in parse_mathematica
+    return parser.parse(s)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24102/sympy/parsing/mathematica.py", line 535, in parse
+    s3 = self._from_tokens_to_fullformlist(s2)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24102/sympy/parsing/mathematica.py", line 726, in _from_tokens_to_fullformlist
+    last_stack = self._parse_after_braces(stack[-1], True)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24102/sympy/parsing/mathematica.py", line 908, in _parse_after_braces
+    return self._parse_after_braces(tokens, inside_enclosure)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24102/sympy/parsing/mathematica.py", line 909, in _parse_after_braces
+    raise SyntaxError("unable to create a single AST for the expression")
+SyntaxError: unable to create a single AST for the expression
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.15 seconds ============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====
+
+===== FAIL_TO_PASS: test_parser_mathematica_tokenizer =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        51711496
+hash randomization: off
+
+sympy/parsing/tests/test_mathematica.py[1] E                              [FAIL]
+
+________________________________________________________________________________
+__ sympy/parsing/tests/test_mathematica.py:test_parser_mathematica_tokenizer ___
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24102/sympy/parsing/tests/test_mathematica.py", line 98, in test_parser_mathematica_tokenizer
+    assert chain("α") == "α"
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24102/sympy/parsing/tests/test_mathematica.py", line 89, in <lambda>
+    chain = lambda expr: parser._from_tokens_to_fullformlist(parser._from_mathematica_to_tokens(expr))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24102/sympy/parsing/mathematica.py", line 740, in _from_tokens_to_fullformlist
+    return self._parse_after_braces(stack[0])
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24102/sympy/parsing/mathematica.py", line 909, in _parse_after_braces
+    raise SyntaxError("unable to create a single AST for the expression")
+SyntaxError: unable to create a single AST for the expression
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.10 seconds ============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

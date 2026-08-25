@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-21612",
+  "trigger_tests": [
+    "test_Mul"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_Mul",
+      "name": "test_Mul",
+      "path": "sympy/printing/tests/test_str.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-21612.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-21612.sh"
+  ]
+}

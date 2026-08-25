@@ -1,0 +1,12 @@
+{
+  "instance_id": "sympy__sympy-20590",
+  "condition": "raw",
+  "top5": [
+    "Top_1 : sympy.core.symbol.Symbol.__new__()",
+    "Top_2 : sympy.core.symbol.Symbol._sanitize()",
+    "Top_3 : sympy.core.symbol.Symbol.__new_stage2__()",
+    "Top_4 : sympy.core.symbol.Symbol.__getstate__()",
+    "Top_5 : sympy.core.symbol.Symbol._sage_()"
+  ],
+  "source_result": "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/res/Llama3_SWEbench_All/sympy__sympy-20590.json"
+}

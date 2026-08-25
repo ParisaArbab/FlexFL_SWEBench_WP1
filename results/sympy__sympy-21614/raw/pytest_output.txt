@@ -1,0 +1,23 @@
+
+===== FAIL_TO_PASS: test_Derivative_kind =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        60706418
+hash randomization: off
+
+sympy/core/tests/test_kind.py[1] F                                        [FAIL]
+
+________________________________________________________________________________
+______________ sympy/core/tests/test_kind.py:test_Derivative_kind ______________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-21614/sympy/core/tests/test_kind.py", line 45, in test_Derivative_kind
+    assert Derivative(comm_x, comm_x).kind is NumberKind
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.01 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

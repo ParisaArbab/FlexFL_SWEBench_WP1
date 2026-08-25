@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-14396",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/polys/polyoptions.py"
+  ],
+  "top5": [
+    "sympy.polys.polyoptions.Domain.preprocess()",
+    "sympy.polys.polyoptions.Domain.preprocess()",
+    "sympy.polys.polyoptions.preprocess_options()",
+    "sympy.polys.polyoptions.Domain.preprocess()",
+    "sympy.polys.polyoptions.Domain.preprocess()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.polys.polyoptions.Domain.preprocess()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/polyoptions.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.polys.polyoptions.Domain.preprocess()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/polyoptions.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.polys.polyoptions.preprocess_options()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/polyoptions.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.polys.polyoptions.Domain.preprocess()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/polyoptions.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.polys.polyoptions.Domain.preprocess()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/polyoptions.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/polys/polyoptions.py"
+}

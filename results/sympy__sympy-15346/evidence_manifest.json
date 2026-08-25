@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-15346",
+  "trigger_tests": [
+    "test_issue_15129_trigsimp_methods"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_issue_15129_trigsimp_methods",
+      "name": "test_issue_15129_trigsimp_methods",
+      "path": "sympy/simplify/tests/test_trigsimp.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-15346.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-15346.sh"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-13146",
+  "trigger_tests": [
+    "test_evalf_bugs"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_evalf_bugs",
+      "name": "test_evalf_bugs",
+      "path": "sympy/core/tests/test_evalf.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-13146.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-13146.sh"
+  ]
+}

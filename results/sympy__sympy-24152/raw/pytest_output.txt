@@ -1,0 +1,23 @@
+
+===== FAIL_TO_PASS: test_tensor_product_expand =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        493455
+hash randomization: off
+
+sympy/physics/quantum/tests/test_tensorproduct.py[1] F                    [FAIL]
+
+________________________________________________________________________________
+_ sympy/physics/quantum/tests/test_tensorproduct.py:test_tensor_product_expand _
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24152/sympy/physics/quantum/tests/test_tensorproduct.py", line 48, in test_tensor_product_expand
+    assert TP(A-B, B-A).expand(tensorproduct=True) == \
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.22 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

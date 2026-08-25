@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-24102",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/parsing/mathematica.py"
+  ],
+  "top5": [
+    "sympy.parsing.mathematica.parse_mathematica()",
+    "sympy.parsing.mathematica.mathematica()",
+    "sympy.parsing.mathematica.MathematicaParser._from_mathematica_to_tokens()",
+    "sympy.parsing.mathematica.MathematicaParser._from_tokens_to_fullformlist()",
+    "sympy.parsing.mathematica.MathematicaParser._get_neg()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.parsing.mathematica.parse_mathematica()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/parsing/mathematica.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.parsing.mathematica.mathematica()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/parsing/mathematica.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.parsing.mathematica.MathematicaParser._from_mathematica_to_tokens()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/parsing/mathematica.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.parsing.mathematica.MathematicaParser._from_tokens_to_fullformlist()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/parsing/mathematica.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.parsing.mathematica.MathematicaParser._get_neg()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/parsing/mathematica.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/parsing/mathematica.py"
+}

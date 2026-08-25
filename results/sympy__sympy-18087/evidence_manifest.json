@@ -1,0 +1,29 @@
+{
+  "instance_id": "sympy__sympy-18087",
+  "trigger_tests": [
+    "test_Factors",
+    "test_fu"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_Factors",
+      "name": "test_Factors",
+      "path": "sympy/core/tests/test_exprtools.py"
+    },
+    {
+      "trigger": "test_fu",
+      "name": "test_fu",
+      "path": "sympy/simplify/tests/test_fu.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-18087.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-18087.sh"
+  ]
+}

@@ -1,0 +1,52 @@
+BUG: sympy__sympy-19007
+CATEGORY: MULTIPLE_DEBUGGING_CLUES_REMOVED
+RAW bytes: 3557
+RTK bytes: 175
+Reduction: 95.08%
+RAW rank: 1
+RTK rank: None
+Top5 overlap: 0/5
+
+REMOVED EXCEPTION TYPES
+
+REMOVED TEST NAMES
+test_block_index_large
+test_block_index_symbolic
+test_block_index_symbolic_nonzero
+test_indexing
+
+REMOVED SOURCE REFERENCES
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-19007/sympy/matrices/expressions/tests/test_indexing.py
+sympy/matrices/expressions/tests/test_indexing.py
+
+REMOVED ASSERTION INFORMATION
+assert A[0, 0] == MatrixElement(A, 0, 0)  # Cannot be A1[0, 0]
+assert A[i, j] == MatrixElement(A, i, j)
+assert A[i, j] == MatrixElement(A, i, j)
+assert A[n + i, n + i] == MatrixElement(A, n + i, n + i)
+
+IMPORTANT REMOVED RAW LINES
+===== FAIL_TO_PASS: test_block_index_symbolic =====
+sympy/matrices/expressions/tests/test_indexing.py[3] FFf                  [FAIL]
+_ sympy/matrices/expressions/tests/test_indexing.py:test_block_index_symbolic __
+Traceback (most recent call last):
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-19007/sympy/matrices/expressions/tests/test_indexing.py", line 94, in test_block_index_symbolic
+assert A[0, 0] == MatrixElement(A, 0, 0)  # Cannot be A1[0, 0]
+sympy/matrices/expressions/tests/test_indexing.py:test_block_index_symbolic_nonzero
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-19007/sympy/matrices/expressions/tests/test_indexing.py", line 119, in test_block_index_symbolic_nonzero
+assert A[i, j] == MatrixElement(A, i, j)
+===== FAIL_TO_PASS: test_block_index_symbolic_nonzero =====
+sympy/matrices/expressions/tests/test_indexing.py[1] F                    [FAIL]
+===== FAIL_TO_PASS: test_block_index_large =====
+___ sympy/matrices/expressions/tests/test_indexing.py:test_block_index_large ___
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-19007/sympy/matrices/expressions/tests/test_indexing.py", line 138, in test_block_index_large
+assert A[n + i, n + i] == MatrixElement(A, n + i, n + i)
+
+RAW TOP 5
+sympy.matrices.expressions.blockmatrix.BlockMatrix._entry()
+sympy.matrices.expressions.blockmatrix.BlockMatrix._blockadd()
+sympy.core.mul.Mul._eval_pos_neg()
+sympy.matrices.expressions.matexpr.MatrixExpr.__getitem__()
+sympy.matrices.expressions.slice.MatrixSlice.__new__()
+
+RTK TOP 5

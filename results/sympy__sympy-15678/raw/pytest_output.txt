@@ -1,0 +1,25 @@
+
+===== FAIL_TO_PASS: test_idiff =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        45327293
+hash randomization: off
+
+sympy/geometry/tests/test_util.py[1] E                                    [FAIL]
+
+________________________________________________________________________________
+_________________ sympy/geometry/tests/test_util.py:test_idiff _________________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15678/sympy/geometry/tests/test_util.py", line 24, in test_idiff
+    assert idiff(f(x) * exp(f(x)) - x * exp(x), f(x), x) == (x + 1) * exp(x - f(x))/(f(x) + 1)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15678/sympy/geometry/util.py", line 574, in idiff
+    raise ValueError("expecting x-dependent symbol(s) but got: %s" % y)
+ValueError: expecting x-dependent symbol(s) but got: f(x)
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.79 seconds ============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

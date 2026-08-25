@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-15678",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/geometry/util.py"
+  ],
+  "top5": [
+    "sympy.geometry.util.idiff()",
+    "sympy.integrals.rubi.utility_function.TrigToExp()",
+    "sympy.integrals.rubi.rules.inverse_trig.inverse_trig()",
+    "sympy.integrals.rubi.rules.inverse_hyperbolic.inverse_hyperbolic()",
+    "sympy.integrals.rubi.utility_function.FunctionOfExpnQ()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.geometry.util.idiff()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/geometry/util.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.integrals.rubi.utility_function.TrigToExp()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.integrals.rubi.rules.inverse_trig.inverse_trig()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.integrals.rubi.rules.inverse_hyperbolic.inverse_hyperbolic()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.integrals.rubi.utility_function.FunctionOfExpnQ()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/geometry/util.py"
+}

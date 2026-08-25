@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-13043",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/integrals/intpoly.py"
+  ],
+  "top5": [
+    "sympy.integrals.intpoly.decompose()",
+    "sympy.solvers.ode._frobenius()",
+    "sympy.integrals.intpoly.decompose()",
+    "sympy.combinatorics.homomorphisms.GroupHomomorphism.image()",
+    "sympy.integrals.intpoly.decompose()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.integrals.intpoly.decompose()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/integrals/intpoly.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.solvers.ode._frobenius()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.integrals.intpoly.decompose()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/integrals/intpoly.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.combinatorics.homomorphisms.GroupHomomorphism.image()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.integrals.intpoly.decompose()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/integrals/intpoly.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/integrals/intpoly.py"
+}

@@ -1,0 +1,6 @@
+OUTPUT (last 5 lines):
+  ValueError: Dimension of "V1" is Dimension(velocity), but it should be Dimension(acceleration*time)
+  =========== tests finished: 0 passed, 1 exceptions, in 0.26 seconds ============
+  DO *NOT* COMMIT!
+  ===== TEST EXIT CODE: 1 =====
+

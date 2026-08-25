@@ -1,0 +1,29 @@
+{
+  "instance_id": "sympy__sympy-16988",
+  "trigger_tests": [
+    "test_imageset",
+    "test_intersection"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_imageset",
+      "name": "test_imageset",
+      "path": "sympy/sets/tests/test_sets.py"
+    },
+    {
+      "trigger": "test_intersection",
+      "name": "test_intersection",
+      "path": "sympy/sets/tests/test_sets.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-16988.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-16988.sh"
+  ]
+}

@@ -1,0 +1,38 @@
+BUG: sympy__sympy-15011
+CATEGORY: MULTIPLE_DEBUGGING_CLUES_REMOVED
+RAW bytes: 1280
+RTK bytes: 188
+Reduction: 85.31%
+RAW rank: 1
+RTK rank: None
+Top5 overlap: 0/5
+
+REMOVED EXCEPTION TYPES
+
+REMOVED TEST NAMES
+test_curly_matrix_symbol
+test_lambdify
+
+REMOVED SOURCE REFERENCES
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15011/sympy/utilities/lambdify.py
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15011/sympy/utilities/tests/test_lambdify.py
+sympy/utilities/tests/test_lambdify.py
+
+REMOVED ASSERTION INFORMATION
+
+IMPORTANT REMOVED RAW LINES
+===== FAIL_TO_PASS: test_curly_matrix_symbol =====
+sympy/utilities/tests/test_lambdify.py[1] E                               [FAIL]
+_______ sympy/utilities/tests/test_lambdify.py:test_curly_matrix_symbol ________
+Traceback (most recent call last):
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15011/sympy/utilities/tests/test_lambdify.py", line 734, in test_curly_matrix_symbol
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15011/sympy/utilities/lambdify.py", line 464, in lambdify
+
+RAW TOP 5
+sympy.utilities.lambdify.lambdify()
+sympy.utilities.lambdify._EvaluatorPrinter._preprocess()
+sympy.utilities.lambdify._EvaluatorPrinter._subexpr()
+sympy.utilities.lambdify._EvaluatorPrinter._argrepr()
+sympy.utilities.lambdify._EvaluatorPrinter.__init__()
+
+RTK TOP 5

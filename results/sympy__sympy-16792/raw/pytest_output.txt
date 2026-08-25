@@ -1,0 +1,23 @@
+
+===== FAIL_TO_PASS: test_ccode_unused_array_arg =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        70845710
+hash randomization: off
+
+sympy/utilities/tests/test_codegen.py[1] F                                [FAIL]
+
+________________________________________________________________________________
+______ sympy/utilities/tests/test_codegen.py:test_ccode_unused_array_arg _______
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-16792/sympy/utilities/tests/test_codegen.py", line 602, in test_ccode_unused_array_arg
+    assert source == expected
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.10 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

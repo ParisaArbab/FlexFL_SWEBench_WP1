@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-16106",
+  "trigger_tests": [
+    "test_print_IndexedBase"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_print_IndexedBase",
+      "name": "test_print_IndexedBase",
+      "path": "sympy/printing/tests/test_mathml.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-16106.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-16106.sh"
+  ]
+}

@@ -1,0 +1,23 @@
+
+===== FAIL_TO_PASS: test_print_IndexedBase =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        7366460
+hash randomization: off
+
+sympy/printing/tests/test_mathml.py[1] F                                  [FAIL]
+
+________________________________________________________________________________
+__________ sympy/printing/tests/test_mathml.py:test_print_IndexedBase __________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-16106/sympy/printing/tests/test_mathml.py", line 1146, in test_print_IndexedBase
+    assert mathml(IndexedBase(a)[b],printer='presentation') == '<msub><mi>a</mi><mi>b</mi></msub>'
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.12 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

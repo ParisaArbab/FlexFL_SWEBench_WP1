@@ -1,0 +1,29 @@
+{
+  "instance_id": "sympy__sympy-17655",
+  "trigger_tests": [
+    "test_point",
+    "test_point3D"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_point",
+      "name": "test_point",
+      "path": "sympy/geometry/tests/test_point.py"
+    },
+    {
+      "trigger": "test_point3D",
+      "name": "test_point3D",
+      "path": "sympy/geometry/tests/test_point.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-17655.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-17655.sh"
+  ]
+}

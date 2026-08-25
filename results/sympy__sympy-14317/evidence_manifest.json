@@ -1,0 +1,29 @@
+{
+  "instance_id": "sympy__sympy-14317",
+  "trigger_tests": [
+    "test_latex_Poly",
+    "test_latex_Poly_order"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_latex_Poly",
+      "name": "test_latex_Poly",
+      "path": "sympy/printing/tests/test_latex.py"
+    },
+    {
+      "trigger": "test_latex_Poly_order",
+      "name": "test_latex_Poly_order",
+      "path": "sympy/printing/tests/test_latex.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-14317.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-14317.sh"
+  ]
+}

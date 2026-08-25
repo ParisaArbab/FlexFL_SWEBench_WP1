@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-24152",
+  "trigger_tests": [
+    "test_tensor_product_expand"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_tensor_product_expand",
+      "name": "test_tensor_product_expand",
+      "path": "sympy/physics/quantum/tests/test_tensorproduct.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-24152.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-24152.sh"
+  ]
+}

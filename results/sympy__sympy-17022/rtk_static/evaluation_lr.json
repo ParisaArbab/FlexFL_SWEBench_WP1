@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-17022",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/printing/pycode.py"
+  ],
+  "top5": [
+    "sympy.printing.pycode.NumPyPrinter._print_MatrixBase()",
+    "sympy.printing.pycode.NumPyPrinter._print()",
+    "sympy.matrices.expressions.matexpr.Identity.__new__()",
+    "sympy.printing.pycode.NumPyPrinter._module_format()",
+    "sympy.utilities.lambdify.lambdify()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.printing.pycode.NumPyPrinter._print_MatrixBase()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pycode.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.printing.pycode.NumPyPrinter._print()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pycode.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.matrices.expressions.matexpr.Identity.__new__()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.printing.pycode.NumPyPrinter._module_format()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pycode.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.utilities.lambdify.lambdify()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/printing/pycode.py"
+}

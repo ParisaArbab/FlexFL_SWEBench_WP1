@@ -1,0 +1,32 @@
+
+===== FAIL_TO_PASS: test_Domain_preprocess =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        79491008
+hash randomization: off
+
+sympy/polys/tests/test_polyoptions.py[1] E                                [FAIL]
+
+________________________________________________________________________________
+_________ sympy/polys/tests/test_polyoptions.py:test_Domain_preprocess _________
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14396/sympy/polys/tests/test_polyoptions.py", line 179, in test_Domain_preprocess
+    assert Domain.preprocess('R[x]') == RR[x]
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14396/sympy/polys/polyoptions.py", line 483, in preprocess
+    raise OptionError('expected a valid domain specification, got %s' % domain)
+sympy.polys.polyerrors.OptionError: expected a valid domain specification, got R[x]
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.08 seconds ============
+DO *NOT* COMMIT!
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14396/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping, defaultdict
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14396/sympy/core/expr.py:12: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import defaultdict, Iterable
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14396/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  class OrderedSet(collections.MutableSet):
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14396/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Callable
+===== TEST EXIT CODE: 1 =====

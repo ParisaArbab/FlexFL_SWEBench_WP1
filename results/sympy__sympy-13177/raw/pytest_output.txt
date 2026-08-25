@@ -1,0 +1,43 @@
+
+===== FAIL_TO_PASS: test_mod =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+random seed:        58130572
+hash randomization: off
+
+sympy/core/tests/test_numbers.py[2] F.                                    [FAIL]
+
+________________________________________________________________________________
+__________________ sympy/core/tests/test_numbers.py:test_mod ___________________
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13177/sympy/core/tests/test_numbers.py", line 132, in test_mod
+    assert m == h * (h % 1)
+AssertionError
+
+============= tests finished: 1 passed, 1 failed, in 0.18 seconds ==============
+DO *NOT* COMMIT!
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13177/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping, defaultdict
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13177/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Callable
+===== TEST EXIT CODE: 1 =====
+
+===== FAIL_TO_PASS: test_mod_inverse =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+random seed:        7439151
+hash randomization: off
+
+sympy/core/tests/test_numbers.py[1] .                                       [OK]
+
+================== tests finished: 1 passed, in 0.18 seconds ===================
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13177/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping, defaultdict
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13177/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Callable
+===== TEST EXIT CODE: 0 =====

@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-15011",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/utilities/lambdify.py"
+  ],
+  "top5": [
+    "sympy.utilities.lambdify.lambdify()",
+    "sympy.utilities.lambdify._EvaluatorPrinter._preprocess()",
+    "sympy.utilities.lambdify._EvaluatorPrinter._subexpr()",
+    "sympy.utilities.lambdify._EvaluatorPrinter._argrepr()",
+    "sympy.utilities.lambdify._EvaluatorPrinter.__init__()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.utilities.lambdify.lambdify()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/utilities/lambdify.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.utilities.lambdify._EvaluatorPrinter._preprocess()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/utilities/lambdify.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.utilities.lambdify._EvaluatorPrinter._subexpr()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/utilities/lambdify.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.utilities.lambdify._EvaluatorPrinter._argrepr()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/utilities/lambdify.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.utilities.lambdify._EvaluatorPrinter.__init__()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/utilities/lambdify.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/utilities/lambdify.py"
+}

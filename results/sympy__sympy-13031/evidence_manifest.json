@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-13031",
+  "trigger_tests": [
+    "test_sparse_matrix"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_sparse_matrix",
+      "name": "test_sparse_matrix",
+      "path": "sympy/matrices/tests/test_sparse.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-13031.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-13031.sh"
+  ]
+}

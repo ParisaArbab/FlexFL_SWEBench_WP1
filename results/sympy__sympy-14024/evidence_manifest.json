@@ -1,0 +1,29 @@
+{
+  "instance_id": "sympy__sympy-14024",
+  "trigger_tests": [
+    "test_powers_Integer",
+    "test_powers_Rational"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_powers_Integer",
+      "name": "test_powers_Integer",
+      "path": "sympy/core/tests/test_numbers.py"
+    },
+    {
+      "trigger": "test_powers_Rational",
+      "name": "test_powers_Rational",
+      "path": "sympy/core/tests/test_numbers.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-14024.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-14024.sh"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "instance_id": "sympy__sympy-20639",
+  "trigger_tests": [
+    "test_issue_6285",
+    "test_issue_17616"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_issue_6285",
+      "name": "test_issue_6285",
+      "path": "sympy/printing/pretty/tests/test_pretty.py"
+    },
+    {
+      "trigger": "test_issue_17616",
+      "name": "test_issue_17616",
+      "path": "sympy/printing/pretty/tests/test_pretty.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-20639.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-20639.sh"
+  ]
+}

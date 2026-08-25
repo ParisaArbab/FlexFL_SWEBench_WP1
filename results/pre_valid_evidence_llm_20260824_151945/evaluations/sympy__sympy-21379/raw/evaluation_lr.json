@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-21379",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/core/mod.py"
+  ],
+  "top5": [
+    "sympy.functions.elementary.piecewise.Piecewise._eval_subs()",
+    "sympy.core.function.Subs._eval_subs()",
+    "sympy.functions.elementary.exp._eval()",
+    "sympy.functions.elementary.sinh._eval()",
+    "sympy.core.basic.Basic._eval_subs()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.functions.elementary.piecewise.Piecewise._eval_subs()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.core.function.Subs._eval_subs()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.functions.elementary.exp._eval()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.functions.elementary.sinh._eval()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.core.basic.Basic._eval_subs()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": false,
+  "file_rank": null,
+  "matched_gold_file": null
+}

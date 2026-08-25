@@ -1,0 +1,6 @@
+OUTPUT (last 5 lines):
+  ValueError: expecting x-dependent symbol(s) but got: f(x)
+  =========== tests finished: 0 passed, 1 exceptions, in 0.79 seconds ============
+  DO *NOT* COMMIT!
+  ===== TEST EXIT CODE: 1 =====
+

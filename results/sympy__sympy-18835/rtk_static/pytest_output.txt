@@ -1,0 +1,6 @@
+OUTPUT (last 5 lines):
+  sympy.testing.pytest.Failed: DID NOT RAISE
+  =========== tests finished: 0 passed, 1 exceptions, in 0.13 seconds ============
+  DO *NOT* COMMIT!
+  ===== TEST EXIT CODE: 1 =====
+

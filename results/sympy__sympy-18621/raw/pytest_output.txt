@@ -1,0 +1,39 @@
+
+===== FAIL_TO_PASS: test_issue_18618 =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        25359744
+hash randomization: off
+
+sympy/matrices/expressions/tests/test_blockmatrix.py[1] E                 [FAIL]
+
+________________________________________________________________________________
+____ sympy/matrices/expressions/tests/test_blockmatrix.py:test_issue_18618 _____
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-18621/sympy/matrices/expressions/tests/test_blockmatrix.py", line 115, in test_issue_18618
+    assert A == Matrix(BlockDiagMatrix(A))
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-18621/sympy/matrices/dense.py", line 296, in __new__
+    return cls._new(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-18621/sympy/matrices/dense.py", line 308, in _new
+    rows, cols, flat_list = cls._handle_creation_inputs(*args, **kwargs)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-18621/sympy/matrices/matrices.py", line 964, in _handle_creation_inputs
+    return args[0].rows, args[0].cols, args[0].as_explicit()._mat
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-18621/sympy/matrices/expressions/matexpr.py", line 345, in as_explicit
+    return ImmutableDenseMatrix([[    self[i, j]
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-18621/sympy/matrices/expressions/matexpr.py", line 345, in <listcomp>
+    return ImmutableDenseMatrix([[    self[i, j]
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-18621/sympy/matrices/expressions/matexpr.py", line 345, in <listcomp>
+    return ImmutableDenseMatrix([[    self[i, j]
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-18621/sympy/matrices/expressions/matexpr.py", line 296, in __getitem__
+    return self._entry(i, j)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-18621/sympy/matrices/expressions/blockmatrix.py", line 247, in _entry
+    return self.blocks[row_block, col_block][i, j]
+TypeError: 'One' object is not subscriptable
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.01 seconds ============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

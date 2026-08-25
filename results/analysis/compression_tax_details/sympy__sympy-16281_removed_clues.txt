@@ -1,0 +1,44 @@
+BUG: sympy__sympy-16281
+CATEGORY: MULTIPLE_DEBUGGING_CLUES_REMOVED
+RAW bytes: 2004
+RTK bytes: 175
+Reduction: 91.27%
+RAW rank: 1
+RTK rank: None
+Top5 overlap: 0/5
+
+REMOVED EXCEPTION TYPES
+
+REMOVED TEST NAMES
+test_issue_6359
+test_pretty
+test_pretty_product
+
+REMOVED SOURCE REFERENCES
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-16281/sympy/printing/pretty/tests/test_pretty.py
+sympy/printing/pretty/tests/test_pretty.py
+
+REMOVED ASSERTION INFORMATION
+assert pretty(expr) == ascii_str
+assert pretty(Product(x**2, (x, 1, 2))**2) == \
+
+IMPORTANT REMOVED RAW LINES
+===== FAIL_TO_PASS: test_pretty_product =====
+sympy/printing/pretty/tests/test_pretty.py[1] F                           [FAIL]
+________ sympy/printing/pretty/tests/test_pretty.py:test_pretty_product ________
+Traceback (most recent call last):
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-16281/sympy/printing/pretty/tests/test_pretty.py", line 2102, in test_pretty_product
+assert pretty(expr) == ascii_str
+===== FAIL_TO_PASS: test_issue_6359 =====
+__________ sympy/printing/pretty/tests/test_pretty.py:test_issue_6359 __________
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-16281/sympy/printing/pretty/tests/test_pretty.py", line 5509, in test_issue_6359
+assert pretty(Product(x**2, (x, 1, 2))**2) == \
+
+RAW TOP 5
+sympy.printing.pretty.pretty.PrettyPrinter._print_Product()
+sympy.printing.pretty.pretty.pretty()
+sympy.printing.pretty.pretty.prod()
+sympy.printing.pretty.pretty.term()
+sympy.printing.pretty.pretty.doit()
+
+RTK TOP 5

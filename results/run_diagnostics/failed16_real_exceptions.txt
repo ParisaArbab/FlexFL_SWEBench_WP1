@@ -1,0 +1,850 @@
+
+============================================================
+sympy__sympy-12481   RAW_Agent4SR
+============================================================
+----- LAST RANK0 TRACEBACK -----
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 262, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 250, in main
+[rank0]:     run_bug(
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 171, in run_bug
+[rank0]:     content = query(generator, instruction)
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 49, in query
+[rank0]:     results = generator.chat_completion(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 313, in chat_completion
+[rank0]:     generation_tokens, generation_logprobs = self.generate(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 155, in generate
+[rank0]:     assert max_prompt_len <= params.max_seq_len
+[rank0]: AssertionError
+[rank0]:[W824 00:40:53.364496210 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0824 00:40:54.278000 3356184 site-packages/torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 3357032) of binary: /home/parbab/miniconda3/envs/flexfl-swebench/bin/python3.10
+Traceback (most recent call last):
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pipeline_swebench.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-24_00:40:54
+  host      : aiscalar
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3357032)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+
+----- CUDA / MEMORY -----
+
+============================================================
+sympy__sympy-13043   RAW_Agent4LR
+============================================================
+----- LAST RANK0 TRACEBACK -----
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 262, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 250, in main
+[rank0]:     run_bug(
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 171, in run_bug
+[rank0]:     content = query(generator, instruction)
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 49, in query
+[rank0]:     results = generator.chat_completion(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 313, in chat_completion
+[rank0]:     generation_tokens, generation_logprobs = self.generate(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 155, in generate
+[rank0]:     assert max_prompt_len <= params.max_seq_len
+[rank0]: AssertionError
+[rank0]:[W824 00:45:45.772840119 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0824 00:45:45.641000 3469409 site-packages/torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 3470113) of binary: /home/parbab/miniconda3/envs/flexfl-swebench/bin/python3.10
+Traceback (most recent call last):
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pipeline_swebench.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-24_00:45:45
+  host      : aiscalar
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3470113)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+
+----- CUDA / MEMORY -----
+
+============================================================
+sympy__sympy-13146   RAW_Agent4SR
+============================================================
+----- LAST RANK0 TRACEBACK -----
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 262, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 250, in main
+[rank0]:     run_bug(
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 171, in run_bug
+[rank0]:     content = query(generator, instruction)
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 49, in query
+[rank0]:     results = generator.chat_completion(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 313, in chat_completion
+[rank0]:     generation_tokens, generation_logprobs = self.generate(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 180, in generate
+[rank0]:     logits = self.model.forward(tokens[:, prev_pos:cur_pos], prev_pos)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/model.py", line 299, in forward
+[rank0]:     h = layer(h, start_pos, freqs_cis, mask)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/model.py", line 246, in forward
+[rank0]:     h = x + self.attention(self.attention_norm(x), start_pos, freqs_cis, mask)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/model.py", line 187, in forward
+[rank0]:     scores = F.softmax(scores.float(), dim=-1).type_as(xq)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/nn/functional.py", line 2159, in softmax
+[rank0]:     ret = input.softmax(dim)
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 7.07 GiB. GPU 0 has a total capacity of 79.25 GiB of which 5.53 GiB is free. Process 3217403 has 35.71 GiB memory in use. Including non-PyTorch memory, this process has 38.00 GiB memory in use. Of the allocated memory 27.02 GiB is allocated by PyTorch, and 10.48 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+[rank0]:[W824 00:46:25.677807870 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0824 00:46:25.572000 3487211 site-packages/torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 3488038) of binary: /home/parbab/miniconda3/envs/flexfl-swebench/bin/python3.10
+Traceback (most recent call last):
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+
+----- CUDA / MEMORY -----
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 7.07 GiB. GPU 0 has a total capacity of 79.25 GiB of which 5.53 GiB is free. Process 3217403 has 35.71 GiB memory in use. Including non-PyTorch memory, this process has 38.00 GiB memory in use. Of the allocated memory 27.02 GiB is allocated by PyTorch, and 10.48 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+
+============================================================
+sympy__sympy-13471   RAW_Agent4LR
+============================================================
+----- LAST RANK0 TRACEBACK -----
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 262, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 250, in main
+[rank0]:     run_bug(
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 171, in run_bug
+[rank0]:     content = query(generator, instruction)
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 49, in query
+[rank0]:     results = generator.chat_completion(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 313, in chat_completion
+[rank0]:     generation_tokens, generation_logprobs = self.generate(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 155, in generate
+[rank0]:     assert max_prompt_len <= params.max_seq_len
+[rank0]: AssertionError
+[rank0]:[W824 00:53:32.665048624 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0824 00:53:32.674000 3564621 site-packages/torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 3564696) of binary: /home/parbab/miniconda3/envs/flexfl-swebench/bin/python3.10
+Traceback (most recent call last):
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pipeline_swebench.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-24_00:53:32
+  host      : aiscalar
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3564696)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+
+----- CUDA / MEMORY -----
+
+============================================================
+sympy__sympy-13773   RAW_Agent4LR
+============================================================
+----- LAST RANK0 TRACEBACK -----
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 262, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 250, in main
+[rank0]:     run_bug(
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 171, in run_bug
+[rank0]:     content = query(generator, instruction)
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 49, in query
+[rank0]:     results = generator.chat_completion(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 313, in chat_completion
+[rank0]:     generation_tokens, generation_logprobs = self.generate(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 180, in generate
+[rank0]:     logits = self.model.forward(tokens[:, prev_pos:cur_pos], prev_pos)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/model.py", line 299, in forward
+[rank0]:     h = layer(h, start_pos, freqs_cis, mask)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/model.py", line 246, in forward
+[rank0]:     h = x + self.attention(self.attention_norm(x), start_pos, freqs_cis, mask)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/model.py", line 187, in forward
+[rank0]:     scores = F.softmax(scores.float(), dim=-1).type_as(xq)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/nn/functional.py", line 2159, in softmax
+[rank0]:     ret = input.softmax(dim)
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 7.86 GiB. GPU 0 has a total capacity of 79.25 GiB of which 5.86 GiB is free. Process 3217403 has 35.71 GiB memory in use. Including non-PyTorch memory, this process has 37.67 GiB memory in use. Of the allocated memory 28.22 GiB is allocated by PyTorch, and 8.95 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+[rank0]:[W824 01:01:48.773626794 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0824 01:01:48.703000 3570830 site-packages/torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 3570904) of binary: /home/parbab/miniconda3/envs/flexfl-swebench/bin/python3.10
+Traceback (most recent call last):
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+
+----- CUDA / MEMORY -----
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 7.86 GiB. GPU 0 has a total capacity of 79.25 GiB of which 5.86 GiB is free. Process 3217403 has 35.71 GiB memory in use. Including non-PyTorch memory, this process has 37.67 GiB memory in use. Of the allocated memory 28.22 GiB is allocated by PyTorch, and 8.95 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+
+============================================================
+sympy__sympy-13895   RAW_Agent4SR
+============================================================
+----- LAST RANK0 TRACEBACK -----
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 262, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 250, in main
+[rank0]:     run_bug(
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 171, in run_bug
+[rank0]:     content = query(generator, instruction)
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 49, in query
+[rank0]:     results = generator.chat_completion(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 313, in chat_completion
+[rank0]:     generation_tokens, generation_logprobs = self.generate(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 155, in generate
+[rank0]:     assert max_prompt_len <= params.max_seq_len
+[rank0]: AssertionError
+[rank0]:[W824 01:02:29.146658085 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0824 01:02:30.050000 3571385 site-packages/torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 3571451) of binary: /home/parbab/miniconda3/envs/flexfl-swebench/bin/python3.10
+Traceback (most recent call last):
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pipeline_swebench.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-24_01:02:30
+  host      : aiscalar
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3571451)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+
+----- CUDA / MEMORY -----
+
+============================================================
+sympy__sympy-13915   RAW_Agent4LR
+============================================================
+----- LAST RANK0 TRACEBACK -----
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 262, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 250, in main
+[rank0]:     run_bug(
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 171, in run_bug
+[rank0]:     content = query(generator, instruction)
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 49, in query
+[rank0]:     results = generator.chat_completion(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 313, in chat_completion
+[rank0]:     generation_tokens, generation_logprobs = self.generate(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 155, in generate
+[rank0]:     assert max_prompt_len <= params.max_seq_len
+[rank0]: AssertionError
+[rank0]:[W824 01:04:59.926230003 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0824 01:04:59.975000 3572878 site-packages/torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 3572952) of binary: /home/parbab/miniconda3/envs/flexfl-swebench/bin/python3.10
+Traceback (most recent call last):
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pipeline_swebench.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-24_01:04:59
+  host      : aiscalar
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3572952)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+
+----- CUDA / MEMORY -----
+
+============================================================
+sympy__sympy-14024   RAW_Agent4SR
+============================================================
+----- LAST RANK0 TRACEBACK -----
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 262, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 250, in main
+[rank0]:     run_bug(
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 171, in run_bug
+[rank0]:     content = query(generator, instruction)
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 49, in query
+[rank0]:     results = generator.chat_completion(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 313, in chat_completion
+[rank0]:     generation_tokens, generation_logprobs = self.generate(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 155, in generate
+[rank0]:     assert max_prompt_len <= params.max_seq_len
+[rank0]: AssertionError
+[rank0]:[W824 01:08:11.287711755 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0824 01:08:12.231000 3575673 site-packages/torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 3575747) of binary: /home/parbab/miniconda3/envs/flexfl-swebench/bin/python3.10
+Traceback (most recent call last):
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pipeline_swebench.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-24_01:08:12
+  host      : aiscalar
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3575747)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+
+----- CUDA / MEMORY -----
+
+============================================================
+sympy__sympy-14774   RAW_Agent4SR
+============================================================
+----- LAST RANK0 TRACEBACK -----
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 262, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 250, in main
+[rank0]:     run_bug(
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 171, in run_bug
+[rank0]:     content = query(generator, instruction)
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 49, in query
+[rank0]:     results = generator.chat_completion(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 313, in chat_completion
+[rank0]:     generation_tokens, generation_logprobs = self.generate(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 155, in generate
+[rank0]:     assert max_prompt_len <= params.max_seq_len
+[rank0]: AssertionError
+[rank0]:[W824 01:18:02.258291775 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0824 01:18:03.196000 3582509 site-packages/torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 3582580) of binary: /home/parbab/miniconda3/envs/flexfl-swebench/bin/python3.10
+Traceback (most recent call last):
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pipeline_swebench.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-24_01:18:03
+  host      : aiscalar
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3582580)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+
+----- CUDA / MEMORY -----
+
+============================================================
+sympy__sympy-15308   RAW_Agent4SR
+============================================================
+----- LAST RANK0 TRACEBACK -----
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 262, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 250, in main
+[rank0]:     run_bug(
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 171, in run_bug
+[rank0]:     content = query(generator, instruction)
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 49, in query
+[rank0]:     results = generator.chat_completion(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 313, in chat_completion
+[rank0]:     generation_tokens, generation_logprobs = self.generate(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 155, in generate
+[rank0]:     assert max_prompt_len <= params.max_seq_len
+[rank0]: AssertionError
+[rank0]:[W824 01:25:00.857916222 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0824 01:25:00.827000 3586156 site-packages/torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 3586233) of binary: /home/parbab/miniconda3/envs/flexfl-swebench/bin/python3.10
+Traceback (most recent call last):
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pipeline_swebench.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-24_01:25:00
+  host      : aiscalar
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3586233)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+
+----- CUDA / MEMORY -----
+
+============================================================
+sympy__sympy-16106   RAW_Agent4LR
+============================================================
+----- LAST RANK0 TRACEBACK -----
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 262, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 250, in main
+[rank0]:     run_bug(
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 171, in run_bug
+[rank0]:     content = query(generator, instruction)
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 49, in query
+[rank0]:     results = generator.chat_completion(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 313, in chat_completion
+[rank0]:     generation_tokens, generation_logprobs = self.generate(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 155, in generate
+[rank0]:     assert max_prompt_len <= params.max_seq_len
+[rank0]: AssertionError
+[rank0]:[W824 01:42:20.803643683 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0824 01:42:20.737000 3594915 site-packages/torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 3594985) of binary: /home/parbab/miniconda3/envs/flexfl-swebench/bin/python3.10
+Traceback (most recent call last):
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pipeline_swebench.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-24_01:42:20
+  host      : aiscalar
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3594985)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+
+----- CUDA / MEMORY -----
+
+============================================================
+sympy__sympy-17022   RAW_Agent4LR
+============================================================
+----- LAST RANK0 TRACEBACK -----
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 262, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 250, in main
+[rank0]:     run_bug(
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 171, in run_bug
+[rank0]:     content = query(generator, instruction)
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 49, in query
+[rank0]:     results = generator.chat_completion(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 313, in chat_completion
+[rank0]:     generation_tokens, generation_logprobs = self.generate(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 155, in generate
+[rank0]:     assert max_prompt_len <= params.max_seq_len
+[rank0]: AssertionError
+[rank0]:[W824 01:56:07.692555479 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0824 01:56:07.641000 3605449 site-packages/torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 3605525) of binary: /home/parbab/miniconda3/envs/flexfl-swebench/bin/python3.10
+Traceback (most recent call last):
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pipeline_swebench.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-24_01:56:07
+  host      : aiscalar
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3605525)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+
+----- CUDA / MEMORY -----
+
+============================================================
+sympy__sympy-18189   RAW_Agent4LR
+============================================================
+----- LAST RANK0 TRACEBACK -----
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 262, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 250, in main
+[rank0]:     run_bug(
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 171, in run_bug
+[rank0]:     content = query(generator, instruction)
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 49, in query
+[rank0]:     results = generator.chat_completion(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 313, in chat_completion
+[rank0]:     generation_tokens, generation_logprobs = self.generate(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 155, in generate
+[rank0]:     assert max_prompt_len <= params.max_seq_len
+[rank0]: AssertionError
+[rank0]:[W824 02:13:30.072554682 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0824 02:13:31.037000 3616300 site-packages/torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 3616375) of binary: /home/parbab/miniconda3/envs/flexfl-swebench/bin/python3.10
+Traceback (most recent call last):
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pipeline_swebench.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-24_02:13:31
+  host      : aiscalar
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3616375)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+
+----- CUDA / MEMORY -----
+
+============================================================
+sympy__sympy-21055   RAW_Agent4LR
+============================================================
+----- LAST RANK0 TRACEBACK -----
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 262, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 250, in main
+[rank0]:     run_bug(
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 171, in run_bug
+[rank0]:     content = query(generator, instruction)
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 49, in query
+[rank0]:     results = generator.chat_completion(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 313, in chat_completion
+[rank0]:     generation_tokens, generation_logprobs = self.generate(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 155, in generate
+[rank0]:     assert max_prompt_len <= params.max_seq_len
+[rank0]: AssertionError
+[rank0]:[W824 02:55:38.110637273 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0824 02:55:38.951000 3637754 site-packages/torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 3637828) of binary: /home/parbab/miniconda3/envs/flexfl-swebench/bin/python3.10
+Traceback (most recent call last):
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pipeline_swebench.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-24_02:55:38
+  host      : aiscalar
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3637828)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+
+----- CUDA / MEMORY -----
+
+============================================================
+sympy__sympy-22714   RAW_Agent4LR
+============================================================
+----- LAST RANK0 TRACEBACK -----
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 262, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 250, in main
+[rank0]:     run_bug(
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 171, in run_bug
+[rank0]:     content = query(generator, instruction)
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 49, in query
+[rank0]:     results = generator.chat_completion(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 313, in chat_completion
+[rank0]:     generation_tokens, generation_logprobs = self.generate(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 155, in generate
+[rank0]:     assert max_prompt_len <= params.max_seq_len
+[rank0]: AssertionError
+[rank0]:[W824 03:18:03.898660750 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0824 03:18:03.832000 3652061 site-packages/torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 3652136) of binary: /home/parbab/miniconda3/envs/flexfl-swebench/bin/python3.10
+Traceback (most recent call last):
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pipeline_swebench.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-24_03:18:03
+  host      : aiscalar
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3652136)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+
+----- CUDA / MEMORY -----
+
+============================================================
+sympy__sympy-23262   RAW_Agent4LR
+============================================================
+----- LAST RANK0 TRACEBACK -----
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 262, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 250, in main
+[rank0]:     run_bug(
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 171, in run_bug
+[rank0]:     content = query(generator, instruction)
+[rank0]:   File "/home/parbab/FlexFL_SWEBench_WP1/FlexFL/src/pipeline_swebench.py", line 49, in query
+[rank0]:     results = generator.chat_completion(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 313, in chat_completion
+[rank0]:     generation_tokens, generation_logprobs = self.generate(
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/llama/generation.py", line 155, in generate
+[rank0]:     assert max_prompt_len <= params.max_seq_len
+[rank0]: AssertionError
+[rank0]:[W824 03:31:44.882305243 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0824 03:31:44.761000 3658739 site-packages/torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 3658820) of binary: /home/parbab/miniconda3/envs/flexfl-swebench/bin/python3.10
+Traceback (most recent call last):
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/parbab/miniconda3/envs/flexfl-swebench/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pipeline_swebench.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-24_03:31:44
+  host      : aiscalar
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3658820)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+
+----- CUDA / MEMORY -----

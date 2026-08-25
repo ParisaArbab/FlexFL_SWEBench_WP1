@@ -1,0 +1,29 @@
+{
+  "instance_id": "sympy__sympy-20154",
+  "trigger_tests": [
+    "test_partitions",
+    "test_uniq"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_partitions",
+      "name": "test_partitions",
+      "path": "sympy/utilities/tests/test_iterables.py"
+    },
+    {
+      "trigger": "test_uniq",
+      "name": "test_uniq",
+      "path": "sympy/utilities/tests/test_iterables.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-20154.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-20154.sh"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-21627",
+  "trigger_tests": [
+    "test_Abs"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_Abs",
+      "name": "test_Abs",
+      "path": "sympy/functions/elementary/tests/test_complexes.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-21627.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-21627.sh"
+  ]
+}

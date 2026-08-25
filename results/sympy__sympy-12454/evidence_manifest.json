@@ -1,0 +1,29 @@
+{
+  "instance_id": "sympy__sympy-12454",
+  "trigger_tests": [
+    "test_is_upper",
+    "test_hessenberg"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_is_upper",
+      "name": "test_is_upper",
+      "path": "sympy/matrices/tests/test_matrices.py"
+    },
+    {
+      "trigger": "test_hessenberg",
+      "name": "test_hessenberg",
+      "path": "sympy/matrices/tests/test_matrices.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-12454.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-12454.sh"
+  ]
+}

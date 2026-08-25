@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-12236",
+  "repo": "sympy/sympy",
+  "base_commit": "d60497958f6dea7f5e25bc41e9107a6a63694d01",
+  "method_count": 12523,
+  "gold_changed_python_files": [
+    "sympy/polys/domains/polynomialring.py"
+  ],
+  "status": "prepared"
+}

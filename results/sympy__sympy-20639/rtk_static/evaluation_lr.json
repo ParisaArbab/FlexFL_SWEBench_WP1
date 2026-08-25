@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-20639",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/printing/pretty/pretty.py"
+  ],
+  "top5": [
+    "sympy.printing.pretty.pretty.PrettyPrinter._print_nth_root()",
+    "sympy.printing.pretty.stringpict.stringPict.render()",
+    "sympy.printing.pretty.stringpict.stringPict.width()",
+    "sympy.printing.pretty.stringpict.stringPict.terminal_width()",
+    "sympy.printing.pretty.stringpict.stringPict.picture"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter._print_nth_root()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pretty/pretty.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.printing.pretty.stringpict.stringPict.render()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.printing.pretty.stringpict.stringPict.width()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.printing.pretty.stringpict.stringPict.terminal_width()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.printing.pretty.stringpict.stringPict.picture",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/printing/pretty/pretty.py"
+}

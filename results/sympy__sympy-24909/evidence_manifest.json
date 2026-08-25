@@ -1,0 +1,23 @@
+{
+  "instance_id": "sympy__sympy-24909",
+  "trigger_tests": [
+    "test_prefix_operations"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_prefix_operations",
+      "name": "test_prefix_operations",
+      "path": "sympy/physics/units/tests/test_prefixes.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-24909.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-24909.sh"
+  ]
+}

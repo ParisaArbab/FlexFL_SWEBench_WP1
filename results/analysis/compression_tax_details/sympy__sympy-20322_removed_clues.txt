@@ -1,0 +1,38 @@
+BUG: sympy__sympy-20322
+CATEGORY: MULTIPLE_DEBUGGING_CLUES_REMOVED
+RAW bytes: 1010
+RTK bytes: 175
+Reduction: 82.67%
+RAW rank: 2
+RTK rank: None
+Top5 overlap: 0/5
+
+REMOVED EXCEPTION TYPES
+
+REMOVED TEST NAMES
+test_Mul_is_integer
+test_arit
+
+REMOVED SOURCE REFERENCES
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20322/sympy/core/tests/test_arit.py
+sympy/core/tests/test_arit.py
+
+REMOVED ASSERTION INFORMATION
+assert Mul(2., S.Half, evaluate=False).is_integer is None
+
+IMPORTANT REMOVED RAW LINES
+===== FAIL_TO_PASS: test_Mul_is_integer =====
+sympy/core/tests/test_arit.py[1] F                                        [FAIL]
+______________ sympy/core/tests/test_arit.py:test_Mul_is_integer _______________
+Traceback (most recent call last):
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-20322/sympy/core/tests/test_arit.py", line 400, in test_Mul_is_integer
+assert Mul(2., S.Half, evaluate=False).is_integer is None
+
+RAW TOP 5
+sympy.parsing.latex._parse_latex_antlr.convert_ceil()
+sympy.core.mul.Mul._eval_is_integer()
+sympy.core.mul.Mul._eval_pos_neg()
+sympy.core.sympify._sympify()
+sympy.core.sympify.sympify()
+
+RTK TOP 5

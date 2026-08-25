@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-13971",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/printing/latex.py"
+  ],
+  "top5": [
+    "sympy.printing.latex.LatexPrinter._print_Function()",
+    "sympy.printing.latex.LatexPrinter._do_exponent()",
+    "sympy.printing.latex.LatexPrinter._needs_brackets()",
+    "sympy.printing.latex.LatexPrinter._hprint_Function()",
+    "sympy.printing.latex.LatexPrinter.doprint()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.printing.latex.LatexPrinter._print_Function()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/latex.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.printing.latex.LatexPrinter._do_exponent()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/latex.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.printing.latex.LatexPrinter._needs_brackets()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/latex.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.printing.latex.LatexPrinter._hprint_Function()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/latex.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.printing.latex.LatexPrinter.doprint()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/latex.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/printing/latex.py"
+}

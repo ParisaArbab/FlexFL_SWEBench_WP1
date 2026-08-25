@@ -1,0 +1,6 @@
+bug,raw_hit,raw_rank,rtk_hit,rtk_rank,classification
+sympy__sympy-11400,True,1,True,2,NO TAX - BOTH HIT
+sympy__sympy-11870,True,2,True,2,NO TAX - BOTH HIT
+sympy__sympy-11897,True,3,True,3,NO TAX - BOTH HIT
+sympy__sympy-12171,True,1,True,1,NO TAX - BOTH HIT
+sympy__sympy-12236,False,,False,,NO TAX - BOTH MISS

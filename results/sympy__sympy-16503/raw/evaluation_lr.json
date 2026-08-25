@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-16503",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/printing/pretty/pretty.py"
+  ],
+  "top5": [
+    "sympy.printing.pretty.pretty.PrettyPrinter._print_Sum()",
+    "sympy.printing.pretty.pretty.PrettyPrinter._print()",
+    "sympy.core.evalf.add_terms()",
+    "sympy.printing.pretty.pretty.PrettyPrinter.doprint()",
+    "sympy.printing.pretty.pretty.PrettyPrinter.render()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter._print_Sum()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pretty/pretty.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter._print()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pretty/pretty.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.core.evalf.add_terms()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter.doprint()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pretty/pretty.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter.render()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pretty/pretty.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/printing/pretty/pretty.py"
+}

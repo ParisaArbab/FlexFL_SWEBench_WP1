@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-21847",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/polys/monomials.py"
+  ],
+  "top5": [
+    "sympy.polys.monomials.itermonomials()",
+    "sympy.polys.monomials.monomial_mul()",
+    "sympy.polys.monomials.monomial_pow()",
+    "sympy.polys.monomials.monomial_div()",
+    "sympy.polys.monomials.itermonomials()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.polys.monomials.itermonomials()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/monomials.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.polys.monomials.monomial_mul()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/monomials.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.polys.monomials.monomial_pow()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/monomials.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.polys.monomials.monomial_div()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/monomials.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.polys.monomials.itermonomials()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/monomials.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/polys/monomials.py"
+}

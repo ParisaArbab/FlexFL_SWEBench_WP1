@@ -1,0 +1,29 @@
+{
+  "instance_id": "sympy__sympy-17630",
+  "trigger_tests": [
+    "test_issue_17624",
+    "test_zero_matrix_add"
+  ],
+  "resolved_tests": [
+    {
+      "trigger": "test_issue_17624",
+      "name": "test_issue_17624",
+      "path": "sympy/matrices/expressions/tests/test_blockmatrix.py"
+    },
+    {
+      "trigger": "test_zero_matrix_add",
+      "name": "test_zero_matrix_add",
+      "path": "sympy/matrices/expressions/tests/test_matadd.py"
+    }
+  ],
+  "raw_command": [
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-17630.sh"
+  ],
+  "rtk_command": [
+    "/home/parbab/.local/bin/rtk",
+    "test",
+    "bash",
+    "/scratch/parbab/FlexFL_SWEBench_WP1/evidence_runners/sympy__sympy-17630.sh"
+  ]
+}

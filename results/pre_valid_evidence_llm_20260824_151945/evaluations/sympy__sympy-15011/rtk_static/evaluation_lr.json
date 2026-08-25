@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-15011",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/utilities/lambdify.py"
+  ],
+  "top5": [
+    "sympy.matrices.expressions.matexpr.MatrixSymbol.__new__()",
+    "sympy.matrices.expressions.matexpr.MatrixSymbol.shape()",
+    "sympy.matrices.expressions.matexpr.MatrixSymbol._hashable_content()",
+    "sympy.utilities.lambdify.lambdify()",
+    "sympy.core.compatibility.iterable.iterable()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.matrices.expressions.matexpr.MatrixSymbol.__new__()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.matrices.expressions.matexpr.MatrixSymbol.shape()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.matrices.expressions.matexpr.MatrixSymbol._hashable_content()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.utilities.lambdify.lambdify()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/utilities/lambdify.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.core.compatibility.iterable.iterable()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 4,
+  "matched_gold_file": "sympy/utilities/lambdify.py"
+}

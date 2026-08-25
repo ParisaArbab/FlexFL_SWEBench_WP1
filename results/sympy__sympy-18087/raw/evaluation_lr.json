@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-18087",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/core/exprtools.py"
+  ],
+  "top5": [
+    "sympy.simplify.trigsimp.trigsimp()",
+    "sympy.simplify.trigsimp.trigsimp_groebner()",
+    "sympy.simplify.trigsimp._trigsimp()",
+    "sympy.core.expr.Expr.as_coefficient()",
+    "sympy.core.numbers.NumberSymbol.__eq__()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.simplify.trigsimp.trigsimp()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.simplify.trigsimp.trigsimp_groebner()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.simplify.trigsimp._trigsimp()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.core.expr.Expr.as_coefficient()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.core.numbers.NumberSymbol.__eq__()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": false,
+  "file_rank": null,
+  "matched_gold_file": null
+}

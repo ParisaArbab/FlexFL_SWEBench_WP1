@@ -1,0 +1,23 @@
+
+===== FAIL_TO_PASS: test_NumPyPrinter =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        7289438
+hash randomization: off
+
+sympy/printing/tests/test_pycode.py[2] F.                                 [FAIL]
+
+________________________________________________________________________________
+____________ sympy/printing/tests/test_pycode.py:test_NumPyPrinter _____________
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-17022/sympy/printing/tests/test_pycode.py", line 52, in test_NumPyPrinter
+    assert p.doprint(Identity(3)) == "numpy.eye(3)"
+AssertionError
+
+============= tests finished: 1 passed, 1 failed, in 0.05 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====

@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-21614",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/core/function.py"
+  ],
+  "top5": [
+    "sympy.core.function.Derivative.__new__()",
+    "sympy.core.function.Derivative._eval_derivative()",
+    "sympy.core.assumptions._ask()",
+    "sympy.core.function.Derivative._diff_wrt()",
+    "sympy.matrices.matrices.MatrixBase.kind()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.core.function.Derivative.__new__()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/core/function.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.core.function.Derivative._eval_derivative()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/core/function.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.core.assumptions._ask()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.core.function.Derivative._diff_wrt()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/core/function.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.matrices.matrices.MatrixBase.kind()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/core/function.py"
+}

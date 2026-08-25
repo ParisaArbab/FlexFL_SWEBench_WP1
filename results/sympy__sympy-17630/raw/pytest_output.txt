@@ -1,0 +1,65 @@
+
+===== FAIL_TO_PASS: test_issue_17624 =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        31668171
+hash randomization: off
+
+sympy/matrices/expressions/tests/test_blockmatrix.py[1] E                 [FAIL]
+
+________________________________________________________________________________
+____ sympy/matrices/expressions/tests/test_blockmatrix.py:test_issue_17624 _____
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-17630/sympy/matrices/expressions/tests/test_blockmatrix.py", line 111, in test_issue_17624
+    assert block_collapse(b * b) == BlockMatrix([[a**2, z], [z, z]])
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-17630/sympy/matrices/expressions/blockmatrix.py", line 393, in block_collapse
+    result = rule(expr)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-17630/sympy/strategies/core.py", line 11, in exhaustive_rl
+    new, old = rule(expr), expr
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-17630/sympy/strategies/core.py", line 44, in chain_rl
+    expr = rule(expr)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-17630/sympy/strategies/core.py", line 11, in exhaustive_rl
+    new, old = rule(expr), expr
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-17630/sympy/strategies/core.py", line 33, in conditioned_rl
+    return rule(expr)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-17630/sympy/strategies/core.py", line 95, in switch_rl
+    return rl(expr)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-17630/sympy/matrices/expressions/blockmatrix.py", line 467, in bc_matmul
+    matrices[i] = A._blockmul(B)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-17630/sympy/matrices/expressions/blockmatrix.py", line 167, in _blockmul
+    return BlockMatrix(self.blocks*other.blocks)
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-17630/sympy/matrices/expressions/blockmatrix.py", line 86, in __new__
+    raise ValueError(filldedent('''
+ValueError: 
+expecting a sequence of 1 or more rows containing Matrices.
+
+=========== tests finished: 0 passed, 1 exceptions, in 0.02 seconds ============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====
+
+===== FAIL_TO_PASS: test_zero_matrix_add =====
+============================= test process starts ==============================
+executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+architecture:       64-bit
+cache:              yes
+ground types:       python 
+numpy:              1.24.4
+random seed:        54781874
+hash randomization: off
+
+sympy/matrices/expressions/tests/test_matadd.py[1] F                      [FAIL]
+
+________________________________________________________________________________
+_____ sympy/matrices/expressions/tests/test_matadd.py:test_zero_matrix_add _____
+Traceback (most recent call last):
+  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-17630/sympy/matrices/expressions/tests/test_matadd.py", line 37, in test_zero_matrix_add
+    assert Add(ZeroMatrix(2, 2), ZeroMatrix(2, 2)) == ZeroMatrix(2, 2)
+AssertionError
+
+============= tests finished: 0 passed, 1 failed, in 0.07 seconds ==============
+DO *NOT* COMMIT!
+===== TEST EXIT CODE: 1 =====
