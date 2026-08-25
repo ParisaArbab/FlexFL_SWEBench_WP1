@@ -14,7 +14,7 @@ sympy.polys.polyroots.roots()
 sympy.core.compatibility.default_sort_key()
 sympy.solvers.solveset.nonlinsolve()
 sympy.integrals.intpoly.decompose()
-None
-None
-None
-None
+sympy.integrals.intpoly.decompose()
+sympy.integrals.intpoly.decompose()
+sympy.integrals.intpoly.decompose()
+sympy.integrals.intpoly.decompose()

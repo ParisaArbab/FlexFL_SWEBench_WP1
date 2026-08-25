@@ -13,8 +13,8 @@ sympy.core.basic.Basic.atoms()
 sympy.utilities.codegen.CodeGen.routine()
 sympy.physics.quantum.spin.uncouple()
 sympy.parsing.latex._parse_latex_antlr.convert_atom()
-sympy.combinatorics.permutations.Permutation.atoms()
-sympy.core.basic.Basic.atoms()
-sympy.matrices.common.MatrixProperties.atoms()
-None
-None
+sympy.core.expr.Expr.atoms()
+sympy.core.expr.Expr.as_terms()
+sympy.core.expr.Expr.fps()
+sympy.core.expr.Expr.apart()
+sympy.core.expr.Expr.ratsimp()

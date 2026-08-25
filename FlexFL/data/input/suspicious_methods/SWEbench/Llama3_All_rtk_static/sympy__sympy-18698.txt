@@ -17,4 +17,4 @@ sympy.polys.polytools.Poly.sqf_list()
 sympy.polys.polyclasses.DMP.sqf_list()
 sympy.polys.polytools.sqf_list()
 sympy.polys.rings.PolyElement.sqf_list()
-None
+sympy.polys.polyclasses.DMP.__init__()

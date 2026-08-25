@@ -13,8 +13,8 @@ sympy.utilities.iterables.kbins()
 sympy.utilities.enumerative.multiset_partitions_taocp()
 sympy.utilities.iterables.ordered_partitions()
 sympy.utilities.iterables._partition()
-sympy.combinatorics.partitions.partitions()
-sympy.combinatorics.partitions.RGS_unrank()
-sympy.combinatorics.partitions.RGS_generalized()
-sympy.combinatorics.partitions.RGS_enum()
-sympy.combinatorics.partitions.IntegerPartition.as_dict()
+sympy.utilities.iterables.partitions.partitions(n,m=None,k=None,size=False)
+sympy.utilities.iterables.partitions
+sympy.combinatorics.partitions.Partition
+sympy.combinatorics.partitions.IntegerPartition
+sympy.combinatorics.partitions.Partition.__new__()

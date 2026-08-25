@@ -14,7 +14,7 @@ sympy.core.sympify.sympify()
 sympy.core.compatibility.ordered()
 sympy.utilities.iterables.uniq()
 sympy.utilities.iterables.uniq()
-sympy.utilities.iterables.uniq.uniq()
-sympy.utilities.iterables.uniq.seen
-sympy.utilities.iterables.uniq.result
-sympy.utilities.iterables.uniq.s
+sympy.utilities.iterables._uniq()
+sympy.utilities.iterables._uniq()
+sympy.utilities.iterables._uniq()
+sympy.utilities.iterables._uniq()
