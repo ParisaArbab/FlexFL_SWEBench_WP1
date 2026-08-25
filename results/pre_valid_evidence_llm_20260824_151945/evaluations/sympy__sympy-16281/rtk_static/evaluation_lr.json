@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-16281",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/printing/pretty/pretty.py"
+  ],
+  "top5": [
+    "sympy.printing.pretty.pretty.PrettyPrinter._print_Product()",
+    "sympy/concrete/products.Product.__new__()",
+    "sympy.integrals.integrals.Integral.doit()",
+    "sympy/concrete/products.Product._eval_product()",
+    "sympy/concrete/products.Product._eval_simplify()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter._print_Product()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pretty/pretty.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy/concrete/products.Product.__new__()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.integrals.integrals.Integral.doit()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy/concrete/products.Product._eval_product()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy/concrete/products.Product._eval_simplify()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/printing/pretty/pretty.py"
+}

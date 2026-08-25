@@ -7,40 +7,40 @@
     "sympy/core/exprtools.py"
   ],
   "top5": [
+    "sympy.integrals.rubi.rules.sine.replacement2277()",
+    "sympy.integrals.rubi.rules.sine.replacement2376()",
     "sympy.simplify.trigsimp.trigsimp_groebner()",
-    "sympy.simplify.trigsimp.trigsimp()",
     "sympy.simplify.trigsimp.trigsimp_old()",
-    "sympy.simplify.trigsimp.trigsimp_groebner()",
-    "sympy.simplify.trigsimp.trigsimp()"
+    "sympy.simplify.trigsimp._trigsimp()"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.simplify.trigsimp.trigsimp_groebner()",
+      "prediction": "sympy.integrals.rubi.rules.sine.replacement2277()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 2,
-      "prediction": "sympy.simplify.trigsimp.trigsimp()",
+      "prediction": "sympy.integrals.rubi.rules.sine.replacement2376()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 3,
-      "prediction": "sympy.simplify.trigsimp.trigsimp_old()",
-      "file_hit": false,
-      "matched_gold_file": null
-    },
-    {
-      "rank": 4,
       "prediction": "sympy.simplify.trigsimp.trigsimp_groebner()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
+      "rank": 4,
+      "prediction": "sympy.simplify.trigsimp.trigsimp_old()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
       "rank": 5,
-      "prediction": "sympy.simplify.trigsimp.trigsimp()",
+      "prediction": "sympy.simplify.trigsimp._trigsimp()",
       "file_hit": false,
       "matched_gold_file": null
     }

@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-24152",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/physics/quantum/tensorproduct.py"
+  ],
+  "top5": [
+    "sympy.physics.quantum.tensorproduct.TensorProduct._eval_expand_tensorproduct()",
+    "sympy.physics.quantum.tensorproduct.TensorProduct.__new__()",
+    "sympy.physics.quantum.tensorproduct.TensorProduct._eval_rewrite()",
+    "sympy.physics.quantum.tensorproduct.tensor_product_simp_Mul()",
+    "sympy.tensor.tensor.TensMul.split()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.physics.quantum.tensorproduct.TensorProduct._eval_expand_tensorproduct()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/quantum/tensorproduct.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.physics.quantum.tensorproduct.TensorProduct.__new__()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/quantum/tensorproduct.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.physics.quantum.tensorproduct.TensorProduct._eval_rewrite()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/quantum/tensorproduct.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.physics.quantum.tensorproduct.tensor_product_simp_Mul()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/quantum/tensorproduct.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.tensor.tensor.TensMul.split()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/physics/quantum/tensorproduct.py"
+}

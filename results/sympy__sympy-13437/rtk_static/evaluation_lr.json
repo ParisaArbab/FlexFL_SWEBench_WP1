@@ -8,10 +8,10 @@
   ],
   "top5": [
     "sympy.functions.combinatorial.numbers.bell._bell_poly()",
+    "sympy.functions.combinatorial.numbers.bell._bell_poly()",
     "sympy.functions.combinatorial.numbers.bell.eval()",
-    "sympy.functions.combinatorial.numbers.bell._bell()",
-    "sympy.functions.combinatorial.numbers.bell._bell_incomplete_poly()",
-    "sympy.functions.combinatorial.numbers.bell._bell()"
+    "sympy.core.expr.Expr.limit()",
+    "sympy.functions.combinatorial.numbers.bell._bell_poly()"
   ],
   "predictions": [
     {
@@ -22,25 +22,25 @@
     },
     {
       "rank": 2,
-      "prediction": "sympy.functions.combinatorial.numbers.bell.eval()",
+      "prediction": "sympy.functions.combinatorial.numbers.bell._bell_poly()",
       "file_hit": true,
       "matched_gold_file": "sympy/functions/combinatorial/numbers.py"
     },
     {
       "rank": 3,
-      "prediction": "sympy.functions.combinatorial.numbers.bell._bell()",
+      "prediction": "sympy.functions.combinatorial.numbers.bell.eval()",
       "file_hit": true,
       "matched_gold_file": "sympy/functions/combinatorial/numbers.py"
     },
     {
       "rank": 4,
-      "prediction": "sympy.functions.combinatorial.numbers.bell._bell_incomplete_poly()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/functions/combinatorial/numbers.py"
+      "prediction": "sympy.core.expr.Expr.limit()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.functions.combinatorial.numbers.bell._bell()",
+      "prediction": "sympy.functions.combinatorial.numbers.bell._bell_poly()",
       "file_hit": true,
       "matched_gold_file": "sympy/functions/combinatorial/numbers.py"
     }

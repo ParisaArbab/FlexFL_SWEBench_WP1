@@ -7,45 +7,45 @@
     "sympy/matrices/matrices.py"
   ],
   "top5": [
-    "sympy.matrices.matrices.Matrix.is_upper()",
-    "sympy.matrices.matrices.Matrix._eval_is_upper_hessenberg()",
-    "sympy.matrices.matrices.Matrix.extract()",
-    "sympy.matrices.matrices.Matrix.a2idx()",
-    "sympy.matrices.matrices.Matrix.__getitem__()"
+    "sympy.matrices.dense.DenseMatrix.__getitem__()",
+    "sympy.matrices.sparse.SparseMatrix.__getitem__()",
+    "sympy.matrices.matrices.MatrixProperties.is_upper()",
+    "sympy.matrices.matrices.MatrixProperties._eval_is_upper_hessenberg()",
+    "sympy.matrices.matrices.MatrixProperties.is_upper_hessenberg()"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.matrices.matrices.Matrix.is_upper()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/matrices/matrices.py"
+      "prediction": "sympy.matrices.dense.DenseMatrix.__getitem__()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 2,
-      "prediction": "sympy.matrices.matrices.Matrix._eval_is_upper_hessenberg()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/matrices/matrices.py"
+      "prediction": "sympy.matrices.sparse.SparseMatrix.__getitem__()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 3,
-      "prediction": "sympy.matrices.matrices.Matrix.extract()",
+      "prediction": "sympy.matrices.matrices.MatrixProperties.is_upper()",
       "file_hit": true,
       "matched_gold_file": "sympy/matrices/matrices.py"
     },
     {
       "rank": 4,
-      "prediction": "sympy.matrices.matrices.Matrix.a2idx()",
+      "prediction": "sympy.matrices.matrices.MatrixProperties._eval_is_upper_hessenberg()",
       "file_hit": true,
       "matched_gold_file": "sympy/matrices/matrices.py"
     },
     {
       "rank": 5,
-      "prediction": "sympy.matrices.matrices.Matrix.__getitem__()",
+      "prediction": "sympy.matrices.matrices.MatrixProperties.is_upper_hessenberg()",
       "file_hit": true,
       "matched_gold_file": "sympy/matrices/matrices.py"
     }
   ],
   "file_hit": true,
-  "file_rank": 1,
+  "file_rank": 3,
   "matched_gold_file": "sympy/matrices/matrices.py"
 }

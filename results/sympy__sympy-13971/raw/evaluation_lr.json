@@ -8,10 +8,10 @@
   ],
   "top5": [
     "sympy.printing.latex.LatexPrinter._print_Function()",
-    "sympy.printing.latex.latex()",
-    "sympy.series.sequences.SeqFormula._add()",
-    "sympy.series.sequences.SeqFormula.formula()",
-    "sympy.series.sequences.SeqBase._add()"
+    "sympy.printing.latex.LatexPrinter._do_exponent()",
+    "sympy.printing.latex.LatexPrinter._needs_brackets()",
+    "sympy.printing.latex.LatexPrinter._hprint_Function()",
+    "sympy.printing.latex.LatexPrinter.doprint()"
   ],
   "predictions": [
     {
@@ -22,27 +22,27 @@
     },
     {
       "rank": 2,
-      "prediction": "sympy.printing.latex.latex()",
+      "prediction": "sympy.printing.latex.LatexPrinter._do_exponent()",
       "file_hit": true,
       "matched_gold_file": "sympy/printing/latex.py"
     },
     {
       "rank": 3,
-      "prediction": "sympy.series.sequences.SeqFormula._add()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.printing.latex.LatexPrinter._needs_brackets()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/latex.py"
     },
     {
       "rank": 4,
-      "prediction": "sympy.series.sequences.SeqFormula.formula()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.printing.latex.LatexPrinter._hprint_Function()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/latex.py"
     },
     {
       "rank": 5,
-      "prediction": "sympy.series.sequences.SeqBase._add()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.printing.latex.LatexPrinter.doprint()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/latex.py"
     }
   ],
   "file_hit": true,

@@ -8,10 +8,10 @@
   ],
   "top5": [
     "sympy.polys.monomials.itermonomials()",
-    "sympy.vector.coordsysrect.CoordSys3D.__new__()",
-    "sympy.simplify.simplify.walk()",
-    "sympy.integrals.intpoly.integration_reduction_dynamic()",
-    "sympy.polys.polyclasses.DMP.__mul__()"
+    "sympy.polys.monomials.monomial_mul()",
+    "sympy.polys.monomials.monomial_pow()",
+    "sympy.polys.monomials.monomial_div()",
+    "sympy.polys.monomials.itermonomials()"
   ],
   "predictions": [
     {
@@ -22,27 +22,27 @@
     },
     {
       "rank": 2,
-      "prediction": "sympy.vector.coordsysrect.CoordSys3D.__new__()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.polys.monomials.monomial_mul()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/monomials.py"
     },
     {
       "rank": 3,
-      "prediction": "sympy.simplify.simplify.walk()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.polys.monomials.monomial_pow()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/monomials.py"
     },
     {
       "rank": 4,
-      "prediction": "sympy.integrals.intpoly.integration_reduction_dynamic()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.polys.monomials.monomial_div()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/monomials.py"
     },
     {
       "rank": 5,
-      "prediction": "sympy.polys.polyclasses.DMP.__mul__()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.polys.monomials.itermonomials()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/monomials.py"
     }
   ],
   "file_hit": true,

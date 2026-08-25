@@ -7,18 +7,18 @@
     "sympy/core/expr.py"
   ],
   "top5": [
-    "sympy.core.expr.Expr.__eq__()",
-    "sympy.parsing.sympy_parser.eval_expr()",
     "sympy.parsing.sympy_parser.parse_expr()",
+    "sympy.parsing.sympy_parser.eval_expr()",
     "sympy.core.sympify.sympify()",
-    "sympy.parsing.autolev._antlr.autolevparser.AutolevParser.prog()"
+    "sympy.core.symbol.var()",
+    "sympy.core.function.Function.__new__()"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.core.expr.Expr.__eq__()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/core/expr.py"
+      "prediction": "sympy.parsing.sympy_parser.parse_expr()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 2,
@@ -28,24 +28,24 @@
     },
     {
       "rank": 3,
-      "prediction": "sympy.parsing.sympy_parser.parse_expr()",
-      "file_hit": false,
-      "matched_gold_file": null
-    },
-    {
-      "rank": 4,
       "prediction": "sympy.core.sympify.sympify()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
+      "rank": 4,
+      "prediction": "sympy.core.symbol.var()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
       "rank": 5,
-      "prediction": "sympy.parsing.autolev._antlr.autolevparser.AutolevParser.prog()",
+      "prediction": "sympy.core.function.Function.__new__()",
       "file_hit": false,
       "matched_gold_file": null
     }
   ],
-  "file_hit": true,
-  "file_rank": 1,
-  "matched_gold_file": "sympy/core/expr.py"
+  "file_hit": false,
+  "file_rank": null,
+  "matched_gold_file": null
 }

@@ -7,40 +7,40 @@
     "sympy/utilities/codegen.py"
   ],
   "top5": [
-    "sympy.utilities.autowrap.CythonCodeWrapper._declare_arg()",
-    "sympy.utilities.autowrap.CythonCodeWrapper._call_arg()",
-    "sympy.utilities.autowrap.CythonCodeWrapper._partition_args()",
-    "sympy.utilities.autowrap.CodeWrapper._generate_code()",
-    "sympy.utilities.autowrap.autowrap()"
+    "sympy.utilities.autowrap.autowrap()",
+    "sympy.utilities.autowrap._infer_language()",
+    "sympy.utilities.autowrap._validate_backend_language()",
+    "sympy.utilities.autowrap.CythonCodeWrapper._generate_code()",
+    "sympy.utilities.autowrap.CodeWrapper._generate_code()"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.utilities.autowrap.CythonCodeWrapper._declare_arg()",
+      "prediction": "sympy.utilities.autowrap.autowrap()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 2,
-      "prediction": "sympy.utilities.autowrap.CythonCodeWrapper._call_arg()",
+      "prediction": "sympy.utilities.autowrap._infer_language()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 3,
-      "prediction": "sympy.utilities.autowrap.CythonCodeWrapper._partition_args()",
+      "prediction": "sympy.utilities.autowrap._validate_backend_language()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 4,
-      "prediction": "sympy.utilities.autowrap.CodeWrapper._generate_code()",
+      "prediction": "sympy.utilities.autowrap.CythonCodeWrapper._generate_code()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.utilities.autowrap.autowrap()",
+      "prediction": "sympy.utilities.autowrap.CodeWrapper._generate_code()",
       "file_hit": false,
       "matched_gold_file": null
     }

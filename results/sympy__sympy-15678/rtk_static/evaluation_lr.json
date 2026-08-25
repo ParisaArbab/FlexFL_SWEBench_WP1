@@ -8,10 +8,10 @@
   ],
   "top5": [
     "sympy.geometry.util.idiff()",
-    "sympy.geometry.util.idiff()",
-    "sympy.geometry.util.idiff()",
-    "sympy.geometry.util.idiff()",
-    "sympy.geometry.util.idiff()"
+    "sympy.integrals.rubi.utility_function.TrigToExp()",
+    "sympy.integrals.rubi.rules.inverse_trig.inverse_trig()",
+    "sympy.integrals.rubi.rules.inverse_hyperbolic.inverse_hyperbolic()",
+    "sympy.integrals.rubi.utility_function.FunctionOfExpnQ()"
   ],
   "predictions": [
     {
@@ -22,27 +22,27 @@
     },
     {
       "rank": 2,
-      "prediction": "sympy.geometry.util.idiff()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/geometry/util.py"
+      "prediction": "sympy.integrals.rubi.utility_function.TrigToExp()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 3,
-      "prediction": "sympy.geometry.util.idiff()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/geometry/util.py"
+      "prediction": "sympy.integrals.rubi.rules.inverse_trig.inverse_trig()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 4,
-      "prediction": "sympy.geometry.util.idiff()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/geometry/util.py"
+      "prediction": "sympy.integrals.rubi.rules.inverse_hyperbolic.inverse_hyperbolic()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.geometry.util.idiff()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/geometry/util.py"
+      "prediction": "sympy.integrals.rubi.utility_function.FunctionOfExpnQ()",
+      "file_hit": false,
+      "matched_gold_file": null
     }
   ],
   "file_hit": true,

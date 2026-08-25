@@ -9,9 +9,9 @@
   "top5": [
     "sympy.matrices.expressions.blockmatrix.BlockMatrix._blockmul()",
     "sympy.matrices.expressions.blockmatrix.BlockMatrix._blockmul()",
-    "sympy.matrices.expressions.blockmatrix.BlockMatrix.colblocksizes()",
-    "sympy.matrices.expressions.blockmatrix.bc_matmul()",
-    "sympy.matrices.expressions.blockmatrix.block_collapse()"
+    "sympy.matrices.expressions.blockmatrix.BlockMatrix._blockmul()",
+    "sympy.matrices.expressions.blockmatrix.BlockMatrix._blockmul()",
+    "sympy.matrices.expressions.blockmatrix.bc_matmul()"
   ],
   "predictions": [
     {
@@ -28,19 +28,19 @@
     },
     {
       "rank": 3,
-      "prediction": "sympy.matrices.expressions.blockmatrix.BlockMatrix.colblocksizes()",
+      "prediction": "sympy.matrices.expressions.blockmatrix.BlockMatrix._blockmul()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 4,
-      "prediction": "sympy.matrices.expressions.blockmatrix.bc_matmul()",
+      "prediction": "sympy.matrices.expressions.blockmatrix.BlockMatrix._blockmul()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.matrices.expressions.blockmatrix.block_collapse()",
+      "prediction": "sympy.matrices.expressions.blockmatrix.bc_matmul()",
       "file_hit": false,
       "matched_gold_file": null
     }

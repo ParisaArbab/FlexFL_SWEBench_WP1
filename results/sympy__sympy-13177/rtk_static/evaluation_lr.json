@@ -8,10 +8,10 @@
   ],
   "top5": [
     "sympy.core.mod.Mod.eval()",
+    "sympy.core.mod.Mod.__call__()",
     "sympy.core.mod.Mod._eval_is_integer()",
-    "sympy.core.expr.Expr.__mod__()",
-    "sympy.core.expr.Expr.could_extract_minus_sign()",
-    "sympy.core.expr.Expr.could_extract_minus_sign()"
+    "sympy.core.mod.Mod._eval_is_nonpositive()",
+    "sympy.core.mod.Mod._eval_is_nonnegative()"
   ],
   "predictions": [
     {
@@ -22,27 +22,27 @@
     },
     {
       "rank": 2,
-      "prediction": "sympy.core.mod.Mod._eval_is_integer()",
+      "prediction": "sympy.core.mod.Mod.__call__()",
       "file_hit": true,
       "matched_gold_file": "sympy/core/mod.py"
     },
     {
       "rank": 3,
-      "prediction": "sympy.core.expr.Expr.__mod__()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.core.mod.Mod._eval_is_integer()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/core/mod.py"
     },
     {
       "rank": 4,
-      "prediction": "sympy.core.expr.Expr.could_extract_minus_sign()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.core.mod.Mod._eval_is_nonpositive()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/core/mod.py"
     },
     {
       "rank": 5,
-      "prediction": "sympy.core.expr.Expr.could_extract_minus_sign()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.core.mod.Mod._eval_is_nonnegative()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/core/mod.py"
     }
   ],
   "file_hit": true,

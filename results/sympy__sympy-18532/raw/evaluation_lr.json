@@ -7,45 +7,45 @@
     "sympy/core/basic.py"
   ],
   "top5": [
-    "sympy.core.basic.Basic.atoms()",
-    "sympy.matrices.common.MatrixProperties.atoms()",
+    "sympy.core.expr.Expr.atoms()",
     "sympy.printing.latex.LatexPrinter._print_KroneckerDelta()",
-    "sympy.printing.ccode.C89CodePrinter._print_sinc()",
-    "sympy.printing.rcode.RCodePrinter._print_ITE()"
+    "sympy.testing.runtests.PyTestReporter.finish()",
+    "sympy.core.expr.Expr._random()",
+    "sympy.core.expr.Expr.as_terms()"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.core.basic.Basic.atoms()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/core/basic.py"
-    },
-    {
-      "rank": 2,
-      "prediction": "sympy.matrices.common.MatrixProperties.atoms()",
+      "prediction": "sympy.core.expr.Expr.atoms()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
-      "rank": 3,
+      "rank": 2,
       "prediction": "sympy.printing.latex.LatexPrinter._print_KroneckerDelta()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
+      "rank": 3,
+      "prediction": "sympy.testing.runtests.PyTestReporter.finish()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
       "rank": 4,
-      "prediction": "sympy.printing.ccode.C89CodePrinter._print_sinc()",
+      "prediction": "sympy.core.expr.Expr._random()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.printing.rcode.RCodePrinter._print_ITE()",
+      "prediction": "sympy.core.expr.Expr.as_terms()",
       "file_hit": false,
       "matched_gold_file": null
     }
   ],
-  "file_hit": true,
-  "file_rank": 1,
-  "matched_gold_file": "sympy/core/basic.py"
+  "file_hit": false,
+  "file_rank": null,
+  "matched_gold_file": null
 }

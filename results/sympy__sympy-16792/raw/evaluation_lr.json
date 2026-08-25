@@ -7,16 +7,16 @@
     "sympy/utilities/codegen.py"
   ],
   "top5": [
-    "sympy.utilities.autowrap.CythonCodeWrapper._declare_arg()",
-    "sympy.utilities.autowrap.CythonCodeWrapper._call_arg()",
-    "sympy.utilities.autowrap.CythonCodeWrapper._partition_args()",
     "sympy.utilities.autowrap.CodeWrapper._generate_code()",
+    "sympy.utilities.autowrap.CythonCodeWrapper._call_arg()",
+    "sympy.utilities.autowrap.CythonCodeWrapper._declare_arg()",
+    "sympy.utilities.autowrap.CodeWrapper._process_files()",
     "sympy.utilities.autowrap.autowrap()"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.utilities.autowrap.CythonCodeWrapper._declare_arg()",
+      "prediction": "sympy.utilities.autowrap.CodeWrapper._generate_code()",
       "file_hit": false,
       "matched_gold_file": null
     },
@@ -28,13 +28,13 @@
     },
     {
       "rank": 3,
-      "prediction": "sympy.utilities.autowrap.CythonCodeWrapper._partition_args()",
+      "prediction": "sympy.utilities.autowrap.CythonCodeWrapper._declare_arg()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 4,
-      "prediction": "sympy.utilities.autowrap.CodeWrapper._generate_code()",
+      "prediction": "sympy.utilities.autowrap.CodeWrapper._process_files()",
       "file_hit": false,
       "matched_gold_file": null
     },

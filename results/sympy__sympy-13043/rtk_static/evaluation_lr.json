@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-13043",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/integrals/intpoly.py"
+  ],
+  "top5": [
+    "sympy.integrals.intpoly.decompose()",
+    "sympy.integrals.intpoly.decompose()",
+    "sympy.integrals.intpoly.decompose()",
+    "sympy.integrals.intpoly.decompose()",
+    "sympy.integrals.intpoly.decompose()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.integrals.intpoly.decompose()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/integrals/intpoly.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.integrals.intpoly.decompose()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/integrals/intpoly.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.integrals.intpoly.decompose()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/integrals/intpoly.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.integrals.intpoly.decompose()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/integrals/intpoly.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.integrals.intpoly.decompose()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/integrals/intpoly.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/integrals/intpoly.py"
+}

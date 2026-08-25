@@ -7,40 +7,40 @@
     "sympy/printing/str.py"
   ],
   "top5": [
-    "sympy.parsing.latex._antlr.latexparser.LaTeXParser.frac()",
-    "sympy.parsing.latex.__init__.parse_latex()",
-    "sympy.printing.latex.latex()",
-    "sympy.functions.elementary.integers.frac._eval_rewrite_as_floor()",
-    "sympy.functions.elementary.integers.frac._eval_rewrite_as_ceiling()"
+    "sympy.parsing.latex._parse_latex_antlr.parse_latex()",
+    "sympy.parsing.latex._parse_latex_antlr.LaTeXParser.math().relation()",
+    "sympy.parsing.latex._parse_latex_antlr.LaTeXParser.expr()",
+    "sympy.parsing.latex._parse_latex_antlr.convert_frac()",
+    "sympy.parsing.latex._parse_latex_antlr.convert_binom()"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.parsing.latex._antlr.latexparser.LaTeXParser.frac()",
+      "prediction": "sympy.parsing.latex._parse_latex_antlr.parse_latex()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 2,
-      "prediction": "sympy.parsing.latex.__init__.parse_latex()",
+      "prediction": "sympy.parsing.latex._parse_latex_antlr.LaTeXParser.math().relation()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 3,
-      "prediction": "sympy.printing.latex.latex()",
+      "prediction": "sympy.parsing.latex._parse_latex_antlr.LaTeXParser.expr()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 4,
-      "prediction": "sympy.functions.elementary.integers.frac._eval_rewrite_as_floor()",
+      "prediction": "sympy.parsing.latex._parse_latex_antlr.convert_frac()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.functions.elementary.integers.frac._eval_rewrite_as_ceiling()",
+      "prediction": "sympy.parsing.latex._parse_latex_antlr.convert_binom()",
       "file_hit": false,
       "matched_gold_file": null
     }

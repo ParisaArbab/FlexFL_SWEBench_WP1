@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-15345",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/printing/mathematica.py"
+  ],
+  "top5": [
+    "sympy.printing.mathematica.mathematica_code()",
+    "sympy.parsing.mathematica.MathematicaParser._apply_rules()",
+    "sympy.printing.mathematica.MCodePrinter.doprint()",
+    "sympy.printing.mathematica.MCodePrinter()",
+    "sympy.printing.mathematica.mathematica_code()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.printing.mathematica.mathematica_code()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/mathematica.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.parsing.mathematica.MathematicaParser._apply_rules()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.printing.mathematica.MCodePrinter.doprint()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/mathematica.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.printing.mathematica.MCodePrinter()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/mathematica.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.printing.mathematica.mathematica_code()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/mathematica.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/printing/mathematica.py"
+}

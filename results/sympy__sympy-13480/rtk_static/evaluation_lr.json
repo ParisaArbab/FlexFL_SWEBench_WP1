@@ -7,22 +7,22 @@
     "sympy/functions/elementary/hyperbolic.py"
   ],
   "top5": [
-    "sympy.functions.elementary.trigonometric.cot._eval_is_real()",
-    "sympy.functions.elementary.trigonometric.cot._eval_is_finite()",
+    "sympy.functions.elementary.hyperbolic.coth.eval()",
+    "sympy.functions.elementary.trigonometric.cot.eval()",
     "sympy.functions.elementary.trigonometric.tan._eval_is_finite()",
-    "sympy.functions.elementary.hyperbolic.coth.fdiff()",
-    "sympy.functions.elementary.hyperbolic.coth.eval()"
+    "sympy.functions.elementary.trigonometric.cot._eval_is_finite()",
+    "sympy.functions.elementary.trigonometric.tan._eval_is_real()"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.functions.elementary.trigonometric.cot._eval_is_real()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.functions.elementary.hyperbolic.coth.eval()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/functions/elementary/hyperbolic.py"
     },
     {
       "rank": 2,
-      "prediction": "sympy.functions.elementary.trigonometric.cot._eval_is_finite()",
+      "prediction": "sympy.functions.elementary.trigonometric.cot.eval()",
       "file_hit": false,
       "matched_gold_file": null
     },
@@ -34,18 +34,18 @@
     },
     {
       "rank": 4,
-      "prediction": "sympy.functions.elementary.hyperbolic.coth.fdiff()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/functions/elementary/hyperbolic.py"
+      "prediction": "sympy.functions.elementary.trigonometric.cot._eval_is_finite()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.functions.elementary.hyperbolic.coth.eval()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/functions/elementary/hyperbolic.py"
+      "prediction": "sympy.functions.elementary.trigonometric.tan._eval_is_real()",
+      "file_hit": false,
+      "matched_gold_file": null
     }
   ],
   "file_hit": true,
-  "file_rank": 4,
+  "file_rank": 1,
   "matched_gold_file": "sympy/functions/elementary/hyperbolic.py"
 }

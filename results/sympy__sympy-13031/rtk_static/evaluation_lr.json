@@ -7,45 +7,45 @@
     "sympy/matrices/sparse.py"
   ],
   "top5": [
+    "sympy.matrices.common.MatrixShaping.hstack()",
+    "sympy.matrices.common.MatrixShaping.row_join()",
     "sympy.matrices.sparse.MutableSparseMatrix.row_join()",
     "sympy.matrices.sparse.MutableSparseMatrix.col_join()",
-    "sympy.matrices.MatrixBase.vech()",
-    "sympy.matrices.MatrixBase.dot()",
-    "sympy.matrices.MatrixBase.add()"
+    "sympy.matrices.common.MatrixShaping._new()"
   ],
   "predictions": [
     {
       "rank": 1,
+      "prediction": "sympy.matrices.common.MatrixShaping.hstack()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.matrices.common.MatrixShaping.row_join()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
       "prediction": "sympy.matrices.sparse.MutableSparseMatrix.row_join()",
       "file_hit": true,
       "matched_gold_file": "sympy/matrices/sparse.py"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "prediction": "sympy.matrices.sparse.MutableSparseMatrix.col_join()",
       "file_hit": true,
       "matched_gold_file": "sympy/matrices/sparse.py"
     },
     {
-      "rank": 3,
-      "prediction": "sympy.matrices.MatrixBase.vech()",
-      "file_hit": false,
-      "matched_gold_file": null
-    },
-    {
-      "rank": 4,
-      "prediction": "sympy.matrices.MatrixBase.dot()",
-      "file_hit": false,
-      "matched_gold_file": null
-    },
-    {
       "rank": 5,
-      "prediction": "sympy.matrices.MatrixBase.add()",
+      "prediction": "sympy.matrices.common.MatrixShaping._new()",
       "file_hit": false,
       "matched_gold_file": null
     }
   ],
   "file_hit": true,
-  "file_rank": 1,
+  "file_rank": 3,
   "matched_gold_file": "sympy/matrices/sparse.py"
 }

@@ -8,10 +8,10 @@
   ],
   "top5": [
     "sympy.polys.polytools.Poly.sqf_list()",
-    "sympy.polys.galoistools.gf_sqf_list()",
-    "sympy.polys.polytools.Poly.sqf_list_include()",
-    "sympy.polys.sqfreetools.dmp_sqf_list_include()",
-    "sympy.polys.densebasic.dup_terms_gcd()"
+    "sympy.polys.polytools.sqf_list()",
+    "sympy.polys.polytools.Poly.factor_list()",
+    "sympy.solvers.diophantine._diop_ternary_quadratic_normal()",
+    "sympy.integrals.rationaltools.ratint_logpart()"
   ],
   "predictions": [
     {
@@ -22,25 +22,25 @@
     },
     {
       "rank": 2,
-      "prediction": "sympy.polys.galoistools.gf_sqf_list()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.polys.polytools.sqf_list()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/polys/polytools.py"
     },
     {
       "rank": 3,
-      "prediction": "sympy.polys.polytools.Poly.sqf_list_include()",
+      "prediction": "sympy.polys.polytools.Poly.factor_list()",
       "file_hit": true,
       "matched_gold_file": "sympy/polys/polytools.py"
     },
     {
       "rank": 4,
-      "prediction": "sympy.polys.sqfreetools.dmp_sqf_list_include()",
+      "prediction": "sympy.solvers.diophantine._diop_ternary_quadratic_normal()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.polys.densebasic.dup_terms_gcd()",
+      "prediction": "sympy.integrals.rationaltools.ratint_logpart()",
       "file_hit": false,
       "matched_gold_file": null
     }

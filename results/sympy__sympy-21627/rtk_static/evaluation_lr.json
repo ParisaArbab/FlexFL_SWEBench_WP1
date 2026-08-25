@@ -9,9 +9,9 @@
   "top5": [
     "sympy.integrals.rubi.rules.inverse_hyperbolic.replacement6320()",
     "sympy.integrals.rubi.rules.inverse_hyperbolic.replacement6313()",
-    "sympy.functions.elementary.trigonometric._peeloff_pi()",
-    "sympy.functions.elementary.trigonometric.acos.fdiff()",
-    "sympy.functions.elementary.trigonometric.cos._peeloff_pi()"
+    "sympy.integrals.rubi.rules.special_functions.replacement6858()",
+    "sympy.functions.elementary.hyperbolic.cosh._eval_expand_trig()",
+    "sympy.integrals.rubi.constraints.cons_f758()"
   ],
   "predictions": [
     {
@@ -28,19 +28,19 @@
     },
     {
       "rank": 3,
-      "prediction": "sympy.functions.elementary.trigonometric._peeloff_pi()",
+      "prediction": "sympy.integrals.rubi.rules.special_functions.replacement6858()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 4,
-      "prediction": "sympy.functions.elementary.trigonometric.acos.fdiff()",
+      "prediction": "sympy.functions.elementary.hyperbolic.cosh._eval_expand_trig()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.functions.elementary.trigonometric.cos._peeloff_pi()",
+      "prediction": "sympy.integrals.rubi.constraints.cons_f758()",
       "file_hit": false,
       "matched_gold_file": null
     }

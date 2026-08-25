@@ -7,45 +7,45 @@
     "sympy/printing/latex.py"
   ],
   "top5": [
-    "sympy.printing.latex.LatexPrinter._print_Poly()",
-    "sympy.printing.latex.LatexPrinter._print_PolynomialRing()",
-    "sympy.printing.latex.LatexPrinter._print_PolynomialRingBase()",
-    "sympy.printing.latex.LatexPrinter._print_PolyElement()",
-    "sympy.printing.latex.LatexPrinter._print()"
+    "sympy.polys.polytools.Poly.latex()",
+    "sympy.polys.polytools.Poly.deflate()",
+    "sympy.polys.polytools.Poly.new()",
+    "sympy.polys.polytools.Poly.gen()",
+    "sympy.polys.polytools.Poly.__new__()"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.printing.latex.LatexPrinter._print_Poly()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/printing/latex.py"
+      "prediction": "sympy.polys.polytools.Poly.latex()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 2,
-      "prediction": "sympy.printing.latex.LatexPrinter._print_PolynomialRing()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/printing/latex.py"
+      "prediction": "sympy.polys.polytools.Poly.deflate()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 3,
-      "prediction": "sympy.printing.latex.LatexPrinter._print_PolynomialRingBase()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/printing/latex.py"
+      "prediction": "sympy.polys.polytools.Poly.new()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 4,
-      "prediction": "sympy.printing.latex.LatexPrinter._print_PolyElement()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/printing/latex.py"
+      "prediction": "sympy.polys.polytools.Poly.gen()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.printing.latex.LatexPrinter._print()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/printing/latex.py"
+      "prediction": "sympy.polys.polytools.Poly.__new__()",
+      "file_hit": false,
+      "matched_gold_file": null
     }
   ],
-  "file_hit": true,
-  "file_rank": 1,
-  "matched_gold_file": "sympy/printing/latex.py"
+  "file_hit": false,
+  "file_rank": null,
+  "matched_gold_file": null
 }

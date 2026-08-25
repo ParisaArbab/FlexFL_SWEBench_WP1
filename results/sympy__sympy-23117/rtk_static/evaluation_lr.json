@@ -8,10 +8,10 @@
   ],
   "top5": [
     "sympy.tensor.array.ndim_array.NDimArray._handle_ndarray_creation_inputs()",
-    "sympy.tensor.array.dense_ndim_array.DenseNDimArray.__new__()",
-    "sympy.tensor.array.dense_ndim_array.DenseNDimArray.__getitem__()",
-    "sympy.tensor.array.dense_ndim_array.DenseNDimArray.kind()",
-    "sympy.tensor.array.dense_ndim_array.DenseNDimArray.reshape()"
+    "sympy.tensor.array.dense_ndim_array.DenseNDimArray._new()",
+    "sympy.tensor.array.dense_ndim_array._handle_ndarray_creation_inputs()",
+    "sympy.tensor.array.ndim_array.NDimArray._scan_iterable_shape()",
+    "sympy.tensor.array.dense_ndim_array.DenseNDimArray._new()"
   ],
   "predictions": [
     {
@@ -22,25 +22,25 @@
     },
     {
       "rank": 2,
-      "prediction": "sympy.tensor.array.dense_ndim_array.DenseNDimArray.__new__()",
+      "prediction": "sympy.tensor.array.dense_ndim_array.DenseNDimArray._new()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 3,
-      "prediction": "sympy.tensor.array.dense_ndim_array.DenseNDimArray.__getitem__()",
+      "prediction": "sympy.tensor.array.dense_ndim_array._handle_ndarray_creation_inputs()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 4,
-      "prediction": "sympy.tensor.array.dense_ndim_array.DenseNDimArray.kind()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.tensor.array.ndim_array.NDimArray._scan_iterable_shape()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/tensor/array/ndim_array.py"
     },
     {
       "rank": 5,
-      "prediction": "sympy.tensor.array.dense_ndim_array.DenseNDimArray.reshape()",
+      "prediction": "sympy.tensor.array.dense_ndim_array.DenseNDimArray._new()",
       "file_hit": false,
       "matched_gold_file": null
     }

@@ -7,40 +7,40 @@
     "sympy/physics/vector/point.py"
   ],
   "top5": [
-    "sympy.physics.vector.point.Point.vel(frame)",
-    "sympy.physics.vector.point.Point._check_frame(frame)",
-    "sympy.physics.vector.point.Point.set_vel(frame, velocity)",
-    "sympy.physics.vector.point.Point._vel_dict",
-    "sympy.physics.vector.point.Point.vel()"
+    "sympy.physics.vector.point.Point.vel()",
+    "sympy.physics.vector.point.Point.set_vel()",
+    "sympy.physics.vector.point.Point.set_pos()",
+    "sympy.physics.vector.point.Point._check_frame()",
+    "sympy.physics.vector.point.Point._check_point()"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.physics.vector.point.Point.vel(frame)",
+      "prediction": "sympy.physics.vector.point.Point.vel()",
       "file_hit": true,
       "matched_gold_file": "sympy/physics/vector/point.py"
     },
     {
       "rank": 2,
-      "prediction": "sympy.physics.vector.point.Point._check_frame(frame)",
+      "prediction": "sympy.physics.vector.point.Point.set_vel()",
       "file_hit": true,
       "matched_gold_file": "sympy/physics/vector/point.py"
     },
     {
       "rank": 3,
-      "prediction": "sympy.physics.vector.point.Point.set_vel(frame, velocity)",
+      "prediction": "sympy.physics.vector.point.Point.set_pos()",
       "file_hit": true,
       "matched_gold_file": "sympy/physics/vector/point.py"
     },
     {
       "rank": 4,
-      "prediction": "sympy.physics.vector.point.Point._vel_dict",
+      "prediction": "sympy.physics.vector.point.Point._check_frame()",
       "file_hit": true,
       "matched_gold_file": "sympy/physics/vector/point.py"
     },
     {
       "rank": 5,
-      "prediction": "sympy.physics.vector.point.Point.vel()",
+      "prediction": "sympy.physics.vector.point.Point._check_point()",
       "file_hit": true,
       "matched_gold_file": "sympy/physics/vector/point.py"
     }

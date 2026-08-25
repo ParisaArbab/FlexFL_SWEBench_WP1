@@ -9,9 +9,9 @@
   "top5": [
     "sympy.physics.quantum.tensorproduct.TensorProduct._eval_expand_tensorproduct()",
     "sympy.physics.quantum.tensorproduct.TensorProduct.__new__()",
-    "sympy.physics.quantum.tensorproduct.TensorProduct._eval_rewrite()",
+    "sympy.physics.quantum.tensorproduct.TensorProduct._eval_expand_tensorproduct()",
     "sympy.physics.quantum.tensorproduct.tensor_product_simp_Mul()",
-    "sympy.tensor.tensor.TensMul.split()"
+    "sympy.physics.quantum.tensorproduct.TensorProduct._eval_rewrite()"
   ],
   "predictions": [
     {
@@ -28,7 +28,7 @@
     },
     {
       "rank": 3,
-      "prediction": "sympy.physics.quantum.tensorproduct.TensorProduct._eval_rewrite()",
+      "prediction": "sympy.physics.quantum.tensorproduct.TensorProduct._eval_expand_tensorproduct()",
       "file_hit": true,
       "matched_gold_file": "sympy/physics/quantum/tensorproduct.py"
     },
@@ -40,9 +40,9 @@
     },
     {
       "rank": 5,
-      "prediction": "sympy.tensor.tensor.TensMul.split()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.physics.quantum.tensorproduct.TensorProduct._eval_rewrite()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/physics/quantum/tensorproduct.py"
     }
   ],
   "file_hit": true,

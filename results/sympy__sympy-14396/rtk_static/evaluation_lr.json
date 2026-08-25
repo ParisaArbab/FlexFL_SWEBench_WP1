@@ -7,16 +7,16 @@
     "sympy/polys/polyoptions.py"
   ],
   "top5": [
-    "sympy.polys.polyoptions.Domain.preprocess('RR[y,z]')",
     "sympy.polys.polyoptions.Domain.preprocess()",
-    "sympy.polys.polyoptions.Option.preprocess('RR[y,z]')",
-    "sympy.polys.polyoptions.Option.preprocess()",
-    "sympy.polys.polyoptions.Domain.__new__(cls,rep,*gens,**args)"
+    "sympy.polys.polyoptions.Domain.preprocess()",
+    "sympy.polys.polyoptions.preprocess_options()",
+    "sympy.polys.polyoptions.Domain.preprocess()",
+    "sympy.polys.polyoptions.Domain.preprocess()"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.polys.polyoptions.Domain.preprocess('RR[y,z]')",
+      "prediction": "sympy.polys.polyoptions.Domain.preprocess()",
       "file_hit": true,
       "matched_gold_file": "sympy/polys/polyoptions.py"
     },
@@ -28,19 +28,19 @@
     },
     {
       "rank": 3,
-      "prediction": "sympy.polys.polyoptions.Option.preprocess('RR[y,z]')",
+      "prediction": "sympy.polys.polyoptions.preprocess_options()",
       "file_hit": true,
       "matched_gold_file": "sympy/polys/polyoptions.py"
     },
     {
       "rank": 4,
-      "prediction": "sympy.polys.polyoptions.Option.preprocess()",
+      "prediction": "sympy.polys.polyoptions.Domain.preprocess()",
       "file_hit": true,
       "matched_gold_file": "sympy/polys/polyoptions.py"
     },
     {
       "rank": 5,
-      "prediction": "sympy.polys.polyoptions.Domain.__new__(cls,rep,*gens,**args)",
+      "prediction": "sympy.polys.polyoptions.Domain.preprocess()",
       "file_hit": true,
       "matched_gold_file": "sympy/polys/polyoptions.py"
     }

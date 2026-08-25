@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-20212",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/core/power.py"
+  ],
+  "top5": [
+    "sympy.core.numbers.Zero._eval_power()",
+    "sympy.core.power.Pow._eval_power()",
+    "sympy.core.numbers.ComplexInfinity._eval_power()",
+    "sympy.core.numbers.Zero._eval_power()",
+    "sympy.core.power.Pow._eval_power()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.core.numbers.Zero._eval_power()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.core.power.Pow._eval_power()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/core/power.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.core.numbers.ComplexInfinity._eval_power()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.core.numbers.Zero._eval_power()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.core.power.Pow._eval_power()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/core/power.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 2,
+  "matched_gold_file": "sympy/core/power.py"
+}

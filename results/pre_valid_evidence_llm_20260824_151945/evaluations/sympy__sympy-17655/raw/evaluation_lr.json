@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-17655",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/geometry/point.py"
+  ],
+  "top5": [
+    "sympy.geometry.point.Point.__add__()",
+    "sympy.geometry.point.Point.__new__()",
+    "sympy.geometry.entity.GeometryEntity.__rmul__()",
+    "sympy.core.add._unevaluated_Add()",
+    "sympy.geometry.point.Point._normalize_dimension()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.geometry.point.Point.__add__()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/geometry/point.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.geometry.point.Point.__new__()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/geometry/point.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.geometry.entity.GeometryEntity.__rmul__()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.core.add._unevaluated_Add()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.geometry.point.Point._normalize_dimension()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/geometry/point.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/geometry/point.py"
+}

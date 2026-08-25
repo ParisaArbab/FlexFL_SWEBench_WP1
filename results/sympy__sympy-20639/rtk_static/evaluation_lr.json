@@ -8,10 +8,10 @@
   ],
   "top5": [
     "sympy.printing.pretty.pretty.PrettyPrinter._print_nth_root()",
-    "sympy.printing.latex._antlr.latexparser.LaTeXParser.unary_nofunc()",
-    "sympy.printing.latex._antlr.latexparser.LaTeXParser.func_normal()",
-    "sympy.integrals.rubi.rules.special_functions.replacement6785()",
-    "sympy.printing.str.StrPrinter._print_Pi()"
+    "sympy.printing.pretty.stringpict.stringPict.render()",
+    "sympy.printing.pretty.stringpict.stringPict.width()",
+    "sympy.printing.pretty.stringpict.stringPict.terminal_width()",
+    "sympy.printing.pretty.stringpict.stringPict.picture"
   ],
   "predictions": [
     {
@@ -22,25 +22,25 @@
     },
     {
       "rank": 2,
-      "prediction": "sympy.printing.latex._antlr.latexparser.LaTeXParser.unary_nofunc()",
+      "prediction": "sympy.printing.pretty.stringpict.stringPict.render()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 3,
-      "prediction": "sympy.printing.latex._antlr.latexparser.LaTeXParser.func_normal()",
+      "prediction": "sympy.printing.pretty.stringpict.stringPict.width()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 4,
-      "prediction": "sympy.integrals.rubi.rules.special_functions.replacement6785()",
+      "prediction": "sympy.printing.pretty.stringpict.stringPict.terminal_width()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.printing.str.StrPrinter._print_Pi()",
+      "prediction": "sympy.printing.pretty.stringpict.stringPict.picture",
       "file_hit": false,
       "matched_gold_file": null
     }

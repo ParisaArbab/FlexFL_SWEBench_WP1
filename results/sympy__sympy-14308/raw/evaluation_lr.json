@@ -7,45 +7,45 @@
     "sympy/printing/pretty/pretty.py"
   ],
   "top5": [
-    "sympy.vector.coordsysrect.CoordSys3D.__new__()",
+    "sympy.printing.pretty.pretty.PrettyPrinter._hprint_vec()",
+    "sympy.printing.pretty.pretty.PrettyPrinter._print_Atom()",
+    "sympy.printing.pretty.pretty.PrettyPrinter._print_Or()",
     "sympy.physics.vector.printing.vpprint()",
-    "sympy.vector.vector.BaseVector.__str__()",
-    "sympy.diffgeom.diffgeom.intcurve_diffequ()",
-    "sympy.vector.dyadic.Dyadic.dot()"
+    "sympy.printing.pretty.pretty.PrettyPrinter._print_Xor()"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.vector.coordsysrect.CoordSys3D.__new__()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter._hprint_vec()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pretty/pretty.py"
     },
     {
       "rank": 2,
+      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter._print_Atom()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pretty/pretty.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter._print_Or()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pretty/pretty.py"
+    },
+    {
+      "rank": 4,
       "prediction": "sympy.physics.vector.printing.vpprint()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
-      "rank": 3,
-      "prediction": "sympy.vector.vector.BaseVector.__str__()",
-      "file_hit": false,
-      "matched_gold_file": null
-    },
-    {
-      "rank": 4,
-      "prediction": "sympy.diffgeom.diffgeom.intcurve_diffequ()",
-      "file_hit": false,
-      "matched_gold_file": null
-    },
-    {
       "rank": 5,
-      "prediction": "sympy.vector.dyadic.Dyadic.dot()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter._print_Xor()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pretty/pretty.py"
     }
   ],
-  "file_hit": false,
-  "file_rank": null,
-  "matched_gold_file": null
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/printing/pretty/pretty.py"
 }

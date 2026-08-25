@@ -8,10 +8,10 @@
   ],
   "top5": [
     "sympy.utilities.iterables.partitions()",
-    "sympy.utilities.iterables.multiset_partitions()",
-    "sympy.combinatorics.partitions.RGS_enum()",
-    "sympy.combinatorics.partitions.RGS_unrank()",
-    "sympy.combinatorics.partitions.RGS_generalized()"
+    "sympy.utilities.iterables.multiset_partitions_taocp()",
+    "sympy.combinatorics.partitions.Partitions.partitions()",
+    "sympy.combinatorics.partitions.Partition.partition()",
+    "sympy.combinatorics.partitions.Partition.from_rgs()"
   ],
   "predictions": [
     {
@@ -22,25 +22,25 @@
     },
     {
       "rank": 2,
-      "prediction": "sympy.utilities.iterables.multiset_partitions()",
+      "prediction": "sympy.utilities.iterables.multiset_partitions_taocp()",
       "file_hit": true,
       "matched_gold_file": "sympy/utilities/iterables.py"
     },
     {
       "rank": 3,
-      "prediction": "sympy.combinatorics.partitions.RGS_enum()",
+      "prediction": "sympy.combinatorics.partitions.Partitions.partitions()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 4,
-      "prediction": "sympy.combinatorics.partitions.RGS_unrank()",
+      "prediction": "sympy.combinatorics.partitions.Partition.partition()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.combinatorics.partitions.RGS_generalized()",
+      "prediction": "sympy.combinatorics.partitions.Partition.from_rgs()",
       "file_hit": false,
       "matched_gold_file": null
     }

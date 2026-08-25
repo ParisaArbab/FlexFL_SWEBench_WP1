@@ -7,18 +7,18 @@
     "sympy/physics/units/unitsystem.py"
   ],
   "top5": [
-    "sympy.physics.units.unitsystem.UnitSystem._collect_factor_and_dimension()",
+    "sympy.physics.units.dimensions._QuantityMapper.set_quantity_dimension()",
     "sympy.physics.units.quantities.Quantity._collect_factor_and_dimension()",
-    "sympy.physics.units.unitsystem.UnitSystem._collect_factor_and_dimension()",
-    "sympy.physics.units.unitsystem.UnitSystem._collect_factor_and_dimension()",
-    "sympy.physics.units.unitsystem.UnitSystem._collect_factor_and_dimension()"
+    "sympy.physics.units.dimensions.Dimension.__mul__()",
+    "sympy.physics.units.util.quantity_simplify()",
+    "sympy.physics.units.dimensions.Dimension.__add__()"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.physics.units.unitsystem.UnitSystem._collect_factor_and_dimension()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/physics/units/unitsystem.py"
+      "prediction": "sympy.physics.units.dimensions._QuantityMapper.set_quantity_dimension()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 2,
@@ -28,24 +28,24 @@
     },
     {
       "rank": 3,
-      "prediction": "sympy.physics.units.unitsystem.UnitSystem._collect_factor_and_dimension()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/physics/units/unitsystem.py"
+      "prediction": "sympy.physics.units.dimensions.Dimension.__mul__()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 4,
-      "prediction": "sympy.physics.units.unitsystem.UnitSystem._collect_factor_and_dimension()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/physics/units/unitsystem.py"
+      "prediction": "sympy.physics.units.util.quantity_simplify()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.physics.units.unitsystem.UnitSystem._collect_factor_and_dimension()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/physics/units/unitsystem.py"
+      "prediction": "sympy.physics.units.dimensions.Dimension.__add__()",
+      "file_hit": false,
+      "matched_gold_file": null
     }
   ],
-  "file_hit": true,
-  "file_rank": 1,
-  "matched_gold_file": "sympy/physics/units/unitsystem.py"
+  "file_hit": false,
+  "file_rank": null,
+  "matched_gold_file": null
 }

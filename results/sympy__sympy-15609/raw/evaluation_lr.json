@@ -7,45 +7,45 @@
     "sympy/printing/latex.py"
   ],
   "top5": [
-    "sympy.printing.latex.LatexPrinter._print_Function()",
-    "sympy.matrices.expressions.matexpr.MatrixElement._eval_derivative()",
-    "sympy.printing.latex.LatexPrinter.latex()",
-    "sympy.matrices.expressions.matexpr.MatrixElement.__new__()",
-    "sympy.parsing.latex._antlr.latexparser.LaTeXParser.func()"
+    "sympy.parsing.latex._antlr.latexparser.LaTeXParser.func()",
+    "sympy.printing.latex.latex()",
+    "sympy.physics.quantum.matrixutils.matrix_tensor_product()",
+    "sympy.physics.quantum.matrixutils.scipy_sparse_to_sympy()",
+    "sympy.physics.units.quantities.Quantity.__new__()"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.printing.latex.LatexPrinter._print_Function()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/printing/latex.py"
-    },
-    {
-      "rank": 2,
-      "prediction": "sympy.matrices.expressions.matexpr.MatrixElement._eval_derivative()",
+      "prediction": "sympy.parsing.latex._antlr.latexparser.LaTeXParser.func()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
-      "rank": 3,
-      "prediction": "sympy.printing.latex.LatexPrinter.latex()",
+      "rank": 2,
+      "prediction": "sympy.printing.latex.latex()",
       "file_hit": true,
       "matched_gold_file": "sympy/printing/latex.py"
     },
     {
+      "rank": 3,
+      "prediction": "sympy.physics.quantum.matrixutils.matrix_tensor_product()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
       "rank": 4,
-      "prediction": "sympy.matrices.expressions.matexpr.MatrixElement.__new__()",
+      "prediction": "sympy.physics.quantum.matrixutils.scipy_sparse_to_sympy()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.parsing.latex._antlr.latexparser.LaTeXParser.func()",
+      "prediction": "sympy.physics.units.quantities.Quantity.__new__()",
       "file_hit": false,
       "matched_gold_file": null
     }
   ],
   "file_hit": true,
-  "file_rank": 1,
+  "file_rank": 2,
   "matched_gold_file": "sympy/printing/latex.py"
 }

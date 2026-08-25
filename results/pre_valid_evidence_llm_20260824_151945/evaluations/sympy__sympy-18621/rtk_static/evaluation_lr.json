@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-18621",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/matrices/expressions/blockmatrix.py"
+  ],
+  "top5": [
+    "sympy.matrices.expressions.blockmatrix.BlockDiagMatrix._entry()",
+    "sympy.matrices.expressions.matexpr.MatrixExpr.__getitem__()",
+    "sympy.matrices.expressions.blockmatrix.BlockMatrix._entry()",
+    "sympy.matrices.expressions.blockmatrix.BlockDiagMatrix.diag()",
+    "sympy.matrices.expressions.blockmatrix.BlockDiagMatrix.shape()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.matrices.expressions.blockmatrix.BlockDiagMatrix._entry()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/expressions/blockmatrix.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.matrices.expressions.matexpr.MatrixExpr.__getitem__()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.matrices.expressions.blockmatrix.BlockMatrix._entry()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/expressions/blockmatrix.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.matrices.expressions.blockmatrix.BlockDiagMatrix.diag()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/expressions/blockmatrix.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.matrices.expressions.blockmatrix.BlockDiagMatrix.shape()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/expressions/blockmatrix.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/matrices/expressions/blockmatrix.py"
+}

@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-22840",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/simplify/cse_main.py"
+  ],
+  "top5": [
+    "sympy.simplify.cse_main.cse()",
+    "sympy.simplify.cse_main.tree_cse()",
+    "sympy.simplify.cse_main._cse_homogeneous()",
+    "sympy.core.basic.Atom.sort_key()",
+    "sympy.core.symbol.Str.__new__()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.simplify.cse_main.cse()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/simplify/cse_main.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.simplify.cse_main.tree_cse()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/simplify/cse_main.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.simplify.cse_main._cse_homogeneous()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/simplify/cse_main.py"
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.core.basic.Atom.sort_key()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.core.symbol.Str.__new__()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/simplify/cse_main.py"
+}

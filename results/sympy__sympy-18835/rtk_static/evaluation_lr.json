@@ -8,10 +8,10 @@
   ],
   "top5": [
     "sympy.utilities.iterables.uniq()",
-    "sympy.utilities.iterables.uniq()",
-    "sympy.utilities.iterables.uniq()",
-    "sympy.utilities.iterables.uniq()",
-    "sympy.utilities.iterables.uniq()"
+    "sympy.utilities.iterables._uniq()",
+    "sympy.physics.quantum.qft.Fourier._represent_ZGate()",
+    "sympy.combinatorics.tensor_can.canonicalize()",
+    "sympy.combinatorics.permutations.Permutation.__new__()"
   ],
   "predictions": [
     {
@@ -22,27 +22,27 @@
     },
     {
       "rank": 2,
-      "prediction": "sympy.utilities.iterables.uniq()",
+      "prediction": "sympy.utilities.iterables._uniq()",
       "file_hit": true,
       "matched_gold_file": "sympy/utilities/iterables.py"
     },
     {
       "rank": 3,
-      "prediction": "sympy.utilities.iterables.uniq()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/utilities/iterables.py"
+      "prediction": "sympy.physics.quantum.qft.Fourier._represent_ZGate()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 4,
-      "prediction": "sympy.utilities.iterables.uniq()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/utilities/iterables.py"
+      "prediction": "sympy.combinatorics.tensor_can.canonicalize()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.utilities.iterables.uniq()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/utilities/iterables.py"
+      "prediction": "sympy.combinatorics.permutations.Permutation.__new__()",
+      "file_hit": false,
+      "matched_gold_file": null
     }
   ],
   "file_hit": true,

@@ -7,45 +7,45 @@
     "sympy/core/power.py"
   ],
   "top5": [
-    "sympy.core.numbers.Zero._eval_power()",
     "sympy.core.power.Pow._eval_power()",
+    "sympy.core.power.Pow.__new__()",
+    "sympy.integrals.integrals.Integral.doit()",
     "sympy.core.numbers.ComplexInfinity._eval_power()",
-    "sympy.core.numbers.Zero._eval_power()",
-    "sympy.core.power.Pow._eval_power()"
+    "sympy.core.numbers.Zero._eval_power()"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.core.numbers.Zero._eval_power()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.core.power.Pow._eval_power()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/core/power.py"
     },
     {
       "rank": 2,
-      "prediction": "sympy.core.power.Pow._eval_power()",
+      "prediction": "sympy.core.power.Pow.__new__()",
       "file_hit": true,
       "matched_gold_file": "sympy/core/power.py"
     },
     {
       "rank": 3,
-      "prediction": "sympy.core.numbers.ComplexInfinity._eval_power()",
+      "prediction": "sympy.integrals.integrals.Integral.doit()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 4,
-      "prediction": "sympy.core.numbers.Zero._eval_power()",
+      "prediction": "sympy.core.numbers.ComplexInfinity._eval_power()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.core.power.Pow._eval_power()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/core/power.py"
+      "prediction": "sympy.core.numbers.Zero._eval_power()",
+      "file_hit": false,
+      "matched_gold_file": null
     }
   ],
   "file_hit": true,
-  "file_rank": 2,
+  "file_rank": 1,
   "matched_gold_file": "sympy/core/power.py"
 }

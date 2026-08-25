@@ -9,9 +9,9 @@
   "top5": [
     "sympy.simplify.fu._TR56(rv, f, g, h, max, pow)",
     "sympy.simplify.fu.TR6(rv, max=4, pow=False)",
+    "sympy.core.expr.Expr.__lt__(self, other)",
     "sympy.simplify.trigsimp.futrig(e)",
-    "sympy.simplify.trigsimp.trigsimp_old()",
-    "sympy.simplify.fu._f(rv)"
+    "sympy.simplify.trigsimp.trigsimp_old(expr)"
   ],
   "predictions": [
     {
@@ -28,21 +28,21 @@
     },
     {
       "rank": 3,
-      "prediction": "sympy.simplify.trigsimp.futrig(e)",
+      "prediction": "sympy.core.expr.Expr.__lt__(self, other)",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 4,
-      "prediction": "sympy.simplify.trigsimp.trigsimp_old()",
+      "prediction": "sympy.simplify.trigsimp.futrig(e)",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.simplify.fu._f(rv)",
-      "file_hit": true,
-      "matched_gold_file": "sympy/simplify/fu.py"
+      "prediction": "sympy.simplify.trigsimp.trigsimp_old(expr)",
+      "file_hit": false,
+      "matched_gold_file": null
     }
   ],
   "file_hit": true,

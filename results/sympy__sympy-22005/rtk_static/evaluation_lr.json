@@ -7,40 +7,40 @@
     "sympy/solvers/polysys.py"
   ],
   "top5": [
-    "sympy.solvers.polysys.solve_poly_system()",
-    "sympy.solvers.polysys._is_univariate()",
     "sympy.solvers.polysys._solve_reduced_system()",
+    "sympy.solvers.polysys.solve_poly_system()",
     "sympy.solvers.polysys.solve_biquadratic()",
-    "sympy.solvers.polysys.solve_generic()"
+    "sympy.solvers.polysys.solve_generic()",
+    "sympy.solvers.polysys.parallel_poly_from_expr()"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.solvers.polysys.solve_poly_system()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/solvers/polysys.py"
-    },
-    {
-      "rank": 2,
-      "prediction": "sympy.solvers.polysys._is_univariate()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/solvers/polysys.py"
-    },
-    {
-      "rank": 3,
       "prediction": "sympy.solvers.polysys._solve_reduced_system()",
       "file_hit": true,
       "matched_gold_file": "sympy/solvers/polysys.py"
     },
     {
-      "rank": 4,
+      "rank": 2,
+      "prediction": "sympy.solvers.polysys.solve_poly_system()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/solvers/polysys.py"
+    },
+    {
+      "rank": 3,
       "prediction": "sympy.solvers.polysys.solve_biquadratic()",
       "file_hit": true,
       "matched_gold_file": "sympy/solvers/polysys.py"
     },
     {
-      "rank": 5,
+      "rank": 4,
       "prediction": "sympy.solvers.polysys.solve_generic()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/solvers/polysys.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.solvers.polysys.parallel_poly_from_expr()",
       "file_hit": true,
       "matched_gold_file": "sympy/solvers/polysys.py"
     }

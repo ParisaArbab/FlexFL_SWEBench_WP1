@@ -7,40 +7,40 @@
     "sympy/core/mod.py"
   ],
   "top5": [
-    "sympy.functions.elementary.piecewise.Piecewise._eval_subs()",
-    "sympy.core.function.Subs._eval_subs()",
-    "sympy.functions.elementary.exp._eval()",
-    "sympy.functions.elementary.sinh._eval()",
-    "sympy.core.basic.Basic._eval_subs()"
+    "sympy.physics.quantum.cg._check_cg_simp()",
+    "sympy.testing.runtests.PyTestReporter.finish()",
+    "sympy.solvers.ode.ode._nonlinear_2eq_order1_type4()",
+    "sympy.vector.functions.scalar_potential_difference()",
+    "sympy.core.add.Add._eval_is_extended_nonnegative()"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.functions.elementary.piecewise.Piecewise._eval_subs()",
+      "prediction": "sympy.physics.quantum.cg._check_cg_simp()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 2,
-      "prediction": "sympy.core.function.Subs._eval_subs()",
+      "prediction": "sympy.testing.runtests.PyTestReporter.finish()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 3,
-      "prediction": "sympy.functions.elementary.exp._eval()",
+      "prediction": "sympy.solvers.ode.ode._nonlinear_2eq_order1_type4()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 4,
-      "prediction": "sympy.functions.elementary.sinh._eval()",
+      "prediction": "sympy.vector.functions.scalar_potential_difference()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.core.basic.Basic._eval_subs()",
+      "prediction": "sympy.core.add.Add._eval_is_extended_nonnegative()",
       "file_hit": false,
       "matched_gold_file": null
     }

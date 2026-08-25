@@ -11,7 +11,7 @@
     "sympy.polys.factortools.dmp_zz_mignotte_bound()",
     "sympy.polys.compatibility.IPolys.dup_zz_mignotte_bound()",
     "sympy.polys.compatibility.IPolys.dup_zz_mignotte_bound()",
-    "sympy.polys.factortools.dup_zz_mignotte_bound()"
+    "sympy.polys.compatibility.IPolys.dup_zz_mignotte_bound()"
   ],
   "predictions": [
     {
@@ -40,9 +40,9 @@
     },
     {
       "rank": 5,
-      "prediction": "sympy.polys.factortools.dup_zz_mignotte_bound()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/polys/factortools.py"
+      "prediction": "sympy.polys.compatibility.IPolys.dup_zz_mignotte_bound()",
+      "file_hit": false,
+      "matched_gold_file": null
     }
   ],
   "file_hit": true,

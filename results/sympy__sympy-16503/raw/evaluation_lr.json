@@ -8,10 +8,10 @@
   ],
   "top5": [
     "sympy.printing.pretty.pretty.PrettyPrinter._print_Sum()",
-    "sympy.printing.pretty.pretty.PrettyPrinter._print_Add()",
-    "sympy.printing.pretty.pretty.PrettyPrinter._print_Mul()",
-    "sympy.integrals.rubi.rules.miscellaneous_algebraic.miscellaneous_algebraic()",
-    "sympy.core.evalf.add_terms()"
+    "sympy.printing.pretty.pretty.PrettyPrinter._print()",
+    "sympy.core.evalf.add_terms()",
+    "sympy.printing.pretty.pretty.PrettyPrinter.doprint()",
+    "sympy.printing.pretty.pretty.PrettyPrinter.render()"
   ],
   "predictions": [
     {
@@ -22,27 +22,27 @@
     },
     {
       "rank": 2,
-      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter._print_Add()",
+      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter._print()",
       "file_hit": true,
       "matched_gold_file": "sympy/printing/pretty/pretty.py"
     },
     {
       "rank": 3,
-      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter._print_Mul()",
+      "prediction": "sympy.core.evalf.add_terms()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter.doprint()",
       "file_hit": true,
       "matched_gold_file": "sympy/printing/pretty/pretty.py"
     },
     {
-      "rank": 4,
-      "prediction": "sympy.integrals.rubi.rules.miscellaneous_algebraic.miscellaneous_algebraic()",
-      "file_hit": false,
-      "matched_gold_file": null
-    },
-    {
       "rank": 5,
-      "prediction": "sympy.core.evalf.add_terms()",
-      "file_hit": false,
-      "matched_gold_file": null
+      "prediction": "sympy.printing.pretty.pretty.PrettyPrinter.render()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pretty/pretty.py"
     }
   ],
   "file_hit": true,

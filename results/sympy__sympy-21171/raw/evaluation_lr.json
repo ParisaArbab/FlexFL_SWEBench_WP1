@@ -8,10 +8,10 @@
   ],
   "top5": [
     "sympy.printing.latex.LatexPrinter._print_SingularityFunction()",
-    "sympy.functions.special.singularity_functions.SingularityFunction.eval()",
+    "sympy.functions.special.singularity_functions.SingularityFunction._print_SingularityFunction()",
     "sympy.printing.latex.LatexPrinter._print_Mul()",
-    "sympy.printing.latex.LatexPrinter._print_Add()",
-    "sympy.printing.latex.LatexPrinter._print_Pow()"
+    "sympy.printing.printer.Printer._print()",
+    "sympy.printing.latex.LatexPrinter.doprint()"
   ],
   "predictions": [
     {
@@ -22,7 +22,7 @@
     },
     {
       "rank": 2,
-      "prediction": "sympy.functions.special.singularity_functions.SingularityFunction.eval()",
+      "prediction": "sympy.functions.special.singularity_functions.SingularityFunction._print_SingularityFunction()",
       "file_hit": false,
       "matched_gold_file": null
     },
@@ -34,13 +34,13 @@
     },
     {
       "rank": 4,
-      "prediction": "sympy.printing.latex.LatexPrinter._print_Add()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/printing/latex.py"
+      "prediction": "sympy.printing.printer.Printer._print()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.printing.latex.LatexPrinter._print_Pow()",
+      "prediction": "sympy.printing.latex.LatexPrinter.doprint()",
       "file_hit": true,
       "matched_gold_file": "sympy/printing/latex.py"
     }

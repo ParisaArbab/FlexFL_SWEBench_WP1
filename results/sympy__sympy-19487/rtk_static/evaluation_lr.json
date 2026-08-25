@@ -9,9 +9,9 @@
   "top5": [
     "sympy.functions.elementary.complexes.sign._eval_Abs()",
     "sympy.functions.elementary.complexes.sign._eval_conjugate()",
-    "sympy.functions.elementary.complexes.sign._eval_is_nonnegative()",
+    "sympy.functions.elementary.complexes.sign._eval_derivative()",
     "sympy.functions.elementary.complexes.sign._eval_is_imaginary()",
-    "sympy.functions.elementary.complexes.sign._eval_derivative()"
+    "sympy.functions.elementary.complexes.sign._eval_is_nonnegative()"
   ],
   "predictions": [
     {
@@ -28,7 +28,7 @@
     },
     {
       "rank": 3,
-      "prediction": "sympy.functions.elementary.complexes.sign._eval_is_nonnegative()",
+      "prediction": "sympy.functions.elementary.complexes.sign._eval_derivative()",
       "file_hit": true,
       "matched_gold_file": "sympy/functions/elementary/complexes.py"
     },
@@ -40,7 +40,7 @@
     },
     {
       "rank": 5,
-      "prediction": "sympy.functions.elementary.complexes.sign._eval_derivative()",
+      "prediction": "sympy.functions.elementary.complexes.sign._eval_is_nonnegative()",
       "file_hit": true,
       "matched_gold_file": "sympy/functions/elementary/complexes.py"
     }

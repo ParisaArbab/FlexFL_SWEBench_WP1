@@ -11,7 +11,7 @@
     "sympy.parsing.mathematica.mathematica()",
     "sympy.parsing.mathematica.MathematicaParser._from_mathematica_to_tokens()",
     "sympy.parsing.mathematica.MathematicaParser._from_tokens_to_fullformlist()",
-    "sympy.parsing.mathematica.MathematicaParser._get_tokenizer()"
+    "sympy.parsing.mathematica.MathematicaParser._get_neg()"
   ],
   "predictions": [
     {
@@ -40,7 +40,7 @@
     },
     {
       "rank": 5,
-      "prediction": "sympy.parsing.mathematica.MathematicaParser._get_tokenizer()",
+      "prediction": "sympy.parsing.mathematica.MathematicaParser._get_neg()",
       "file_hit": true,
       "matched_gold_file": "sympy/parsing/mathematica.py"
     }

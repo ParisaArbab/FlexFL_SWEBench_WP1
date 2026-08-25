@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-13773",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/matrices/common.py"
+  ],
+  "top5": [
+    "sympy.matrices.common.MatrixArithmetic.__matmul__()",
+    "sympy.matrices.common.MatrixArithmetic.__mul__()",
+    "sympy.physics.quantum.gate.represent_zbasis()",
+    "sympy.integrals.rubi.utility_function._SimplifyAntiderivative()",
+    "sympy.matrices.expressions.matmul.MatMul._eval_adjoint()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.matrices.common.MatrixArithmetic.__matmul__()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/common.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.matrices.common.MatrixArithmetic.__mul__()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/matrices/common.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.physics.quantum.gate.represent_zbasis()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.integrals.rubi.utility_function._SimplifyAntiderivative()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.matrices.expressions.matmul.MatMul._eval_adjoint()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/matrices/common.py"
+}

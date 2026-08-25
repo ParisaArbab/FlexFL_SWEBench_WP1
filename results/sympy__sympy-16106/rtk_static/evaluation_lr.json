@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-16106",
+  "condition": "rtk_static",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/printing/mathml.py"
+  ],
+  "top5": [
+    "sympy.printing.mathml.MathMLPresentationPrinter._print_Basic()",
+    "sympy.printing.mathml.MathMLPresentationPrinter._print_Basic()",
+    "sympy.tensor.indexed.IndexedBase.__getitem__()",
+    "sympy.printing.mathml.MathMLPrinterBase.doprint()",
+    "sympy.printing.mathml.MathMLPresentationPrinter._print_Basic()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.printing.mathml.MathMLPresentationPrinter._print_Basic()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/mathml.py"
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.printing.mathml.MathMLPresentationPrinter._print_Basic()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/mathml.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.tensor.indexed.IndexedBase.__getitem__()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.printing.mathml.MathMLPrinterBase.doprint()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/mathml.py"
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.printing.mathml.MathMLPresentationPrinter._print_Basic()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/mathml.py"
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 1,
+  "matched_gold_file": "sympy/printing/mathml.py"
+}

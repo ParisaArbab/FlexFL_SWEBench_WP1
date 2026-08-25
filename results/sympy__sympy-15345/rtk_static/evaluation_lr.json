@@ -8,10 +8,10 @@
   ],
   "top5": [
     "sympy.printing.mathematica.mathematica_code()",
-    "sympy.parsing.mathematica.MathematicaParser._apply_rules()",
-    "sympy.printing.mathematica.MCodePrinter.doprint()",
-    "sympy.printing.mathematica.MCodePrinter()",
-    "sympy.printing.mathematica.mathematica_code()"
+    "sympy.functions.elementary.miscellaneous.Max._eval_rewrite_as_Piecewise()",
+    "sympy.printing.fcode.FCodePrinter.indent_code()",
+    "sympy.functions.elementary.miscellaneous.Max._eval_is_positive()",
+    "sympy.functions.elementary.miscellaneous.Max.fdiff()"
   ],
   "predictions": [
     {
@@ -22,27 +22,27 @@
     },
     {
       "rank": 2,
-      "prediction": "sympy.parsing.mathematica.MathematicaParser._apply_rules()",
+      "prediction": "sympy.functions.elementary.miscellaneous.Max._eval_rewrite_as_Piecewise()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 3,
-      "prediction": "sympy.printing.mathematica.MCodePrinter.doprint()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/printing/mathematica.py"
+      "prediction": "sympy.printing.fcode.FCodePrinter.indent_code()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 4,
-      "prediction": "sympy.printing.mathematica.MCodePrinter()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/printing/mathematica.py"
+      "prediction": "sympy.functions.elementary.miscellaneous.Max._eval_is_positive()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.printing.mathematica.mathematica_code()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/printing/mathematica.py"
+      "prediction": "sympy.functions.elementary.miscellaneous.Max.fdiff()",
+      "file_hit": false,
+      "matched_gold_file": null
     }
   ],
   "file_hit": true,

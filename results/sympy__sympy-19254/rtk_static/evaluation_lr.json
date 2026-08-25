@@ -10,7 +10,7 @@
     "sympy.polys.factortools.dup_zz_mignotte_bound()",
     "sympy.polys.factortools.dmp_zz_mignotte_bound()",
     "sympy.polys.compatibility.IPolys.dup_zz_mignotte_bound()",
-    "sympy.polys.compatibility.IPolys.dup_zz_mignotte_bound()",
+    "sympy.polys.compatibility.IPolys.dmp_zz_mignotte_bound()",
     "sympy.polys.factortools.dup_zz_mignotte_bound()"
   ],
   "predictions": [
@@ -34,7 +34,7 @@
     },
     {
       "rank": 4,
-      "prediction": "sympy.polys.compatibility.IPolys.dup_zz_mignotte_bound()",
+      "prediction": "sympy.polys.compatibility.IPolys.dmp_zz_mignotte_bound()",
       "file_hit": false,
       "matched_gold_file": null
     },

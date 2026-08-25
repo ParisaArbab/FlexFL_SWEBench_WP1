@@ -1,0 +1,51 @@
+{
+  "instance_id": "sympy__sympy-23191",
+  "condition": "raw",
+  "stage": "LR",
+  "metric_level": "file",
+  "gold_changed_python_files": [
+    "sympy/printing/pretty/pretty.py"
+  ],
+  "top5": [
+    "sympy.vector.deloperator.Del.cross()",
+    "sympy.printing.pretty.pretty.pretty_print()",
+    "sympy.physics.vector.printing.VectorLatexPrinter._print_Function()",
+    "sympy.physics.vector.printing.VectorLatexPrinter._print_Derivative()",
+    "sympy.vector.printing.VectorPrettyPrinter._print_Function()"
+  ],
+  "predictions": [
+    {
+      "rank": 1,
+      "prediction": "sympy.vector.deloperator.Del.cross()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 2,
+      "prediction": "sympy.printing.pretty.pretty.pretty_print()",
+      "file_hit": true,
+      "matched_gold_file": "sympy/printing/pretty/pretty.py"
+    },
+    {
+      "rank": 3,
+      "prediction": "sympy.physics.vector.printing.VectorLatexPrinter._print_Function()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 4,
+      "prediction": "sympy.physics.vector.printing.VectorLatexPrinter._print_Derivative()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
+      "rank": 5,
+      "prediction": "sympy.vector.printing.VectorPrettyPrinter._print_Function()",
+      "file_hit": false,
+      "matched_gold_file": null
+    }
+  ],
+  "file_hit": true,
+  "file_rank": 2,
+  "matched_gold_file": "sympy/printing/pretty/pretty.py"
+}

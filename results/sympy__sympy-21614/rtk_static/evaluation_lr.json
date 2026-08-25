@@ -9,9 +9,9 @@
   "top5": [
     "sympy.core.function.Derivative.__new__()",
     "sympy.core.function.Derivative._eval_derivative()",
-    "sympy.core.function.Derivative._eval_as_leading_term()",
+    "sympy.core.assumptions._ask()",
     "sympy.core.function.Derivative._diff_wrt()",
-    "sympy.core.function.Derivative._dispatch_eval_derivative_n_times()"
+    "sympy.matrices.matrices.MatrixBase.kind()"
   ],
   "predictions": [
     {
@@ -28,9 +28,9 @@
     },
     {
       "rank": 3,
-      "prediction": "sympy.core.function.Derivative._eval_as_leading_term()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/core/function.py"
+      "prediction": "sympy.core.assumptions._ask()",
+      "file_hit": false,
+      "matched_gold_file": null
     },
     {
       "rank": 4,
@@ -40,9 +40,9 @@
     },
     {
       "rank": 5,
-      "prediction": "sympy.core.function.Derivative._dispatch_eval_derivative_n_times()",
-      "file_hit": true,
-      "matched_gold_file": "sympy/core/function.py"
+      "prediction": "sympy.matrices.matrices.MatrixBase.kind()",
+      "file_hit": false,
+      "matched_gold_file": null
     }
   ],
   "file_hit": true,

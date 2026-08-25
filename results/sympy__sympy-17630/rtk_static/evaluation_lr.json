@@ -8,10 +8,10 @@
   ],
   "top5": [
     "sympy.matrices.expressions.blockmatrix.BlockMatrix._blockmul()",
-    "sympy.matrices.expressions.blockmatrix.BlockMatrix._blockmul()",
     "sympy.matrices.expressions.blockmatrix.BlockMatrix.colblocksizes()",
-    "sympy.matrices.expressions.blockmatrix.bc_matmul()",
-    "sympy.matrices.expressions.blockmatrix.block_collapse()"
+    "sympy.matrices.expressions.blockmatrix.BlockMatrix._blockmul()",
+    "sympy.matrices.expressions.blockmatrix.BlockMatrix.rowblocksizes()",
+    "sympy.matrices.expressions.blockmatrix.BlockMatrix.structurally_equal()"
   ],
   "predictions": [
     {
@@ -22,25 +22,25 @@
     },
     {
       "rank": 2,
-      "prediction": "sympy.matrices.expressions.blockmatrix.BlockMatrix._blockmul()",
-      "file_hit": false,
-      "matched_gold_file": null
-    },
-    {
-      "rank": 3,
       "prediction": "sympy.matrices.expressions.blockmatrix.BlockMatrix.colblocksizes()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
+      "rank": 3,
+      "prediction": "sympy.matrices.expressions.blockmatrix.BlockMatrix._blockmul()",
+      "file_hit": false,
+      "matched_gold_file": null
+    },
+    {
       "rank": 4,
-      "prediction": "sympy.matrices.expressions.blockmatrix.bc_matmul()",
+      "prediction": "sympy.matrices.expressions.blockmatrix.BlockMatrix.rowblocksizes()",
       "file_hit": false,
       "matched_gold_file": null
     },
     {
       "rank": 5,
-      "prediction": "sympy.matrices.expressions.blockmatrix.block_collapse()",
+      "prediction": "sympy.matrices.expressions.blockmatrix.BlockMatrix.structurally_equal()",
       "file_hit": false,
       "matched_gold_file": null
     }

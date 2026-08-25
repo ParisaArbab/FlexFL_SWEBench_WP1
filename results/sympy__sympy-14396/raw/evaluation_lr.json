@@ -7,40 +7,40 @@
     "sympy/polys/polyoptions.py"
   ],
   "top5": [
-    "sympy.polys.polyoptions.Domain.preprocess('RR[y,z]')",
-    "sympy.polys.polyoptions.Domain.preprocess()",
-    "sympy.polys.polyoptions.Option.preprocess('RR[y,z]')",
-    "sympy.polys.polyoptions.Option.preprocess()",
-    "sympy.polys.polyoptions.Domain.__new__(cls,rep,*gens,**args)"
+    "sympy.polys.polyoptions.polyoptions.Domain.preprocess(cls, domain)",
+    "sympy.polys.polyoptions.polyoptions.build_options(gens, args)",
+    "sympy.polys.polyoptions.polyoptions.preprocess_options(args)",
+    "sympy.polys.polyoptions.polyoptions.OptionError('expected a valid domain specification, got %s' % domain)",
+    "sympy.polys.polyoptions.polyoptions.Options.__init__(self, gens, args, flags=None, strict=False)"
   ],
   "predictions": [
     {
       "rank": 1,
-      "prediction": "sympy.polys.polyoptions.Domain.preprocess('RR[y,z]')",
+      "prediction": "sympy.polys.polyoptions.polyoptions.Domain.preprocess(cls, domain)",
       "file_hit": true,
       "matched_gold_file": "sympy/polys/polyoptions.py"
     },
     {
       "rank": 2,
-      "prediction": "sympy.polys.polyoptions.Domain.preprocess()",
+      "prediction": "sympy.polys.polyoptions.polyoptions.build_options(gens, args)",
       "file_hit": true,
       "matched_gold_file": "sympy/polys/polyoptions.py"
     },
     {
       "rank": 3,
-      "prediction": "sympy.polys.polyoptions.Option.preprocess('RR[y,z]')",
+      "prediction": "sympy.polys.polyoptions.polyoptions.preprocess_options(args)",
       "file_hit": true,
       "matched_gold_file": "sympy/polys/polyoptions.py"
     },
     {
       "rank": 4,
-      "prediction": "sympy.polys.polyoptions.Option.preprocess()",
+      "prediction": "sympy.polys.polyoptions.polyoptions.OptionError('expected a valid domain specification, got %s' % domain)",
       "file_hit": true,
       "matched_gold_file": "sympy/polys/polyoptions.py"
     },
     {
       "rank": 5,
-      "prediction": "sympy.polys.polyoptions.Domain.__new__(cls,rep,*gens,**args)",
+      "prediction": "sympy.polys.polyoptions.polyoptions.Options.__init__(self, gens, args, flags=None, strict=False)",
       "file_hit": true,
       "matched_gold_file": "sympy/polys/polyoptions.py"
     }
