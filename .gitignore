@@ -18,3 +18,7 @@ __pycache__/
 # Intermediate coverage files
 results/*/coverage/
 results/*/coverage_sympy_runner/
+
+# Generated SBIR intermediate R files
+FlexFL/data/FL_results/SBIR/raw/R_scripts_seed1/*.R
+FlexFL/data/FL_results/SBIR/raw/R_scripts_seed1/*.out
