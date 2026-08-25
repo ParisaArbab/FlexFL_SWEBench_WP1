@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-13915",
+  "repo": "sympy/sympy",
+  "base_commit": "5c1644ff85e15752f9f8721bc142bfbf975e7805",
+  "method_count": 13714,
+  "gold_changed_python_files": [
+    "sympy/core/mul.py"
+  ],
+  "status": "prepared"
+}

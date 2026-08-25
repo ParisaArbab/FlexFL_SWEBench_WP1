@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-13480",
+  "repo": "sympy/sympy",
+  "base_commit": "f57fe3f4b3f2cab225749e1b3b38ae1bf80b62f0",
+  "method_count": 13600,
+  "gold_changed_python_files": [
+    "sympy/functions/elementary/hyperbolic.py"
+  ],
+  "status": "prepared"
+}

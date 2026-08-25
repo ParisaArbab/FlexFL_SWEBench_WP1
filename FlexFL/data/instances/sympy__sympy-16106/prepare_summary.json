@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-16106",
+  "repo": "sympy/sympy",
+  "base_commit": "0e987498b00167fdd4a08a41c852a97cb70ce8f2",
+  "method_count": 15500,
+  "gold_changed_python_files": [
+    "sympy/printing/mathml.py"
+  ],
+  "status": "prepared"
+}

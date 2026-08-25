@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-21614",
+  "repo": "sympy/sympy",
+  "base_commit": "b4777fdcef467b7132c055f8ac2c9a5059e6a145",
+  "changed_python_files": [
+    "sympy/core/function.py"
+  ],
+  "FAIL_TO_PASS": "[\"test_Derivative_kind\"]",
+  "PASS_TO_PASS": "[\"test_NumberKind\", \"test_Add_kind\", \"test_mul_kind\", \"test_Symbol_kind\", \"test_Integral_kind\", \"test_Matrix_kind\"]"
+}

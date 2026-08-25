@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-24152",
+  "repo": "sympy/sympy",
+  "base_commit": "b9af885473ad7e34b5b0826cb424dd26d8934670",
+  "method_count": 26615,
+  "gold_changed_python_files": [
+    "sympy/physics/quantum/tensorproduct.py"
+  ],
+  "status": "prepared"
+}

@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-17655",
+  "repo": "sympy/sympy",
+  "base_commit": "f5e965947af2410ded92cfad987aaf45262ea434",
+  "method_count": 23623,
+  "gold_changed_python_files": [
+    "sympy/geometry/point.py"
+  ],
+  "status": "prepared"
+}

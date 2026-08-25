@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-20049",
+  "repo": "sympy/sympy",
+  "base_commit": "d57aaf064041fe52c0fa357639b069100f8b28e1",
+  "changed_python_files": [
+    "sympy/physics/vector/point.py"
+  ],
+  "FAIL_TO_PASS": "[\"test_auto_point_vel\", \"test_auto_point_vel_multiple_point_path\", \"test_auto_vel_dont_overwrite\", \"test_auto_point_vel_shortest_path\"]",
+  "PASS_TO_PASS": "[\"test_point_v1pt_theorys\", \"test_point_a1pt_theorys\", \"test_point_v2pt_theorys\", \"test_point_a2pt_theorys\", \"test_point_funcs\", \"test_point_pos\", \"test_point_partial_velocity\", \"test_point_vel\", \"test_auto_point_vel_if_tree_has_vel_but_inappropriate_pos_vector\"]"
+}

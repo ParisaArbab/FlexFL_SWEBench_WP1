@@ -22,3 +22,26 @@ results/*/coverage_sympy_runner/
 # Generated SBIR intermediate R files
 FlexFL/data/FL_results/SBIR/raw/R_scripts_seed1/*.R
 FlexFL/data/FL_results/SBIR/raw/R_scripts_seed1/*.out
+
+# Local SWE-bench repository checkouts
+FlexFL/data/repos/
+FlexFL/data/repos/**
+
+# Llama model/checkpoint
+FlexFL/src/Meta-Llama-3-8B-Instruct
+FlexFL/src/Meta-Llama-3-8B-Instruct/**
+
+# Experiment logs
+logs/
+logs/**
+
+# Temporary/pre-run backups
+results/pre_valid_evidence_llm_*/
+results/pre_valid_evidence_llm_*/**
+
+# Coverage intermediates
+results/sympy__sympy-*/coverage/
+results/sympy__sympy-*/coverage/**
+
+# Old source backups
+FlexFL/src/*.before_*

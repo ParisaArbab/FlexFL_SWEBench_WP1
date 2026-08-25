@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-15346",
+  "repo": "sympy/sympy",
+  "base_commit": "9ef28fba5b4d6d0168237c9c005a550e6dc27d81",
+  "method_count": 15212,
+  "gold_changed_python_files": [
+    "sympy/simplify/trigsimp.py"
+  ],
+  "status": "prepared"
+}

@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-22005",
+  "repo": "sympy/sympy",
+  "base_commit": "2c83657ff1c62fc2761b639469fdac7f7561a72a",
+  "changed_python_files": [
+    "sympy/solvers/polysys.py"
+  ],
+  "FAIL_TO_PASS": "[\"test_solve_poly_system\"]",
+  "PASS_TO_PASS": "[\"test_solve_biquadratic\", \"test_solve_triangulated\"]"
+}

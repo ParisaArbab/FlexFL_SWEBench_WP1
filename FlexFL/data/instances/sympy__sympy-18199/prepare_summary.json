@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-18199",
+  "repo": "sympy/sympy",
+  "base_commit": "ba80d1e493f21431b4bf729b3e0452cd47eb9566",
+  "method_count": 23872,
+  "gold_changed_python_files": [
+    "sympy/ntheory/residue_ntheory.py"
+  ],
+  "status": "prepared"
+}

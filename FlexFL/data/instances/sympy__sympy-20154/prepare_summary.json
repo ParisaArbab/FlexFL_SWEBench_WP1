@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-20154",
+  "repo": "sympy/sympy",
+  "base_commit": "bdb49c4abfb35554a3c8ce761696ffff3bb837fe",
+  "method_count": 24858,
+  "gold_changed_python_files": [
+    "sympy/utilities/iterables.py"
+  ],
+  "status": "prepared"
+}

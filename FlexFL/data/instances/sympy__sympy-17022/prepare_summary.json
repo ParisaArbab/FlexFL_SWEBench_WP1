@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-17022",
+  "repo": "sympy/sympy",
+  "base_commit": "f91de695585c1fbc7d4f49ee061f64fcb1c2c4d8",
+  "method_count": 15867,
+  "gold_changed_python_files": [
+    "sympy/printing/pycode.py"
+  ],
+  "status": "prepared"
+}

@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-15678",
+  "repo": "sympy/sympy",
+  "base_commit": "31c68eef3ffef39e2e792b0ec92cd92b7010eb2a",
+  "changed_python_files": [
+    "sympy/geometry/util.py"
+  ],
+  "FAIL_TO_PASS": "[\"test_idiff\"]",
+  "PASS_TO_PASS": "[\"test_intersection\", \"test_convex_hull\", \"test_centroid\"]"
+}

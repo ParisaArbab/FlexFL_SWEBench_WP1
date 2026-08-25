@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-15678",
+  "repo": "sympy/sympy",
+  "base_commit": "31c68eef3ffef39e2e792b0ec92cd92b7010eb2a",
+  "method_count": 15376,
+  "gold_changed_python_files": [
+    "sympy/geometry/util.py"
+  ],
+  "status": "prepared"
+}

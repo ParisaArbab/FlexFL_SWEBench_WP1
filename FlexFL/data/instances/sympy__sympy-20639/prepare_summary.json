@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-20639",
+  "repo": "sympy/sympy",
+  "base_commit": "eb926a1d0c1158bf43f01eaf673dc84416b5ebb1",
+  "method_count": 24961,
+  "gold_changed_python_files": [
+    "sympy/printing/pretty/pretty.py"
+  ],
+  "status": "prepared"
+}

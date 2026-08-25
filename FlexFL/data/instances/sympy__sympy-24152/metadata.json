@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-24152",
+  "repo": "sympy/sympy",
+  "base_commit": "b9af885473ad7e34b5b0826cb424dd26d8934670",
+  "changed_python_files": [
+    "sympy/physics/quantum/tensorproduct.py"
+  ],
+  "FAIL_TO_PASS": "[\"test_tensor_product_expand\"]",
+  "PASS_TO_PASS": "[\"test_sparse_matrices\", \"test_tensor_product_dagger\", \"test_tensor_product_abstract\", \"test_tensor_product_commutator\", \"test_tensor_product_simp\", \"test_issue_5923\"]"
+}

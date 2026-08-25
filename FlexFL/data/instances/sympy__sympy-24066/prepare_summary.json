@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-24066",
+  "repo": "sympy/sympy",
+  "base_commit": "514579c655bf22e2af14f0743376ae1d7befe345",
+  "method_count": 26593,
+  "gold_changed_python_files": [
+    "sympy/physics/units/unitsystem.py"
+  ],
+  "status": "prepared"
+}

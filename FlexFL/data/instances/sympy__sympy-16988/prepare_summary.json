@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-16988",
+  "repo": "sympy/sympy",
+  "base_commit": "e727339af6dc22321b00f52d971cda39e4ce89fb",
+  "method_count": 15859,
+  "gold_changed_python_files": [
+    "sympy/sets/sets.py"
+  ],
+  "status": "prepared"
+}

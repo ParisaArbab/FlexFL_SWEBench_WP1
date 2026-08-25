@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-24102",
+  "repo": "sympy/sympy",
+  "base_commit": "58598660a3f6ab3d918781c4988c2e4b2bdd9297",
+  "method_count": 26613,
+  "gold_changed_python_files": [
+    "sympy/parsing/mathematica.py"
+  ],
+  "status": "prepared"
+}

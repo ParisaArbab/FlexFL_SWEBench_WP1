@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-12481",
+  "repo": "sympy/sympy",
+  "base_commit": "c807dfe7569692cad24f02a08477b70c1679a4dd",
+  "method_count": 12591,
+  "gold_changed_python_files": [
+    "sympy/combinatorics/permutations.py"
+  ],
+  "status": "prepared"
+}

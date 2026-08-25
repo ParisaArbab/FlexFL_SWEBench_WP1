@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-13437",
+  "repo": "sympy/sympy",
+  "base_commit": "674afc619d7f5c519b6a5393a8b0532a131e57e0",
+  "changed_python_files": [
+    "sympy/functions/combinatorial/numbers.py"
+  ],
+  "FAIL_TO_PASS": "[\"test_bell\"]",
+  "PASS_TO_PASS": "[\"test_bernoulli\", \"test_fibonacci\", \"test_harmonic\", \"test_harmonic_rational\", \"test_harmonic_evalf\", \"test_harmonic_rewrite_polygamma\", \"test_harmonic_rewrite_sum\", \"test_euler\", \"test_euler_odd\", \"test_euler_polynomials\", \"test_euler_polynomial_rewrite\", \"test_catalan\", \"test_genocchi\", \"test_nC_nP_nT\", \"test_issue_8496\"]"
+}

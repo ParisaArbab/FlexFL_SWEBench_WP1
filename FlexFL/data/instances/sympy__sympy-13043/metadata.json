@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-13043",
+  "repo": "sympy/sympy",
+  "base_commit": "a3389a25ec84d36f5cf04a4f2562d820f131db64",
+  "changed_python_files": [
+    "sympy/integrals/intpoly.py"
+  ],
+  "FAIL_TO_PASS": "[\"test_decompose\"]",
+  "PASS_TO_PASS": "[\"test_best_origin\"]"
+}

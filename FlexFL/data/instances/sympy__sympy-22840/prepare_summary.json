@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-22840",
+  "repo": "sympy/sympy",
+  "base_commit": "d822fcba181155b85ff2b29fe525adbafb22b448",
+  "method_count": 26266,
+  "gold_changed_python_files": [
+    "sympy/simplify/cse_main.py"
+  ],
+  "status": "prepared"
+}

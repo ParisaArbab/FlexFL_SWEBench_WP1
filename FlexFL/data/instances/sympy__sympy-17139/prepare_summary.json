@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-17139",
+  "repo": "sympy/sympy",
+  "base_commit": "1d3327b8e90a186df6972991963a5ae87053259d",
+  "method_count": 15977,
+  "gold_changed_python_files": [
+    "sympy/simplify/fu.py"
+  ],
+  "status": "prepared"
+}

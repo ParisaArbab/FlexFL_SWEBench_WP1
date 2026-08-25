@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-18698",
+  "repo": "sympy/sympy",
+  "base_commit": "3dff1b98a78f28c953ae2140b69356b8391e399c",
+  "method_count": 24094,
+  "gold_changed_python_files": [
+    "sympy/polys/polytools.py"
+  ],
+  "status": "prepared"
+}

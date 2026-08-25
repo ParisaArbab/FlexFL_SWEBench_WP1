@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-23191",
+  "repo": "sympy/sympy",
+  "base_commit": "fa9b4b140ec0eaf75a62c1111131626ef0f6f524",
+  "changed_python_files": [
+    "sympy/printing/pretty/pretty.py"
+  ],
+  "FAIL_TO_PASS": "[\"test_issue_23058\"]",
+  "PASS_TO_PASS": "[\"test_str_printing\", \"test_pretty_print_unicode_v\", \"test_latex_printing\"]"
+}

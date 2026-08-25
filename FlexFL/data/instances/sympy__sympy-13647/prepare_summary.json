@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-13647",
+  "repo": "sympy/sympy",
+  "base_commit": "67e3c956083d0128a621f65ee86a7dacd4f9f19f",
+  "method_count": 13649,
+  "gold_changed_python_files": [
+    "sympy/matrices/common.py"
+  ],
+  "status": "prepared"
+}

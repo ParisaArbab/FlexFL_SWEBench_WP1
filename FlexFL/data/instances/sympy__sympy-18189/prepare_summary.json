@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-18189",
+  "repo": "sympy/sympy",
+  "base_commit": "1923822ddf8265199dbd9ef9ce09641d3fd042b9",
+  "method_count": 23845,
+  "gold_changed_python_files": [
+    "sympy/solvers/diophantine.py"
+  ],
+  "status": "prepared"
+}

@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-16792",
+  "repo": "sympy/sympy",
+  "base_commit": "09786a173e7a0a488f46dd6000177c23e5d24eed",
+  "method_count": 15721,
+  "gold_changed_python_files": [
+    "sympy/utilities/codegen.py"
+  ],
+  "status": "prepared"
+}

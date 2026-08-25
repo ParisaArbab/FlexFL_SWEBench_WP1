@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-23117",
+  "repo": "sympy/sympy",
+  "base_commit": "c5cef2499d6eed024b0db5c792d6ec7c53baa470",
+  "changed_python_files": [
+    "sympy/tensor/array/ndim_array.py"
+  ],
+  "FAIL_TO_PASS": "[\"test_issue_17851\"]",
+  "PASS_TO_PASS": "[\"test_array_negative_indices\", \"test_issue_18361\", \"test_issue_20222\"]"
+}

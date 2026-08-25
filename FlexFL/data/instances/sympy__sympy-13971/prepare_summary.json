@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-13971",
+  "repo": "sympy/sympy",
+  "base_commit": "84c125972ad535b2dfb245f8d311d347b45e5b8a",
+  "method_count": 13751,
+  "gold_changed_python_files": [
+    "sympy/printing/latex.py"
+  ],
+  "status": "prepared"
+}

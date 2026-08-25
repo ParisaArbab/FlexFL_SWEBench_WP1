@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-23117",
+  "repo": "sympy/sympy",
+  "base_commit": "c5cef2499d6eed024b0db5c792d6ec7c53baa470",
+  "method_count": 26327,
+  "gold_changed_python_files": [
+    "sympy/tensor/array/ndim_array.py"
+  ],
+  "status": "prepared"
+}

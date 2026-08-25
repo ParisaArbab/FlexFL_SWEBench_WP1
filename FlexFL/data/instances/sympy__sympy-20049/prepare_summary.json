@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-20049",
+  "repo": "sympy/sympy",
+  "base_commit": "d57aaf064041fe52c0fa357639b069100f8b28e1",
+  "method_count": 24840,
+  "gold_changed_python_files": [
+    "sympy/physics/vector/point.py"
+  ],
+  "status": "prepared"
+}

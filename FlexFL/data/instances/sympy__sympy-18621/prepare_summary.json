@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-18621",
+  "repo": "sympy/sympy",
+  "base_commit": "b17ef6effe278d5b861d65896cc53442a6370d8f",
+  "method_count": 24052,
+  "gold_changed_python_files": [
+    "sympy/matrices/expressions/blockmatrix.py"
+  ],
+  "status": "prepared"
+}

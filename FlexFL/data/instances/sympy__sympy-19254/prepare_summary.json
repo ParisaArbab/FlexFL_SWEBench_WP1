@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-19254",
+  "repo": "sympy/sympy",
+  "base_commit": "e0ef1da13e2ab2a77866c05246f73c871ca9388c",
+  "method_count": 24304,
+  "gold_changed_python_files": [
+    "sympy/polys/factortools.py"
+  ],
+  "status": "prepared"
+}

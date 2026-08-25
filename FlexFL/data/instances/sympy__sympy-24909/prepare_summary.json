@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-24909",
+  "repo": "sympy/sympy",
+  "base_commit": "d3b4158dea271485e3daa11bf82e69b8dab348ce",
+  "method_count": 18987,
+  "gold_changed_python_files": [
+    "sympy/physics/units/prefixes.py"
+  ],
+  "status": "prepared"
+}

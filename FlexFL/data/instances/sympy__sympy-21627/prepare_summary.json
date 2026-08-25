@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-21627",
+  "repo": "sympy/sympy",
+  "base_commit": "126f80578140e752ad5135aac77b8ff887eede3e",
+  "method_count": 25663,
+  "gold_changed_python_files": [
+    "sympy/functions/elementary/complexes.py"
+  ],
+  "status": "prepared"
+}

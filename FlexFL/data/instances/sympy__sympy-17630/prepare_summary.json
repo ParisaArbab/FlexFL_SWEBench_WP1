@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-17630",
+  "repo": "sympy/sympy",
+  "base_commit": "58e78209c8577b9890e957b624466e5beed7eb08",
+  "method_count": 23618,
+  "gold_changed_python_files": [
+    "sympy/matrices/expressions/matexpr.py"
+  ],
+  "status": "prepared"
+}

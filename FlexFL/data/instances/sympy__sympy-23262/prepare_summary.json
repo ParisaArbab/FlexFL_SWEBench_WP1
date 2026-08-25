@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-23262",
+  "repo": "sympy/sympy",
+  "base_commit": "fdc707f73a65a429935c01532cd3970d3355eab6",
+  "method_count": 26342,
+  "gold_changed_python_files": [
+    "sympy/utilities/lambdify.py"
+  ],
+  "status": "prepared"
+}

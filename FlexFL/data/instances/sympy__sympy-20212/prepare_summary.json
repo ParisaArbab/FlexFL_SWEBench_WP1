@@ -1,0 +1,10 @@
+{
+  "instance_id": "sympy__sympy-20212",
+  "repo": "sympy/sympy",
+  "base_commit": "a106f4782a9dbe7f8fd16030f15401d977e03ae9",
+  "method_count": 24895,
+  "gold_changed_python_files": [
+    "sympy/core/power.py"
+  ],
+  "status": "prepared"
+}
