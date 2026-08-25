@@ -14,3 +14,7 @@ SBIR-ReplicationPackage/
 # Python cache
 __pycache__/
 *.pyc
+
+# Intermediate coverage files
+results/*/coverage/
+results/*/coverage_sympy_runner/
