@@ -45,3 +45,10 @@ results/sympy__sympy-*/coverage/**
 
 # Old source backups
 FlexFL/src/*.before_*
+
+# Generated FlexFL SWE-bench method corpora
+FlexFL/data/input/buggy_program/SWEbench/*.corpusRawMethodLevelGranularity
+FlexFL/data/input/buggy_program/SWEbench/*.corpusMappingWithPackageSeparatorMethodLevelGranularity
+
+# Local SWE-bench repository clones
+FlexFL/data/repos/
