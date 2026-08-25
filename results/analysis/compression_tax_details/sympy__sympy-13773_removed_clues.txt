@@ -1,0 +1,45 @@
+BUG: sympy__sympy-13773
+CATEGORY: MULTIPLE_DEBUGGING_CLUES_REMOVED
+RAW bytes: 2818
+RTK bytes: 671
+Reduction: 76.19%
+RAW rank: 1
+RTK rank: None
+Top5 overlap: 0/5
+
+REMOVED EXCEPTION TYPES
+
+REMOVED TEST NAMES
+test_commonmatrix
+test_matmul
+
+REMOVED SOURCE REFERENCES
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13773/sympy/core/basic.py:3
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13773/sympy/core/decorators.py
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13773/sympy/matrices/common.py
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13773/sympy/matrices/tests/test_commonmatrix.py
+sympy/matrices/tests/test_commonmatrix.py
+
+REMOVED ASSERTION INFORMATION
+assert a.__matmul__(2) == NotImplemented
+
+IMPORTANT REMOVED RAW LINES
+===== FAIL_TO_PASS: test_matmul =====
+sympy/matrices/tests/test_commonmatrix.py[1] E                            [FAIL]
+____________ sympy/matrices/tests/test_commonmatrix.py:test_matmul _____________
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13773/sympy/matrices/tests/test_commonmatrix.py", line 680, in test_matmul
+assert a.__matmul__(2) == NotImplemented
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13773/sympy/core/decorators.py", line 132, in binary_op_wrapper
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13773/sympy/matrices/common.py", line 1976, in __matmul__
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13773/sympy/matrices/common.py", line 2022, in __mul__
+File "/home/parbab/miniconda3/envs/flexfl-sympy38/lib/python3.8/collections/__init__.py", line 49, in __getattr__
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13773/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+
+RAW TOP 5
+sympy.matrices.common.MatrixArithmetic.__matmul__()
+sympy.matrices.common.MatrixArithmetic.__mul__()
+sympy.physics.quantum.gate.represent_zbasis()
+sympy.integrals.rubi.utility_function._SimplifyAntiderivative()
+sympy.matrices.expressions.matmul.MatMul._eval_adjoint()
+
+RTK TOP 5

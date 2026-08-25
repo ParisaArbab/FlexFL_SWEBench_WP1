@@ -1,0 +1,56 @@
+BUG: sympy__sympy-13971
+CATEGORY: MULTIPLE_DEBUGGING_CLUES_REMOVED
+RAW bytes: 4066
+RTK bytes: 476
+Reduction: 88.29%
+RAW rank: 1
+RTK rank: None
+Top5 overlap: 0/5
+
+REMOVED EXCEPTION TYPES
+
+REMOVED TEST NAMES
+test_latex
+test_latex_sequences
+
+REMOVED SOURCE REFERENCES
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/core/basic.py:3
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/core/containers.py:271
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/physics/quantum/__init__.py
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/physics/quantum/anticommutator.py
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/physics/quantum/matrixutils.py
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/physics/quantum/operator.py
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/physics/quantum/qexpr.py
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/plotting/plot.py:28
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/printing/tests/test_latex.py
+sympy/printing/tests/test_latex.py
+
+REMOVED ASSERTION INFORMATION
+
+IMPORTANT REMOVED RAW LINES
+===== FAIL_TO_PASS: test_latex_sequences =====
+sympy/printing/tests/test_latex.py[0] /scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+Traceback (most recent call last):
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/utilities/runtests.py", line 1156, in test_file
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/printing/tests/test_latex.py", line 35, in <module>
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/physics/quantum/__init__.py", line 14, in <module>
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/physics/quantum/anticommutator.py", line 8, in <module>
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/physics/quantum/operator.py", line 17, in <module>
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/physics/quantum/qexpr.py", line 9, in <module>
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/physics/quantum/matrixutils.py", line 46, in <module>
+File "/home/parbab/.local/lib/python3.8/site-packages/scipy/sparse/base.py", line 38, in __getattr__
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/utilities/runtests.py", line 487, in test
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/utilities/runtests.py", line 574, in _test
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/utilities/runtests.py", line 1088, in test
+self.test_file(f, sort, timeout, slow,
+
+RAW TOP 5
+sympy.printing.latex.LatexPrinter._print_Function()
+sympy.printing.latex.LatexPrinter._do_exponent()
+sympy.printing.latex.LatexPrinter._needs_brackets()
+sympy.printing.latex.LatexPrinter._hprint_Function()
+sympy.printing.latex.LatexPrinter.doprint()
+
+RTK TOP 5

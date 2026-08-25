@@ -1,0 +1,38 @@
+BUG: sympy__sympy-16503
+CATEGORY: MULTIPLE_DEBUGGING_CLUES_REMOVED
+RAW bytes: 992
+RTK bytes: 175
+Reduction: 82.36%
+RAW rank: 1
+RTK rank: None
+Top5 overlap: 0/5
+
+REMOVED EXCEPTION TYPES
+
+REMOVED TEST NAMES
+test_pretty
+test_pretty_sum
+
+REMOVED SOURCE REFERENCES
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-16503/sympy/printing/pretty/tests/test_pretty.py
+sympy/printing/pretty/tests/test_pretty.py
+
+REMOVED ASSERTION INFORMATION
+assert upretty(expr) == ucode_str
+
+IMPORTANT REMOVED RAW LINES
+===== FAIL_TO_PASS: test_pretty_sum =====
+sympy/printing/pretty/tests/test_pretty.py[1] F                           [FAIL]
+__________ sympy/printing/pretty/tests/test_pretty.py:test_pretty_sum __________
+Traceback (most recent call last):
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-16503/sympy/printing/pretty/tests/test_pretty.py", line 4439, in test_pretty_sum
+assert upretty(expr) == ucode_str
+
+RAW TOP 5
+sympy.printing.pretty.pretty.PrettyPrinter._print_Sum()
+sympy.printing.pretty.pretty.PrettyPrinter._print()
+sympy.core.evalf.add_terms()
+sympy.printing.pretty.pretty.PrettyPrinter.doprint()
+sympy.printing.pretty.pretty.PrettyPrinter.render()
+
+RTK TOP 5

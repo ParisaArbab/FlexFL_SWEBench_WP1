@@ -1,0 +1,43 @@
+BUG: sympy__sympy-15346
+CATEGORY: MULTIPLE_DEBUGGING_CLUES_REMOVED
+RAW bytes: 1023
+RTK bytes: 175
+Reduction: 82.89%
+RAW rank: 1
+RTK rank: None
+Top5 overlap: 0/5
+
+REMOVED EXCEPTION TYPES
+
+REMOVED TEST NAMES
+test_issue_15129_trigsimp_methods
+test_trigsimp
+
+REMOVED SOURCE REFERENCES
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15346/sympy/simplify/tests/test_trigsimp.py
+sympy/simplify/tests/test_trigsimp.py
+
+REMOVED ASSERTION INFORMATION
+assert trigsimp(r1) == cos(S(1)/50)
+
+IMPORTANT REMOVED RAW LINES
+===== FAIL_TO_PASS: test_issue_15129_trigsimp_methods =====
+sympy/simplify/tests/test_trigsimp.py[1] F                                [FAIL]
+___ sympy/simplify/tests/test_trigsimp.py:test_issue_15129_trigsimp_methods ____
+Traceback (most recent call last):
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-15346/sympy/simplify/tests/test_trigsimp.py", line 367, in test_issue_15129_trigsimp_methods
+assert trigsimp(r1) == cos(S(1)/50)
+
+RAW TOP 5
+sympy.simplify.trigsimp._trigsimp()
+sympy.simplify.trigsimp.trigsimp()
+sympy.simplify.trigsimp.__trigsimp()
+sympy.simplify.trigsimp._dotrig()
+sympy.simplify.trigsimp._futrig()
+
+RTK TOP 5
+sympy.integrals.rubi.parsetools.parse.replaceWith()
+sympy.integrals.rubi.rules.sine.sine()
+sympy.integrals.rubi.rules.secant.secant()
+sympy.integrals.rubi.rules.tangent.tangent()
+sympy.integrals.rubi.parsetools.parse.extract_set()

@@ -1,0 +1,60 @@
+BUG: sympy__sympy-14308
+CATEGORY: MULTIPLE_DEBUGGING_CLUES_REMOVED
+RAW bytes: 4308
+RTK bytes: 672
+Reduction: 84.40%
+RAW rank: 1
+RTK rank: None
+Top5 overlap: 1/5
+
+REMOVED EXCEPTION TYPES
+AssertionError
+
+REMOVED TEST NAMES
+test_issue_12675
+test_pretty
+test_pretty_print_unicode
+test_printing
+
+REMOVED SOURCE REFERENCES
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14308/sympy/core/basic.py:3
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14308/sympy/core/expr.py:12
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14308/sympy/printing/pretty/tests/test_pretty.py
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14308/sympy/vector/tests/test_printing.py
+sympy/printing/pretty/tests/test_pretty.py
+sympy/vector/tests/test_printing.py
+
+REMOVED ASSERTION INFORMATION
+assert upretty((x/y)**t*e.j) == ucode_str
+AssertionError
+assert upretty(v[8]) == upretty_v_8
+AssertionError
+
+IMPORTANT REMOVED RAW LINES
+===== FAIL_TO_PASS: test_issue_12675 =====
+sympy/printing/pretty/tests/test_pretty.py[1] F                           [FAIL]
+_________ sympy/printing/pretty/tests/test_pretty.py:test_issue_12675 __________
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14308/sympy/printing/pretty/tests/test_pretty.py", line 6104, in test_issue_12675
+assert upretty((x/y)**t*e.j) == ucode_str
+AssertionError
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14308/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14308/sympy/core/expr.py:12: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+===== FAIL_TO_PASS: test_pretty_print_unicode =====
+sympy/vector/tests/test_printing.py[1] F                                  [FAIL]
+________ sympy/vector/tests/test_printing.py:test_pretty_print_unicode _________
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-14308/sympy/vector/tests/test_printing.py", line 135, in test_pretty_print_unicode
+assert upretty(v[8]) == upretty_v_8
+
+RAW TOP 5
+sympy.printing.pretty.pretty.PrettyPrinter._hprint_vec()
+sympy.printing.pretty.pretty.PrettyPrinter._print_Atom()
+sympy.printing.pretty.pretty.PrettyPrinter._print_Or()
+sympy.physics.vector.printing.vpprint()
+sympy.printing.pretty.pretty.PrettyPrinter._print_Xor()
+
+RTK TOP 5
+sympy.physics.vector.printing.vpprint()
+sympy.physics.vector.printing.VectorPrettyPrinter._print_Derivative()
+sympy.physics.vector.printing.VectorPrettyPrinter._print_Function()
+sympy.physics.vector.printing.VectorPrettyPrinter._print_Vector()
+sympy.physics.vector.printing.VectorPrettyPrinter._print_VectorLatex()

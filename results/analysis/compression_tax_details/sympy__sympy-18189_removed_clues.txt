@@ -1,0 +1,37 @@
+BUG: sympy__sympy-18189
+CATEGORY: MULTIPLE_DEBUGGING_CLUES_REMOVED
+RAW bytes: 1034
+RTK bytes: 175
+Reduction: 83.08%
+RAW rank: 1
+RTK rank: None
+Top5 overlap: 0/5
+
+REMOVED EXCEPTION TYPES
+
+REMOVED TEST NAMES
+test_diophantine
+
+REMOVED SOURCE REFERENCES
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-18189/sympy/solvers/tests/test_diophantine.py
+sympy/solvers/tests/test_diophantine.py
+
+REMOVED ASSERTION INFORMATION
+assert diophantine(y**4 + x**4 - 2**4 - 3**4, syms=(y, x), permute=True) == \
+
+IMPORTANT REMOVED RAW LINES
+===== FAIL_TO_PASS: test_diophantine =====
+sympy/solvers/tests/test_diophantine.py[2] F.                             [FAIL]
+___________ sympy/solvers/tests/test_diophantine.py:test_diophantine ___________
+Traceback (most recent call last):
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-18189/sympy/solvers/tests/test_diophantine.py", line 554, in test_diophantine
+assert diophantine(y**4 + x**4 - 2**4 - 3**4, syms=(y, x), permute=True) == \
+
+RAW TOP 5
+sympy.solvers.diophantine.diophantine()
+sympy.solvers.diophantine._diop_general_sum_of_even_powers()
+sympy.solvers.diophantine._diop_general_pythagorean()
+sympy.solvers.diophantine._diop_linear()
+sympy.solvers.diophantine._diop_quadratic()
+
+RTK TOP 5

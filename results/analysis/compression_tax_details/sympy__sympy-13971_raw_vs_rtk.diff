@@ -1,0 +1,62 @@
+--- RAW
++++ RTK
+@@ -1,53 +1,7 @@
++OUTPUT (last 5 lines):
++    File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/utilities/runtests.py", line 1163, in test_file
++      reporter.test_exception(sys.exc_info())
++    File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/utilities/runtests.py", line 2299, in test_exception
++      self._exceptions.append((self._active_file, self._active_f, exc_info))
++  AttributeError: 'PyTestReporter' object has no attribute '_active_file'
+ 
+-===== FAIL_TO_PASS: test_latex_sequences =====
+-============================= test process starts ==============================
+-executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+-architecture:       64-bit
+-cache:              yes
+-ground types:       python 
+-numpy:              1.24.4
+-random seed:        27517650
+-hash randomization: off
+-
+-sympy/printing/tests/test_latex.py[0] /scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+-  from collections import Mapping, defaultdict
+-/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+-  class OrderedSet(collections.MutableSet):
+-/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+-  from collections import Callable
+-Traceback (most recent call last):
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/utilities/runtests.py", line 1156, in test_file
+-    exec_(code, gl)
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/printing/tests/test_latex.py", line 35, in <module>
+-    from sympy.physics.quantum import Commutator, Operator
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/physics/quantum/__init__.py", line 14, in <module>
+-    from . import anticommutator
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/physics/quantum/anticommutator.py", line 8, in <module>
+-    from sympy.physics.quantum.operator import Operator
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/physics/quantum/operator.py", line 17, in <module>
+-    from sympy.physics.quantum.qexpr import QExpr, dispatch_method
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/physics/quantum/qexpr.py", line 9, in <module>
+-    from sympy.physics.quantum.matrixutils import (
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/physics/quantum/matrixutils.py", line 46, in <module>
+-    scipy_sparse_matrix = sparse.base.spmatrix
+-  File "/home/parbab/.local/lib/python3.8/site-packages/scipy/sparse/base.py", line 38, in __getattr__
+-    warnings.warn(f"Please use `{name}` from the `scipy.sparse` namespace, "
+-DeprecationWarning: Please use `spmatrix` from the `scipy.sparse` namespace, the `scipy.sparse.base` namespace is deprecated.
+-
+-During handling of the above exception, another exception occurred:
+-
+-Traceback (most recent call last):
+-  File "bin/test", line 107, in <module>
+-    ok = sympy.test(*args, verbose=options.verbose, kw=options.kw,
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/utilities/runtests.py", line 487, in test
+-    val = not bool(_test(*paths, **kwargs))
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/utilities/runtests.py", line 574, in _test
+-    return int(not t.test(sort=sort, timeout=timeout, slow=slow,
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/utilities/runtests.py", line 1088, in test
+-    self.test_file(f, sort, timeout, slow,
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/utilities/runtests.py", line 1163, in test_file
+-    reporter.test_exception(sys.exc_info())
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-13971/sympy/utilities/runtests.py", line 2299, in test_exception
+-    self._exceptions.append((self._active_file, self._active_f, exc_info))
+-AttributeError: 'PyTestReporter' object has no attribute '_active_file'
+-===== TEST EXIT CODE: 1 =====

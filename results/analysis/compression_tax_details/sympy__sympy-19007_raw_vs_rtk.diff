@@ -1,0 +1,83 @@
+--- RAW
++++ RTK
+@@ -1,75 +1,6 @@
++OUTPUT (last 5 lines):
++  AssertionError
++  ============= tests finished: 0 passed, 1 failed, in 0.11 seconds ==============
++  DO *NOT* COMMIT!
++  ===== TEST EXIT CODE: 1 =====
+ 
+-===== FAIL_TO_PASS: test_block_index_symbolic =====
+-============================= test process starts ==============================
+-executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+-architecture:       64-bit
+-cache:              yes
+-ground types:       python 
+-numpy:              1.24.4
+-random seed:        25868751
+-hash randomization: off
+-
+-sympy/matrices/expressions/tests/test_indexing.py[3] FFf                  [FAIL]
+-
+-________________________________________________________________________________
+-_ sympy/matrices/expressions/tests/test_indexing.py:test_block_index_symbolic __
+-Traceback (most recent call last):
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-19007/sympy/matrices/expressions/tests/test_indexing.py", line 94, in test_block_index_symbolic
+-    assert A[0, 0] == MatrixElement(A, 0, 0)  # Cannot be A1[0, 0]
+-AssertionError
+-________________________________________________________________________________
+- sympy/matrices/expressions/tests/test_indexing.py:test_block_index_symbolic_nonzero 
+-Traceback (most recent call last):
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-19007/sympy/matrices/expressions/tests/test_indexing.py", line 119, in test_block_index_symbolic_nonzero
+-    assert A[i, j] == MatrixElement(A, i, j)
+-AssertionError
+-
+-=== tests finished: 0 passed, 2 failed, 1 expected to fail, in 0.12 seconds ====
+-DO *NOT* COMMIT!
+-===== TEST EXIT CODE: 1 =====
+-
+-===== FAIL_TO_PASS: test_block_index_symbolic_nonzero =====
+-============================= test process starts ==============================
+-executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+-architecture:       64-bit
+-cache:              yes
+-ground types:       python 
+-numpy:              1.24.4
+-random seed:        39126523
+-hash randomization: off
+-
+-sympy/matrices/expressions/tests/test_indexing.py[1] F                    [FAIL]
+-
+-________________________________________________________________________________
+- sympy/matrices/expressions/tests/test_indexing.py:test_block_index_symbolic_nonzero 
+-Traceback (most recent call last):
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-19007/sympy/matrices/expressions/tests/test_indexing.py", line 119, in test_block_index_symbolic_nonzero
+-    assert A[i, j] == MatrixElement(A, i, j)
+-AssertionError
+-
+-============= tests finished: 0 passed, 1 failed, in 0.11 seconds ==============
+-DO *NOT* COMMIT!
+-===== TEST EXIT CODE: 1 =====
+-
+-===== FAIL_TO_PASS: test_block_index_large =====
+-============================= test process starts ==============================
+-executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+-architecture:       64-bit
+-cache:              yes
+-ground types:       python 
+-numpy:              1.24.4
+-random seed:        86939555
+-hash randomization: off
+-
+-sympy/matrices/expressions/tests/test_indexing.py[1] F                    [FAIL]
+-
+-________________________________________________________________________________
+-___ sympy/matrices/expressions/tests/test_indexing.py:test_block_index_large ___
+-Traceback (most recent call last):
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-19007/sympy/matrices/expressions/tests/test_indexing.py", line 138, in test_block_index_large
+-    assert A[n + i, n + i] == MatrixElement(A, n + i, n + i)
+-AssertionError
+-
+-============= tests finished: 0 passed, 1 failed, in 0.11 seconds ==============
+-DO *NOT* COMMIT!
+-===== TEST EXIT CODE: 1 =====

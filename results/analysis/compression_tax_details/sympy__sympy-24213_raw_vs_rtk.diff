@@ -1,0 +1,33 @@
+--- RAW
++++ RTK
+@@ -1,25 +1,6 @@
++OUTPUT (last 5 lines):
++  ValueError: Dimension of "V1" is Dimension(velocity), but it should be Dimension(acceleration*time)
++  =========== tests finished: 0 passed, 1 exceptions, in 0.26 seconds ============
++  DO *NOT* COMMIT!
++  ===== TEST EXIT CODE: 1 =====
+ 
+-===== FAIL_TO_PASS: test_issue_24211 =====
+-============================= test process starts ==============================
+-executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+-architecture:       64-bit
+-cache:              yes
+-ground types:       python 
+-numpy:              1.24.4
+-random seed:        18740326
+-hash randomization: off
+-
+-sympy/physics/units/tests/test_quantities.py[1] E                         [FAIL]
+-
+-________________________________________________________________________________
+-________ sympy/physics/units/tests/test_quantities.py:test_issue_24211 _________
+-Traceback (most recent call last):
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24213/sympy/physics/units/tests/test_quantities.py", line 578, in test_issue_24211
+-    SI._collect_factor_and_dimension(expr)
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24213/sympy/physics/units/unitsystem.py", line 179, in _collect_factor_and_dimension
+-    raise ValueError(
+-ValueError: Dimension of "V1" is Dimension(velocity), but it should be Dimension(acceleration*time)
+-
+-=========== tests finished: 0 passed, 1 exceptions, in 0.25 seconds ============
+-DO *NOT* COMMIT!
+-===== TEST EXIT CODE: 1 =====

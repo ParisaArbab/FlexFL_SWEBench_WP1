@@ -1,0 +1,44 @@
+BUG: sympy__sympy-24213
+CATEGORY: MULTIPLE_DEBUGGING_CLUES_REMOVED
+RAW bytes: 1255
+RTK bytes: 260
+Reduction: 79.28%
+RAW rank: 4
+RTK rank: None
+Top5 overlap: 2/5
+
+REMOVED EXCEPTION TYPES
+
+REMOVED TEST NAMES
+test_issue_24211
+test_quantities
+
+REMOVED SOURCE REFERENCES
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24213/sympy/physics/units/tests/test_quantities.py
+/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24213/sympy/physics/units/unitsystem.py
+sympy/physics/units/tests/test_quantities.py
+
+REMOVED ASSERTION INFORMATION
+
+IMPORTANT REMOVED RAW LINES
+===== FAIL_TO_PASS: test_issue_24211 =====
+sympy/physics/units/tests/test_quantities.py[1] E                         [FAIL]
+________ sympy/physics/units/tests/test_quantities.py:test_issue_24211 _________
+Traceback (most recent call last):
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24213/sympy/physics/units/tests/test_quantities.py", line 578, in test_issue_24211
+File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-24213/sympy/physics/units/unitsystem.py", line 179, in _collect_factor_and_dimension
+raise ValueError(
+
+RAW TOP 5
+sympy.physics.units.quantities.Quantity._collect_factor_and_dimension()
+sympy.physics.units.dimensions._QuantityMapper.set_quantity_dimension()
+sympy.physics.units.dimensions._QuantityMapper.get_quantity_dimension()
+sympy.physics.units.unitsystem.UnitSystem._collect_factor_and_dimension()
+sympy.physics.units.dimensions._QuantityMapper.set_quantity_scale_factor()
+
+RTK TOP 5
+sympy.physics.units.dimensions._QuantityMapper.set_quantity_dimension()
+sympy.physics.units.quantities.Quantity._collect_factor_and_dimension()
+sympy.physics.units.dimensions.Dimension.__mul__()
+sympy.physics.units.util.quantity_simplify()
+sympy.physics.units.dimensions.Dimension.__add__()

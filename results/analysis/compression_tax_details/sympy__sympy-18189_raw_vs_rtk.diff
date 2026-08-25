@@ -1,0 +1,31 @@
+--- RAW
++++ RTK
+@@ -1,23 +1,6 @@
++OUTPUT (last 5 lines):
++  AssertionError
++  ============= tests finished: 1 passed, 1 failed, in 0.78 seconds ==============
++  DO *NOT* COMMIT!
++  ===== TEST EXIT CODE: 1 =====
+ 
+-===== FAIL_TO_PASS: test_diophantine =====
+-============================= test process starts ==============================
+-executable:         /home/parbab/miniconda3/envs/flexfl-sympy38/bin/python  (3.8.20-final-0) [CPython]
+-architecture:       64-bit
+-cache:              yes
+-ground types:       python 
+-numpy:              1.24.4
+-random seed:        57116394
+-hash randomization: off
+-
+-sympy/solvers/tests/test_diophantine.py[2] F.                             [FAIL]
+-
+-________________________________________________________________________________
+-___________ sympy/solvers/tests/test_diophantine.py:test_diophantine ___________
+-Traceback (most recent call last):
+-  File "/scratch/parbab/FlexFL_SWEBench_WP1/repos/sympy__sympy-18189/sympy/solvers/tests/test_diophantine.py", line 554, in test_diophantine
+-    assert diophantine(y**4 + x**4 - 2**4 - 3**4, syms=(y, x), permute=True) == \
+-AssertionError
+-
+-============= tests finished: 1 passed, 1 failed, in 0.79 seconds ==============
+-DO *NOT* COMMIT!
+-===== TEST EXIT CODE: 1 =====
